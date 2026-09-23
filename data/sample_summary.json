@@ -1,0 +1,38 @@
+{
+  "source": "https://www.kaggle.com/datasets/wordsforthewise/lending-club/versions/3",
+  "dataset_version": 3,
+  "source_file": "accepted_2007_to_2018Q4.csv.gz",
+  "license": "CC0: Public Domain (según la ficha de Kaggle)",
+  "selection": "Muestreo aleatorio uniforme sin reemplazo entre Fully Paid y Charged Off",
+  "seed": 42,
+  "sample_size": 115000,
+  "source_rows": 2260701,
+  "eligible_rows": 1345310,
+  "source_status_counts": {
+    "Fully Paid": 1076751,
+    "Charged Off": 268559
+  },
+  "columns": 151,
+  "loan_status_counts": {
+    "Fully Paid": 91959,
+    "Charged Off": 23041
+  },
+  "issue_year_counts": {
+    "2007": 27,
+    "2008": 142,
+    "2009": 387,
+    "2010": 993,
+    "2011": 1905,
+    "2012": 4552,
+    "2013": 11677,
+    "2014": 18909,
+    "2015": 32034,
+    "2016": 24999,
+    "2017": 14543,
+    "2018": 4832
+  },
+  "term_counts": {
+    " 36 months": 87303,
+    " 60 months": 27697
+  }
+}

@@ -7,7 +7,7 @@ Predicción del riesgo de incumplimiento en préstamos personales de Lending Clu
 ## 2. Integrantes
 
 
-**Grupo:** 7 
+**Grupo:** 7
 
 - Marco Soto Maceda
 - Marcelo Ferreyra
@@ -19,11 +19,13 @@ Predicción del riesgo de incumplimiento en préstamos personales de Lending Clu
 
 Se utilizará el dataset **Lending Club Loan Data**, disponible en Kaggle:
 
-https://www.kaggle.com/datasets/wordsforthewise/lending-club
+https://www.kaggle.com/datasets/wordsforthewise/lending-club/versions/3
 
-El archivo original contiene 2,260,701 registros y 151 variables de préstamos emitidos entre 2007 y 2018. Para la entrega previa se utilizará una muestra representativa de 115,000 registros y 151 variables, permitida por las indicaciones del proyecto. La muestra cubre todo el periodo disponible, incluye préstamos de 36 y 60 meses y conserva los resultados definitivos `Fully Paid` y `Charged Off`.
+La ficha de Kaggle declara la licencia **CC0: Public Domain**. La descarga del archivo original puede requerir iniciar sesión. La muestra incluida en `data/lending_club_muestra.csv.gz` se genera con `scripts/crear_muestra.py` a partir de `accepted_2007_to_2018Q4.csv.gz` de esa versión, con semilla 42.
 
-La muestra contiene 92,191 préstamos `Fully Paid`, equivalentes al 80.17%, y 22,809 préstamos `Charged Off`, equivalentes al 19.83%.
+El archivo original contiene 2,260,701 registros y 151 variables de préstamos emitidos entre 2007 y 2018. De ellos, 1,345,310 tienen estado definitivo `Fully Paid` o `Charged Off`. La muestra aleatoria sin reemplazo tiene 115,000 registros y 151 variables de 2007 a 2018, con plazos de 36 y 60 meses. Contiene 91,959 préstamos `Fully Paid` (79.96%) y 23,041 `Charged Off` (20.04%). La composición por año y plazo está en `data/sample_summary.json`.
+
+Esta muestra representa solo préstamos con resultado definitivo; no representa a todos los solicitantes ni a todos los préstamos emitidos, especialmente los más recientes.
 
 ## 4. Pregunta predictiva
 
@@ -113,13 +115,13 @@ La muestra se dividirá de forma estratificada y reproducible:
 
 La estratificación mantendrá aproximadamente la misma proporción de `Fully Paid` y `Charged Off` en las tres particiones. Se utilizará una semilla aleatoria igual a 42.
 
-El conjunto de prueba se mantendrá separado y no se utilizará para seleccionar variables, umbrales o decisiones de modelado.
+El conjunto de prueba se mantendrá separado y no se utilizará para seleccionar variables, umbrales o decisiones de modelado. En este avance se reportan métricas solo sobre validación. Más adelante se estudiará una validación temporal.
 
 ## 11. Modelo baseline
 
-El baseline será una regresión logística implementada mediante un pipeline de scikit-learn.
+El baseline es una regresión logística implementada mediante un pipeline de scikit-learn.
 
-El pipeline incluirá:
+El pipeline incluye:
 
 - Imputación por mediana para variables numéricas.
 - Indicadores de ausencia para variables numéricas.
@@ -128,7 +130,7 @@ El pipeline incluirá:
 - Codificación one-hot para variables categóricas.
 - Regresión logística con ponderación balanceada de clases.
 
-El baseline proporcionará una referencia simple, reproducible e interpretable para comparar modelos posteriores.
+En validación (17,250 préstamos), el baseline obtuvo PR-AUC de **0.3610** frente a una prevalencia de incumplimiento de **0.2003** (1.80 veces), y ROC-AUC de **0.6948**. Con umbral 0.5, la precisión fue **0.3120** y el recall **0.6418**. Es una referencia inicial, no una estimación de desempeño futuro: falta validar estabilidad temporal. La partición de prueba no se consultó.
 
 ## 12. Riesgos técnicos
 
