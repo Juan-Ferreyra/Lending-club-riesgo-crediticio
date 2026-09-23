@@ -6,7 +6,7 @@ Este avance incluye la exploración de datos y un baseline de regresión logíst
 
 ## Ejecutar en Google Colab
 
-1. [Abrir el notebook en Colab](https://colab.research.google.com/github/Juan-Ferreyra/Lending-club-riesgo-crediticio/blob/avance-semana-1-muestra-reproducible/notebooks/01_exploracion_inicial.ipynb).
+1. [Abrir el notebook en Colab](https://colab.research.google.com/github/Juan-Ferreyra/Lending-club-riesgo-crediticio/blob/main/notebooks/01_exploracion_inicial.ipynb).
 2. Conectar el entorno de ejecución y elegir **Runtime → Run all** (o **Entorno de ejecución → Ejecutar todo**).
 
 La primera celda utiliza la muestra incluida en el repositorio y la descarga automáticamente si no está en el entorno. No es necesario descargar el dataset original para ejecutar el notebook. Los resultados y las gráficas también están guardados en el archivo `.ipynb`.
@@ -14,7 +14,7 @@ La primera celda utiliza la muestra incluida en el repositorio y la descarga aut
 Para ejecutarlo localmente, usar Python 3.10 o superior. Primero obtener esta versión del repositorio:
 
 ```bash
-git clone --branch avance-semana-1-muestra-reproducible --single-branch https://github.com/Juan-Ferreyra/Lending-club-riesgo-crediticio.git
+git clone --branch main --single-branch https://github.com/Juan-Ferreyra/Lending-club-riesgo-crediticio.git
 cd Lending-club-riesgo-crediticio
 ```
 
