@@ -1,0 +1,14 @@
+{
+  "state": "complete",
+  "started_utc": "2026-10-27T17:24:56.092972+00:00",
+  "lock_sha256": "892d430c5601882578ef5619a2b5e92c731c186aab44bc0a5f37339bc09adb42",
+  "completed_cohorts": [
+    2015,
+    2016
+  ],
+  "model_selection_already_frozen": true,
+  "completed_utc": "2026-10-27T17:30:18.772026+00:00",
+  "selected_model_unchanged": true,
+  "selected_name": "ensemble",
+  "metrics_sha256": "611bc18c681fbda220ba8664235616710b5aa651f4131a19efc30a3c0d78c8bd"
+}

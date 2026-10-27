@@ -4,3 +4,14 @@ __pycache__/
 data/*.zip
 data/accepted_2007_to_2018Q4.csv.gz
 data/accepted_2007_to_2018Q4.csv
+data/processed/
+outputs/models/
+outputs/predictions/
+outputs/studies/
+outputs/logs/
+*.pyc
+.pytest_cache/
+outputs/**/models/
+outputs/**/predictions/
+outputs/**/studies/
+outputs/**/logs/

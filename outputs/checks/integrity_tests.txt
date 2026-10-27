@@ -1,0 +1,14 @@
+test_calibrators_and_thresholds_stay_valid (test_integrity.IntegrityTests.test_calibrators_and_thresholds_stay_valid) ... ok
+test_changed_prediction_code_rejected_before_outcomes (test_integrity.IntegrityTests.test_changed_prediction_code_rejected_before_outcomes) ... ok
+test_constant_scores_equal_prevalence_and_chance_auc (test_integrity.IntegrityTests.test_constant_scores_equal_prevalence_and_chance_auc) ... ok
+test_date_boundaries_are_disjoint (test_integrity.IntegrityTests.test_date_boundaries_are_disjoint) ... ok
+test_domain_and_history_checks (test_integrity.IntegrityTests.test_domain_and_history_checks) ... ok
+test_external_outcomes_cannot_open_without_a_lock (test_integrity.IntegrityTests.test_external_outcomes_cannot_open_without_a_lock) ... ok
+test_outcomes_cannot_change_predictors (test_integrity.IntegrityTests.test_outcomes_cannot_change_predictors) ... ok
+test_small_batch_without_missing_employment (test_integrity.IntegrityTests.test_small_batch_without_missing_employment) ... ok
+test_weighted_ap_and_auc_handle_ties (test_integrity.IntegrityTests.test_weighted_ap_and_auc_handle_ties) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 1.219s
+
+OK

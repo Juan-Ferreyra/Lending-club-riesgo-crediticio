@@ -1,0 +1,39 @@
+{
+  "version": "1.0",
+  "seed": 42,
+  "task": "Retrospective classification of Charged Off versus Fully Paid among accepted loans with recorded terminal outcomes",
+  "primary_metric": "average_precision_score (AP; not trapezoidal PR area)",
+  "secondary_metrics": ["ROC-AUC", "Brier", "log_loss", "F1", "recall", "precision", "KS", "recall_at_top_20_percent"],
+  "cv": [
+    {"train_end": "2011-12-31", "validation_start": "2012-01-01", "validation_end": "2012-12-31"},
+    {"train_end": "2012-12-31", "validation_start": "2013-01-01", "validation_end": "2013-12-31"}
+  ],
+  "search_max_train_rows_per_fold": 80000,
+  "search_max_validation_rows_per_fold": 40000,
+  "candidate_training_end": "2013-12-31",
+  "selection_start": "2014-01-01",
+  "selection_end": "2014-06-30",
+  "final_training_end": "2014-06-30",
+  "calibration_start": "2014-07-01",
+  "calibration_end": "2014-09-30",
+  "policy_start": "2014-10-01",
+  "policy_end": "2014-12-31",
+  "external_tests": {"2015": "primary out-of-time cohort", "2016": "temporal stress cohort"},
+  "exclude_original_sample_from_external_tests": true,
+  "maturity_sensitivity": "Separately evaluate 2015 36-month loans; 2015 60-month and 2016 loans can be right-censored in the 2019 snapshot",
+  "selection_rule": "Select highest AP on 2014 H1. Choose an ensemble only if AP improves by at least 0.001 over the best single model. No model selection on external tests.",
+  "calibration_rule": "Fit identity, sigmoid and isotonic on 2014 Q3; select lowest Brier on 2014 Q4 (log-loss breaks ties)",
+  "threshold_rule": "Maximize F1 on 2014 Q4; also store threshold meeting recall>=0.60 on that development cohort. Costs are sensitivity scenarios, not observed business costs.",
+  "trials": {"logistic": 10, "random_forest": 10, "lightgbm": 28, "xgboost": 24, "catboost": 24},
+  "limitations_fixed_before_testing": [
+    "Origination-time separation is retrospective. The snapshot does not expose a reliable charge-off event timestamp: historical label availability cannot be reconstructed, so this is not an as-of-production backtest.",
+    "Conditioning on terminal loan_status excludes unresolved loans and can bias recent cohorts. Coverage by issue year and term will be released only with final evaluation.",
+    "Accepted loans do not represent rejected applicants; borrowers cannot be grouped because member_id is missing. Loan IDs are required to be disjoint.",
+    "The original sample EDA informs hypotheses, but every external test loan ID is outside that sample. This is an independent cohort from the same data source, not external geographic or institutional validation.",
+    "No grade, sub_grade, int_rate, installment, funding, payment, recovery, hardship, settlement, or post-origination credit variables are predictors.",
+    "Feature availability assumes evaluation after application verification and before disbursement. Bureau fields are interpreted as origination bureau snapshots.",
+    "AP depends on prevalence; comparisons with the original random-split baseline must not be presented as paired improvements. Use the same-cohort re-trained baseline for comparison.",
+    "Bootstrap intervals quantify conditional sampling variation, not institution-level or macroeconomic generalization. Temporal-block bootstrap will complement row bootstrap.",
+    "No prediction or explanation is a causal effect or an operational lending approval policy. Protected attributes are absent; subgroup diagnostics cannot establish fairness."
+  ]
+}

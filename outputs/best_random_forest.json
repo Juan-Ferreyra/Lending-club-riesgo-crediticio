@@ -1,0 +1,31 @@
+{
+  "family": "random_forest",
+  "params": {
+    "n_estimators": 250,
+    "max_depth": 12,
+    "min_samples_leaf": 60,
+    "max_features": "sqrt",
+    "max_samples": 0.7737068376069123,
+    "class_weight": "balanced_subsample"
+  },
+  "search_params": {
+    "n_estimators": 120,
+    "max_depth": 12,
+    "min_samples_leaf": 60,
+    "max_features": "sqrt",
+    "max_samples": 0.7737068376069123,
+    "class_weight": "balanced_subsample"
+  },
+  "CV_AP": 0.27607896073576277,
+  "best_trial": 3,
+  "fold_AP": [
+    0.2795910223757521,
+    0.27256689909577336
+  ],
+  "fold_best_iterations": [
+    null,
+    null
+  ],
+  "trial_count": 10,
+  "search_seconds_this_call": 0.91
+}

@@ -1,0 +1,5 @@
+{
+  "ids": ["68407277", "68355089", "68341763", "68476715"],
+  "reason": "Three source rows were displayed during initial schema inspection; one loan appeared in a public dataset preview. Exclude these IDs from external tests as well as the entire initial sample.",
+  "applied_before_model_selection_and_external_evaluation": true
+}

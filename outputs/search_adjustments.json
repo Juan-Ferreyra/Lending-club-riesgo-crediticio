@@ -1,0 +1,282 @@
+{
+  "reason": "Compute budget reallocated before family selection and before accessing external outcomes",
+  "old_random_forest_partial_trials": [
+    {
+      "number": 0,
+      "state_before_interruption": "RUNNING",
+      "params": {
+        "max_depth": 12,
+        "min_samples_leaf": 120,
+        "max_features": 0.6806132564587648,
+        "max_samples": 0.897825402228616,
+        "class_weight": "balanced_subsample"
+      },
+      "attrs": {
+        "fold_AP": [
+          0.2801390073651906
+        ],
+        "fold_best_iterations": [
+          null
+        ],
+        "fold_seconds": [
+          156.59
+        ],
+        "model_params": {
+          "n_estimators": 250,
+          "max_depth": 12,
+          "min_samples_leaf": 120,
+          "max_features": 0.6806132564587648,
+          "max_samples": 0.897825402228616,
+          "class_weight": "balanced_subsample"
+        }
+      }
+    }
+  ],
+  "new_search_trees": 120,
+  "new_final_trees": 250,
+  "new_max_features": [
+    "sqrt",
+    0.2,
+    0.4
+  ],
+  "test_outcomes_accessed": false,
+  "sparse_v2_trials": [
+    {
+      "number": 0,
+      "state_before_interruption": "COMPLETE",
+      "value": 0.2757995094424235,
+      "params": {
+        "max_depth": 12,
+        "min_samples_leaf": 120,
+        "max_features": 0.2,
+        "max_samples": 0.7924774630404986,
+        "class_weight": null
+      },
+      "attrs": {
+        "fold_AP": [
+          0.2821362302348086,
+          0.26946278865003837
+        ],
+        "fold_best_iterations": [
+          null,
+          null
+        ],
+        "fold_seconds": [
+          36.95,
+          174.24
+        ],
+        "model_params": {
+          "n_estimators": 120,
+          "max_depth": 12,
+          "min_samples_leaf": 120,
+          "max_features": 0.2,
+          "max_samples": 0.7924774630404986,
+          "class_weight": null
+        }
+      }
+    },
+    {
+      "number": 1,
+      "state_before_interruption": "COMPLETE",
+      "value": 0.27531033916687214,
+      "params": {
+        "max_depth": null,
+        "min_samples_leaf": 60,
+        "max_features": 0.4,
+        "max_samples": 0.7462939903482535,
+        "class_weight": "balanced_subsample"
+      },
+      "attrs": {
+        "fold_AP": [
+          0.28025017753786663,
+          0.27037050079587766
+        ],
+        "fold_best_iterations": [
+          null,
+          null
+        ],
+        "fold_seconds": [
+          79.16,
+          476.81
+        ],
+        "model_params": {
+          "n_estimators": 120,
+          "max_depth": null,
+          "min_samples_leaf": 60,
+          "max_features": 0.4,
+          "max_samples": 0.7462939903482535,
+          "class_weight": "balanced_subsample"
+        }
+      }
+    },
+    {
+      "number": 2,
+      "state_before_interruption": "RUNNING",
+      "value": null,
+      "params": {
+        "max_depth": 18,
+        "min_samples_leaf": 60,
+        "max_features": 0.4,
+        "max_samples": 0.6600381234349004,
+        "class_weight": "balanced_subsample"
+      },
+      "attrs": {
+        "fold_AP": [
+          0.2809629971041925
+        ],
+        "fold_best_iterations": [
+          null
+        ],
+        "fold_seconds": [
+          63.08
+        ],
+        "model_params": {
+          "n_estimators": 120,
+          "max_depth": 18,
+          "min_samples_leaf": 60,
+          "max_features": 0.4,
+          "max_samples": 0.6600381234349004,
+          "class_weight": "balanced_subsample"
+        }
+      }
+    }
+  ],
+  "final_search_implementation": {
+    "study": "random_forest_dense_v3",
+    "matrix": "dense float32",
+    "max_train": 30000,
+    "max_validation": 20000,
+    "search_trees": 120,
+    "final_trees": 250,
+    "final_comparison_uses_full_training_data": true
+  },
+  "onehot_xgboost_trials": [
+    {
+      "number": 0,
+      "state_before_interruption": "COMPLETE",
+      "value": 0.28631142964394174,
+      "attrs": {
+        "fold_AP": [
+          0.29099021013166954,
+          0.281632649156214
+        ],
+        "fold_best_iterations": [
+          175,
+          261
+        ],
+        "fold_seconds": [
+          94.87,
+          144.11
+        ],
+        "model_params": {
+          "n_estimators": 1400,
+          "learning_rate": 0.0449875334610117,
+          "max_depth": 6,
+          "min_child_weight": 38.052091892039236,
+          "reg_lambda": 9.100951626404369,
+          "reg_alpha": 0.000499475708106829,
+          "subsample": 0.7467983561008608,
+          "colsample_bytree": 0.6703292642588699,
+          "gamma": 0.8661761457749352,
+          "scale_pos_weight": 2.0
+        }
+      }
+    },
+    {
+      "number": 1,
+      "state_before_interruption": "COMPLETE",
+      "value": 0.2781031187845332,
+      "attrs": {
+        "fold_AP": [
+          0.2827073181476493,
+          0.27349891942141713
+        ],
+        "fold_best_iterations": [
+          36,
+          41
+        ],
+        "fold_seconds": [
+          38.56,
+          56.17
+        ],
+        "model_params": {
+          "n_estimators": 1400,
+          "learning_rate": 0.11446760508149083,
+          "max_depth": 6,
+          "min_child_weight": 9.008485225328876,
+          "reg_lambda": 1.955665189160277,
+          "reg_alpha": 0.0006624059568209136,
+          "subsample": 0.7912726728878613,
+          "colsample_bytree": 0.8336647510712832,
+          "gamma": 0.43194501864211576,
+          "scale_pos_weight": 2.0
+        }
+      }
+    },
+    {
+      "number": 2,
+      "state_before_interruption": "COMPLETE",
+      "value": 0.2883259661542863,
+      "attrs": {
+        "fold_AP": [
+          0.2928489513117008,
+          0.28380298099687185
+        ],
+        "fold_best_iterations": [
+          429,
+          729
+        ],
+        "fold_seconds": [
+          218.54,
+          424.62
+        ],
+        "model_params": {
+          "n_estimators": 1400,
+          "learning_rate": 0.03953311087982828,
+          "max_depth": 3,
+          "min_child_weight": 17.70651068448003,
+          "reg_lambda": 18.109188689295596,
+          "reg_alpha": 0.0007833642249746983,
+          "subsample": 0.8542703315240835,
+          "colsample_bytree": 0.8573450991017149,
+          "gamma": 0.046450412719997725,
+          "scale_pos_weight": 1.0
+        }
+      }
+    },
+    {
+      "number": 3,
+      "state_before_interruption": "RUNNING",
+      "value": null,
+      "attrs": {
+        "fold_AP": [
+          0.2857876698261478
+        ],
+        "fold_best_iterations": [
+          58
+        ],
+        "fold_seconds": [
+          51.69
+        ],
+        "model_params": {
+          "n_estimators": 1400,
+          "learning_rate": 0.1107541392430612,
+          "max_depth": 6,
+          "min_child_weight": 47.03026275515194,
+          "reg_lambda": 3.0761643332313384,
+          "reg_alpha": 0.0002737095165771333,
+          "subsample": 0.905269907953647,
+          "colsample_bytree": 0.8040533728088605,
+          "gamma": 0.12203823484477883,
+          "scale_pos_weight": 4.0
+        }
+      }
+    }
+  ],
+  "xgboost_final_implementation": {
+    "study": "xgboost_native_v2",
+    "features": "train-only ordinal encoding with native categorical partitions and numeric NaNs",
+    "reason": "Avoid unnecessary one-hot and missing-indicator expansion; validate serialization, unseen categories and native SHAP before full search",
+    "test_outcomes_accessed": false
+  }
+}

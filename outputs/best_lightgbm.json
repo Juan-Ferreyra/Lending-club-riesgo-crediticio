@@ -1,0 +1,39 @@
+{
+  "family": "lightgbm",
+  "params": {
+    "n_estimators": 143,
+    "learning_rate": 0.05081293756112104,
+    "num_leaves": 28,
+    "min_child_samples": 152,
+    "reg_lambda": 1.4731189846460222,
+    "reg_alpha": 0.001169714009152734,
+    "colsample_bytree": 0.6572989610431703,
+    "subsample": 0.7278140434146148,
+    "subsample_freq": 1,
+    "scale_pos_weight": 1.0
+  },
+  "search_params": {
+    "n_estimators": 1400,
+    "learning_rate": 0.05081293756112104,
+    "num_leaves": 28,
+    "min_child_samples": 152,
+    "reg_lambda": 1.4731189846460222,
+    "reg_alpha": 0.001169714009152734,
+    "colsample_bytree": 0.6572989610431703,
+    "subsample": 0.7278140434146148,
+    "subsample_freq": 1,
+    "scale_pos_weight": 1.0
+  },
+  "CV_AP": 0.2869735090616521,
+  "best_trial": 26,
+  "fold_AP": [
+    0.290893463736427,
+    0.2830535543868771
+  ],
+  "fold_best_iterations": [
+    77,
+    173
+  ],
+  "trial_count": 28,
+  "search_seconds_this_call": 0.19
+}

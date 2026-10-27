@@ -1,0 +1,23 @@
+{
+  "evaluation_cohort": "2014 H1 development selection",
+  "train_n": 20000,
+  "validation_n": 15000,
+  "results": [
+    {
+      "seed": 42,
+      "AP_shuffled_training_labels": 0.18095203928728604,
+      "validation_prevalence": 0.17666666666666667
+    },
+    {
+      "seed": 43,
+      "AP_shuffled_training_labels": 0.17804681481816897,
+      "validation_prevalence": 0.17666666666666667
+    },
+    {
+      "seed": 44,
+      "AP_shuffled_training_labels": 0.18091779687385212,
+      "validation_prevalence": 0.17666666666666667
+    }
+  ],
+  "interpretation": "Diagnostic for gross target leakage; similarity to prevalence does not prove absence of every kind of leakage."
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "train_end": "2011-12-31",
+    "validation_start": "2012-01-01",
+    "validation_end": "2012-12-31",
+    "train_n": 39786,
+    "validation_n": 40000,
+    "train_ids_sha256": "4ea7ee39fad4c997397b69f4451877cdb5e20909d0e991bea2e05203052ab806",
+    "validation_ids_sha256": "5ab13c9208c0a51e8f8cd90df483d0de3dd90de48c9a333abfbcfaa0a6f83c19"
+  },
+  {
+    "train_end": "2012-12-31",
+    "validation_start": "2013-01-01",
+    "validation_end": "2013-12-31",
+    "train_n": 80000,
+    "validation_n": 40000,
+    "train_ids_sha256": "86cb8b1afe54f8f6471791f0414c8b065a35851c8056822ed278fd2220dce613",
+    "validation_ids_sha256": "a466047b40b4402b49611412765d0600bd1924e7138dfcf9b532c42ba12daac5"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "frozen_model_sha256": "5261d382d1d11b33ca07b24437bd1db7b3dd08250bd5ccc4280870e458a6fdaa",
+  "model_selection_changed": false,
+  "permutation_test_sample_n": 10000,
+  "SHAP_global_sample_n": 1200,
+  "global_seed": 42,
+  "segment_support_rule": "low_support if n<300 or positive/negative count<30",
+  "fairness_limit": "No protected attributes or rejected applicants; segment disparities do not establish fairness",
+  "maturity_limit": "Read final/maturity_coverage.csv before interpreting 2015 60m or 2016 scores"
+}

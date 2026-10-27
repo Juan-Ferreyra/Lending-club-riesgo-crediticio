@@ -1,5 +1,61 @@
 # Predicción del riesgo crediticio con Lending Club
 
+## Fase experimental de la entrega final
+
+El repositorio incorpora una fase de investigación y experimentos posterior al avance inicial. Incluye comparación temporal de regresión logística, Random Forest, LightGBM, XGBoost y CatBoost; búsqueda de hiperparámetros; calibración; evaluación congelada; errores por segmentos e interpretación. El informe final y la presentación se elaborarán después.
+
+- `experiments/protocol.json`: fechas, objetivo, métricas, presupuesto y reglas fijadas antes de evaluar.
+- `experiments/research_notes.md`: artículos consultados y decisiones técnicas.
+- `notebooks/02_limpieza_features.ipynb`: procedencia, limpieza y auditoría de variables.
+- `notebooks/03_modelos.ipynb`: búsqueda, selección y evaluación temporal.
+- `notebooks/04_analisis_errores.ipynb`: errores, estabilidad, permutación y explicaciones locales.
+- `outputs/`: configuraciones, resultados, huellas y figuras. Los modelos y predicciones grandes se regeneran localmente y están ignorados por Git.
+
+### Resultado del experimento ejecutado
+
+Se completaron **96 intentos de búsqueda** en cinco familias. La selección de 2014 H1 eligió un ensamble de **60% CatBoost y 40% LightGBM**, promediando tres semillas por familia. Se reentrenó con 327.426 préstamos hasta junio de 2014 y se eligió calibración sigmoid en los bloques posteriores de desarrollo. La elección quedó congelada antes de abrir las pruebas siguientes.
+
+| Prueba | Préstamos | AP baseline reentrenado | AP ensamble | ROC-AUC ensamble |
+|---|---:|---:|---:|---:|
+| 2015, todos los resultados terminales | 343.507 | 0,3890 | **0,4164** | 0,7334 |
+| 2015, plazo de 36 meses | 258.856 | 0,2386 | **0,2718** | 0,6920 |
+| 2016, estrés temporal, resultados terminales | 268.096 | 0,3958 | **0,4248** | 0,7116 |
+
+En 2015, la mejora pareada de AP es **+0,0274**, con intervalo bootstrap del 95% por bloques mensuales de **[+0,0243; +0,0302]**. El Brier baja de 0,1455 a 0,1418. Los valores completos están en `outputs/final/metrics.csv`, y los intervalos en `outputs/final/uncertainty.json`.
+
+La prueba de 2015 a 36 meses tiene desenlace terminal en el **99,94%** de su población elegible; la de 60 meses, solo en el **65,09%**. En 2016 esas coberturas son 69,98% y 52,57%. Por ello las cifras agregadas y las de estrés deben interpretarse junto con la cobertura: no estiman el desempeño sobre todos los préstamos vigentes. La separación es retrospectiva por fecha de emisión; no reconstruye la disponibilidad histórica de cada etiqueta. El ensamble fue el mejor por AP y ROC-AUC entre los comparadores congelados en ambas cohortes; esto no demuestra que sea el mejor modelo posible fuera de este experimento.
+
+### Reproducir los experimentos completos
+
+Se recomienda **Python 3.12**. `requirements-lock.txt` registra las versiones efectivamente ejecutadas; `requirements-experiments.txt` contiene rangos compatibles. En Windows, desde la raíz del repositorio:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements-lock.txt
+.\.venv\Scripts\python.exe scripts/run_experiments.py --source "RUTA/accepted_2007_to_2018Q4.csv.gz" --output outputs/reproduction
+```
+
+El archivo original procede de la versión 3 de Kaggle citada abajo. No se añade a Git. El proceso comprueba que contenga todos los IDs de la muestra inicial, registra SHA-256 y reserva préstamos externos de 2015/2016 excluyendo los IDs de esa muestra. La búsqueda usa tres hilos de CPU. El nombre de salida debe ser nuevo; para reanudar una búsqueda interrumpida antes de probar se pueden usar las etapas individuales.
+
+```powershell
+.\.venv\Scripts\python.exe -m src.prepare --source "RUTA/accepted_2007_to_2018Q4.csv.gz"
+.\.venv\Scripts\python.exe -m unittest discover -s tests -v
+.\.venv\Scripts\python.exe -m src.train --stage search
+.\.venv\Scripts\python.exe -m src.train --stage select
+.\.venv\Scripts\python.exe -m src.train --stage freeze
+.\.venv\Scripts\python.exe -m src.final_test --execute-final
+.\.venv\Scripts\python.exe -m src.analyze
+.\.venv\Scripts\python.exe scripts/build_research_notebooks.py
+```
+
+La búsqueda usa dos cortes temporales crecientes y selección en 2014 H1. El entrenamiento final llega hasta junio de 2014; julio-septiembre ajustan calibradores y octubre-diciembre seleccionan calibración/umbrales. Los artefactos y el código se congelan mediante hashes antes de abrir 2015 y 2016. Una evaluación completada bloquea nuevos ajustes sobre esa misma prueba. Repetir los comandos con un directorio nuevo sirve para reproducir el experimento fijado; no convierte una prueba ya observada en otra prueba independiente.
+
+**Alcance temporal:** es una evaluación retrospectiva por fecha de emisión. El snapshot no permite reconstruir con fiabilidad la fecha de disponibilidad de cada etiqueta de incumplimiento. Los préstamos sin resultado terminal se excluyen del objetivo y su cobertura queda en `outputs/final/maturity_coverage.csv`. Se reporta separadamente 2015 a 36 meses para estudiar maduración. No se puede extrapolar la calibración directamente a todos los solicitantes ni a los préstamos vigentes. La comparación válida con el baseline usa las mismas filas de prueba; el resultado aleatorio del avance anterior pertenece a otra partición.
+
+---
+
+## Avance inicial de semana 1
+
 Primera entrega (avance de semana 1) del proyecto de Machine Learning. Se busca estimar el riesgo de que un préstamo aceptado termine en `Charged Off`, utilizando información disponible al completar la evaluación de la solicitud y antes del otorgamiento. La [propuesta](proposal.md) describe el objetivo, los riesgos y el plan de trabajo.
 
 Este avance incluye la exploración de datos y un baseline de regresión logística, entrenado y evaluado, que corresponde a la tarea de clasificación binaria: `Charged Off = 1` y `Fully Paid = 0`. La comparación de otros modelos, la calibración y la evaluación final forman parte del plan de las siguientes semanas.
