@@ -30,3 +30,4 @@ if __name__ == "__main__":
     run("-m", "src.final_test", "--execute-final", "--data-dir", args.data_dir, "--output", args.output)
     run("-m", "src.analyze", "--data-dir", args.data_dir, "--output", args.output)
     run("scripts/build_research_notebooks.py", "--output", args.output)
+    run("scripts/build_explanation_notebook.py", "--output", args.output)

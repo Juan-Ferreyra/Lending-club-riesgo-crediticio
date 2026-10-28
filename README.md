@@ -9,6 +9,7 @@ El repositorio incorpora una fase de investigación y experimentos posterior al 
 - `notebooks/02_limpieza_features.ipynb`: procedencia, limpieza y auditoría de variables.
 - `notebooks/03_modelos.ipynb`: búsqueda, selección y evaluación temporal.
 - `notebooks/04_analisis_errores.ipynb`: errores, estabilidad, permutación y explicaciones locales.
+- `notebooks/05_explicacion.ipynb`: fundamentos de los cinco algoritmos, diagramas del ensamble y lectura de los resultados.
 - `outputs/`: configuraciones, resultados, huellas y figuras. Los modelos y predicciones grandes se regeneran localmente y están ignorados por Git.
 
 ### Resultado del experimento ejecutado
