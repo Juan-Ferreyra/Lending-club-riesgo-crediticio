@@ -1,0 +1,63 @@
+{
+  "family": "svm_rbf",
+  "recipe": {
+    "name": "stable_36_recent",
+    "mode": "stable",
+    "term": "36 months",
+    "start": "2012-01-01"
+  },
+  "params": {
+    "C": 0.2801635158716261,
+    "class_weight": "balanced",
+    "gamma": 0.0028887015747659996,
+    "max_iter": 100000
+  },
+  "CV_AP": 0.20448931703454898,
+  "trial_count": 12,
+  "all_recorded_trials_including_administrative_interruptions": 12,
+  "fold_AP": [
+    0.19536406032090287,
+    0.2136145737481951
+  ],
+  "fold_ROC_AUC": [
+    0.6538714500883424,
+    0.6490833582494762
+  ],
+  "fold_iterations": [
+    null,
+    null
+  ],
+  "fold_records": [
+    {
+      "fold": 0,
+      "train_n": 12000,
+      "validation_n": 8000,
+      "train_ids_sha256": "a0aa8157590082701cd94a0dbbb2eeb1de7309eedc05477b17ed30cbd297c407",
+      "validation_ids_sha256": "15df3f364309518b4c7e2d3e07a56babface2a71a83f3a3d420cee041d614dbc",
+      "feature_count": 76,
+      "AP": 0.19536406032090287,
+      "ROC_AUC": 0.6538714500883424
+    },
+    {
+      "fold": 1,
+      "train_n": 12000,
+      "validation_n": 8000,
+      "train_ids_sha256": "28e47d25c0fa9deeb78f71a4497b8549c4c39b325cd0d876af794dae29dbbaa4",
+      "validation_ids_sha256": "59ebce41c9e14d0c1af0ea01a7e8234937d624f3609f76894dbe32cd237dec90",
+      "feature_count": 76,
+      "AP": 0.2136145737481951,
+      "ROC_AUC": 0.6490833582494762
+    }
+  ],
+  "fold_seconds": [
+    59.71,
+    65.07
+  ],
+  "model_params": {
+    "C": 0.2801635158716261,
+    "class_weight": "balanced",
+    "gamma": 0.0028887015747659996
+  },
+  "solver_retry_count": 3,
+  "solver_limit_note": "Converged original fits are unchanged by a larger unused cap; incomplete configurations are retried before selection."
+}

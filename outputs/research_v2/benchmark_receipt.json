@@ -1,0 +1,9 @@
+{
+  "state": "complete",
+  "completed_utc": "2026-11-02T19:53:26.919535+00:00",
+  "role": "2015/2016 are reused, previously observed retrospective benchmarks, NOT pristine independent final tests. The original experiment and metrics remain immutable.",
+  "lock_sha256": "0ddbbeae2d84de5a4483d2efeb1685007d46e70ab0cf78272f90e78f4e147e49",
+  "selected": "catboost",
+  "metrics_sha256": "816f8a1a18243bf4ab5f42a3f0017ed04f944e092fcd50365b90f3f97f24260f",
+  "pristine_final_test": false
+}

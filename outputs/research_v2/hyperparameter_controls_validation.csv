@@ -1,0 +1,5 @@
+family,setting,train_n,validation_n,AP,ROC_AUC,same_features_and_training_rows,diagnostic_not_used_to_reselect_after_benchmark
+lightgbm,previous_parameters,215847,40595,0.24662933455978583,0.6876727974878675,True,True
+lightgbm,new_search_parameters,215847,40595,0.2500874411801713,0.6904585008036628,True,True
+catboost,previous_parameters,215847,40595,0.25128316208241147,0.6904726968229361,True,True
+catboost,new_search_parameters,215847,40595,0.25356822880349705,0.6920282279544198,True,True

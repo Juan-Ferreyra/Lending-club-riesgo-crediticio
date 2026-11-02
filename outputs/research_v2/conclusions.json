@@ -1,0 +1,46 @@
+{
+  "selected_on_development": "catboost",
+  "recipe": {
+    "name": "stable_36_recent",
+    "mode": "stable",
+    "term": "36 months",
+    "start": "2012-01-01"
+  },
+  "screened_recipe": {
+    "name": "stable_36_recent",
+    "mode": "stable",
+    "term": "36 months",
+    "start": "2012-01-01"
+  },
+  "primary_scope": "same 2015 36-month cohort, reused benchmark",
+  "new_AP": 0.2751871700824274,
+  "original_ensemble_AP": 0.2717972509522987,
+  "paired_AP_delta": 0.0033899191301287046,
+  "new_ROC_AUC": 0.6950591417392189,
+  "original_ROC_AUC": 0.6919532918526607,
+  "new_Brier": 0.1187689817027286,
+  "original_Brier": 0.1189930214066895,
+  "new_precision": 0.2531651571909526,
+  "new_recall": 0.5551194406176081,
+  "new_recall_at_top20": 0.3866288892932338,
+  "original_recall_at_top20": 0.3820280211068077,
+  "median_imputation_mean_CV_AP_delta": -0.0011295605858984703,
+  "hyperparameter_validation_AP_delta": {
+    "catboost": 0.0022850667210855824,
+    "lightgbm": 0.0034581066203854816
+  },
+  "best_svm_on_full_reused_benchmark_descriptive_only": "svm_nystroem_from_2013",
+  "best_svm_reused_benchmark_AP": 0.2640623123130208,
+  "month_block_conditional_CI_AP_delta": {
+    "low": 0.0018296353416589182,
+    "high": 0.004803653583408746
+  },
+  "unlearnable_old_training_columns": 17,
+  "sample_TVD_year_vs_terminal": 0.0027138202185822,
+  "sample_TVD_year_vs_all_accepted": 0.2468384660755524,
+  "validation_AP_gain_with_LC_assigned_information": 0.003820352568557006,
+  "LC_information_eligible_for_main_model": false,
+  "pristine_independent_final_test": false,
+  "conditional_CI_does_not_account_for_benchmark_reuse": true,
+  "original_predictor_and_final_metrics_modified": false
+}

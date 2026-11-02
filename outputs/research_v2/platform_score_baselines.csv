@@ -1,0 +1,3 @@
+strategy,AP,ROC_AUC,scope,validation_n,eligible_for_primary_selection
+LC_interest_rate_rank_only,0.21308080084675132,0.6573579973068389,"after platform scoring, diagnostic only",40595,False
+training_subgrade_frequency_only,0.19793108050863628,0.650646025063572,"after platform scoring, diagnostic only",40595,False

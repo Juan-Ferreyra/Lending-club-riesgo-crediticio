@@ -1,0 +1,8 @@
+hypothesis,finding,predictive_test
+Faltantes estructurales afectan la información disponible,Confirmado: 17 columnas constantes o >95% ausentes en entrenamiento anterior.,Imputación con indicadores: cambio medio CV AP -0.001130. La estructura por sí sola no prueba daño predictivo.
+Excluir préstamos activos limita la generalización,Confirmado: cobertura 2015/36 = 99.9481%; 2016/36 = 71.8258%.,No se identifica el resultado futuro de activos. Se define población madura; no se inventan etiquetas.
+La frecuencia de incumplimiento cambia entre años maduros,Confirmado descriptivamente: 2013/36 = 12.3260%; 2015/36 = 14.8863%.,Se prueban fechas de entrenamiento y validación temporal. No se atribuye causalidad al año.
+La muestra inicial está mal tomada de su población terminal,No respaldado por las marginales revisadas: TVD año = 0.002714.,No demuestra representatividad conjunta ni permite extrapolar a todos los aceptados o rechazados.
+Ajustar hiperparámetros mejora con las mismas filas y entradas,catboost: AP +0.002285; lightgbm: AP +0.003458,Comparación controlada en 2014 Q3; no equivale a confirmación externa independiente.
+SVM supera las otras estrategias en la selección temporal,Mejor SVM AP = 0.251163; mejor candidato AP = 0.253568.,Incluye controles con mismas 12000 filas y benchmark común de 20000; el costo de RBF queda explícito.
+La nueva selección supera al ensamble anterior en la cohorte comparable,AP 0.271797 → 0.275187; cambio +0.003390.,"2015/36 reutilizado, no prueba nueva independiente. Ver intervalo pareado y métricas de calibración."

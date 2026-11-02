@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-11-02T17:14:23.382403+00:00",
+  "source_rows": 2260701,
+  "source_sha256": "55c16f75120f897683f02e7aabcf080d0e4a20c4832feb1d592cfa941bd62a2d",
+  "cache_sha256": "6bd9ab3ad30efeadd7d3f1b4d0ffa370bfce5f77d3d312fea6976ee55f319b39",
+  "latest_recorded_payment_month": "2019-03-01 00:00:00",
+  "payment_date_used_as_predictor": false,
+  "new_post_2015_individual_outcomes_opened_for_modeling": false
+}

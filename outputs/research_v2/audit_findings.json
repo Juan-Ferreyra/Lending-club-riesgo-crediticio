@@ -1,0 +1,30 @@
+{
+  "unlearnable_or_95pct_missing_in_old_training": [
+    "annual_inc_joint",
+    "dti_joint",
+    "open_acc_6m",
+    "open_act_il",
+    "open_il_12m",
+    "open_il_24m",
+    "mths_since_rcnt_il",
+    "total_bal_il",
+    "il_util",
+    "open_rv_12m",
+    "open_rv_24m",
+    "max_bal_bc",
+    "all_util",
+    "inq_fi",
+    "total_cu_tl",
+    "inq_last_12m",
+    "application_type"
+  ],
+  "count": 17,
+  "hypothesis_status": {
+    "missingness": "Structural feature availability verified; predictive harm requires ablation experiments.",
+    "active_loans": "Unequal terminal coverage verified. Eventual active-loan default cannot be identified from this snapshot.",
+    "temporal_shift": "Rates and covariates vary; censoring and population changes must be separated.",
+    "representativeness": "Evaluate the random sample against terminal loans separately from all accepted loans; rejected applicants unavailable."
+  },
+  "pristine_mature_test_available_in_current_source": false,
+  "scope_of_new_model_comparison": "exploratory repeated retrospective benchmark, not a fresh final test"
+}

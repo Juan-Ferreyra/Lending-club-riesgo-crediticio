@@ -1,0 +1,7 @@
+{
+  "utc": "2026-11-02T18:36:36.440386+00:00",
+  "completed_hpo_preserved": true,
+  "interrupted_trial": false,
+  "reason": "Stage selection separately so exact previous-parameter controls are eligible before any new benchmark predictions.",
+  "new_benchmark_outcomes_opened": false
+}

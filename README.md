@@ -10,9 +10,10 @@ El repositorio incorpora una fase de investigación y experimentos posterior al 
 - `notebooks/03_modelos.ipynb`: búsqueda, selección y evaluación temporal.
 - `notebooks/04_analisis_errores.ipynb`: errores, estabilidad, permutación y explicaciones locales.
 - `notebooks/05_explicacion.ipynb`: fundamentos de los cinco algoritmos, diagramas del ensamble y lectura de los resultados.
+- `notebooks/06_diagnostico_datos_svm.ipynb`: auditoría de población y faltantes, ablaciones, ajuste adicional y SVM lineal/RBF.
 - `outputs/`: configuraciones, resultados, huellas y figuras. Los modelos y predicciones grandes se regeneran localmente y están ignorados por Git.
 
-### Resultado del experimento ejecutado
+### Resultado del primer experimento ejecutado
 
 Se completaron **96 intentos de búsqueda** en cinco familias. La selección de 2014 H1 eligió un ensamble de **60% CatBoost y 40% LightGBM**, promediando tres semillas por familia. Se reentrenó con 327.426 préstamos hasta junio de 2014 y se eligió calibración sigmoid en los bloques posteriores de desarrollo. La elección quedó congelada antes de abrir las pruebas siguientes.
 
@@ -52,6 +53,49 @@ El archivo original procede de la versión 3 de Kaggle citada abajo. No se añad
 La búsqueda usa dos cortes temporales crecientes y selección en 2014 H1. El entrenamiento final llega hasta junio de 2014; julio-septiembre ajustan calibradores y octubre-diciembre seleccionan calibración/umbrales. Los artefactos y el código se congelan mediante hashes antes de abrir 2015 y 2016. Una evaluación completada bloquea nuevos ajustes sobre esa misma prueba. Repetir los comandos con un directorio nuevo sirve para reproducir el experimento fijado; no convierte una prueba ya observada en otra prueba independiente.
 
 **Alcance temporal:** es una evaluación retrospectiva por fecha de emisión. El snapshot no permite reconstruir con fiabilidad la fecha de disponibilidad de cada etiqueta de incumplimiento. Los préstamos sin resultado terminal se excluyen del objetivo y su cobertura queda en `outputs/final/maturity_coverage.csv`. Se reporta separadamente 2015 a 36 meses para estudiar maduración. No se puede extrapolar la calibración directamente a todos los solicitantes ni a los préstamos vigentes. La comparación válida con el baseline usa las mismas filas de prueba; el resultado aleatorio del avance anterior pertenece a otra partición.
+
+### Segunda fase: diagnóstico de datos, hiperparámetros y SVM
+
+Esta fase investiga faltantes/valores inválidos, selección de resultados terminales, cambios entre años y representatividad. El alcance principal son préstamos aceptados **a 36 meses**, con seguimiento casi completo para 2015. Se comparan recetas de datos, hiperparámetros y tres estrategias SVM: lineal, RBF exacta y aproximación Nyström. También se controla el presupuesto de filas y se separa un diagnóstico con la clasificación/tasa de la plataforma, que cambia la información disponible.
+
+El [protocolo v2](experiments/protocol_v2.json) y la [bitácora](experiments/research_v2_notes.md) distinguen las decisiones de las conclusiones. Los años 2015/2016 ya fueron observados: esta fase los identifica como **benchmarks retrospectivos reutilizados**, no como una nueva prueba final independiente. Los resultados se guardan en `outputs/research_v2/`, separados del primer experimento.
+
+Se contrastan nueve recetas de datos y 80 configuraciones de hiperparámetros, más tres repeticiones de configuraciones RBF con mayor límite numérico del solver. La selección temporal compara 15 candidatos, incluidos controles con parámetros anteriores y entrenamiento desde 2013. Todos usan la misma validación 2014 Q3 a 36 meses. Una comparación adicional iguala las 12.000 filas de entrenamiento entre familias.
+
+El benchmark principal utiliza los mismos 258.856 préstamos de 2015 a 36 meses de la sensibilidad anterior. Todos los modelos se comparan además sobre los mismos 20.000 préstamos por año; las SVM RBF exactas no seleccionadas se limitan a esa muestra por su costo de predicción. Los otros modelos y siempre el ganador preseleccionado usan también la cohorte completa. Las tablas de distinto tamaño se conservan separadas y no se compara directamente su AP. El resultado de esta fase tampoco se compara con AP 0,4164, que mezclaba plazos de 36 y 60 meses.
+
+La selección de desarrollo eligió **CatBoost**, con variables de disponibilidad estable y entrenamiento de préstamos a 36 meses desde 2012. En la misma cohorte madura reutilizada:
+
+| Modelo | AP 2015/36 meses | ROC-AUC |
+|---|---:|---:|
+| Ensamble anterior | 0,2718 | 0,6920 |
+| CatBoost seleccionado en esta fase | 0,2752 | 0,6951 |
+
+La mejora es pequeña: aproximadamente **+0,0034 AP**. No se presenta como un salto grande ni como confirmación en una nueva prueba independiente. Cambian conjuntamente receta, calendario de ajuste, calibración y predictor; esta diferencia total no se atribuye solo a hiperparámetros. El [notebook 06](notebooks/06_diagnostico_datos_svm.ipynb) muestra controles, intervalos pareados, presupuestos SVM y resultados negativos de las hipótesis.
+
+El intervalo bootstrap pareado por mes para ese cambio es **[+0,0018; +0,0048]** con 300 repeticiones. Es condicional a este benchmark reutilizado y no corrige su reutilización adaptativa. Al revisar el 20% de préstamos con mayor riesgo, el recall pasa de **38,20% a 38,66%**. La Brier baja de **0,118993 a 0,118769**; menor es mejor. Estos cambios respaldan una mejora modesta dentro de esta cohorte.
+
+Para reproducir esta fase se necesitan los modelos/predicciones de la primera. En una copia nueva del repositorio, ejecutar primero la reproducción anterior en `outputs/reproduction`; después elegir una carpeta nueva para esta fase:
+
+```powershell
+$env:LENDING_BASE_OUTPUT = 'outputs/reproduction'
+$env:LENDING_RESEARCH_OUTPUT = 'outputs/research_reproduction'
+.\.venv\Scripts\python.exe -m research.audit --source "RUTA/accepted_2007_to_2018Q4.csv.gz"
+.\.venv\Scripts\python.exe -m research.monthly_coverage --source "RUTA/accepted_2007_to_2018Q4.csv.gz"
+.\.venv\Scripts\python.exe -m research.experiments --stage all
+.\.venv\Scripts\python.exe -m research.followup
+.\.venv\Scripts\python.exe -m research.notebook
+```
+
+En el entorno original, las rutas predeterminadas son `outputs` para la referencia y `outputs/research_v2` para esta fase. Una evaluación completada bloquea reajustes en esa misma salida. La calibración SVM utiliza un bloque temporal separado; sus puntuaciones de margen no se interpretan directamente como probabilidades.
+
+Para reconstruir solamente los predictores y la evaluación de la segunda fase con sus configuraciones registradas, sin repetir la búsqueda adaptativa:
+
+```powershell
+.\.venv\Scripts\python.exe -m research.replay --destination outputs/research_fixed --reference-output outputs/reproduction
+```
+
+El comando requiere los datos preparados y los modelos/predicciones de referencia de la primera fase. Genera una salida nueva y compara sus métricas con las publicadas. Rehacer una búsqueda puede cambiar la trayectoria de TPE por reanudaciones y candidatos guiados; los parámetros realmente seleccionados quedan en `selection.json` y permiten reconstruir el resultado predictivo.
 
 ---
 

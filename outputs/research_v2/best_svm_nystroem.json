@@ -1,0 +1,62 @@
+{
+  "family": "svm_nystroem",
+  "recipe": {
+    "name": "stable_36_recent",
+    "mode": "stable",
+    "term": "36 months",
+    "start": "2012-01-01"
+  },
+  "params": {
+    "C": 1.2649675876166606,
+    "class_weight": null,
+    "gamma": 0.0009187608485161292,
+    "n_components": 600
+  },
+  "CV_AP": 0.21901681271303836,
+  "trial_count": 12,
+  "all_recorded_trials_including_administrative_interruptions": 12,
+  "fold_AP": [
+    0.21080423134740414,
+    0.22722939407867254
+  ],
+  "fold_ROC_AUC": [
+    0.66909954496024,
+    0.6649551808966435
+  ],
+  "fold_iterations": [
+    null,
+    null
+  ],
+  "fold_records": [
+    {
+      "fold": 0,
+      "train_n": 60000,
+      "validation_n": 20000,
+      "train_ids_sha256": "e04094ae1fdcd862d9927f4356b337f0a1933670cfbd795aaa1ec28eb24e81c7",
+      "validation_ids_sha256": "5025bc85d9cc5f06c6f7298de69a35ddd2d0ef88e3aa0cfc9e5a7e4a23a853d3",
+      "feature_count": 76,
+      "AP": 0.21080423134740414,
+      "ROC_AUC": 0.66909954496024
+    },
+    {
+      "fold": 1,
+      "train_n": 60000,
+      "validation_n": 20000,
+      "train_ids_sha256": "cdef2519bbfdb255a01532b6f66f0d7ca8e52996cbb3e3766527701ad74e365c",
+      "validation_ids_sha256": "27e5aac14b3a95c715af10dbfdb5ad84dd100434258dafed4e1c5c76116561f5",
+      "feature_count": 76,
+      "AP": 0.22722939407867254,
+      "ROC_AUC": 0.6649551808966435
+    }
+  ],
+  "fold_seconds": [
+    27.09,
+    26.23
+  ],
+  "model_params": {
+    "C": 1.2649675876166606,
+    "class_weight": null,
+    "gamma": 0.0009187608485161292,
+    "n_components": 600
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "utc": "2026-11-02T17:34:41.916838+00:00",
+  "reason": "Queued warm-start trials must not reduce the executed search budget. Completed trials preserved; one in-flight configuration administratively interrupted and excluded from the budget.",
+  "selection_or_new_benchmark_predictions_accessed": false,
+  "interrupted_trials": [
+    {
+      "study": "v2_catboost",
+      "number": 1,
+      "params": {
+        "learning_rate": 0.03513049653867429,
+        "depth": 7,
+        "l2_leaf_reg": 26.88235609610436,
+        "random_strength": 0.9100951626404371,
+        "bagging_temperature": 0.31203728088487304,
+        "rsm": 0.7045980821176709,
+        "auto_class_weights": "Balanced"
+      },
+      "partial_attributes": {
+        "fold_AP": [
+          0.2166013911973716
+        ],
+        "fold_ROC_AUC": [
+          0.6738383511944499
+        ],
+        "fold_iterations": [
+          491
+        ],
+        "fold_records": [
+          {
+            "fold": 0,
+            "train_n": 60000,
+            "validation_n": 20000,
+            "train_ids_sha256": "e04094ae1fdcd862d9927f4356b337f0a1933670cfbd795aaa1ec28eb24e81c7",
+            "validation_ids_sha256": "5025bc85d9cc5f06c6f7298de69a35ddd2d0ef88e3aa0cfc9e5a7e4a23a853d3",
+            "feature_count": 76,
+            "AP": 0.2166013911973716,
+            "ROC_AUC": 0.6738383511944499
+          }
+        ],
+        "fold_seconds": [
+          74.46
+        ],
+        "model_params": {
+          "iterations": 1200,
+          "learning_rate": 0.03513049653867429,
+          "depth": 7,
+          "l2_leaf_reg": 26.88235609610436,
+          "random_strength": 0.9100951626404371,
+          "bagging_temperature": 0.31203728088487304,
+          "rsm": 0.7045980821176709,
+          "auto_class_weights": "Balanced"
+        }
+      }
+    }
+  ]
+}

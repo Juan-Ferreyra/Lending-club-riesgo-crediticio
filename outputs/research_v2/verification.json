@@ -1,0 +1,26 @@
+{
+  "verified_utc": "2026-11-02T20:06:18.249266+00:00",
+  "checks": {
+    "original_source_unchanged": true,
+    "original_model_unchanged": true,
+    "original_cohorts_unchanged": true,
+    "original_final_metrics_unchanged": true,
+    "new_frozen_source_matches": true,
+    "new_frozen_protocol_matches": true,
+    "new_frozen_model_matches": true,
+    "new_selection_matches": true,
+    "new_receipt_matches": true,
+    "common_ids_fixed_before_new_predictions": true,
+    "all_models_same_common_budget": true,
+    "full_cohort_sizes_match": true,
+    "all_notebook_code_executed": true,
+    "no_notebook_errors": true,
+    "eight_figures_embedded": true,
+    "notebook02_original_cells_preserved": true
+  },
+  "unit_tests_passed": 13,
+  "executed_notebook_code_cells": 26,
+  "embedded_figures": 8,
+  "figures_visually_inspected": 8,
+  "pristine_final_test": false
+}

@@ -1,0 +1,3 @@
+scope,AP,ROC_AUC,train_n,validation_n,eligible_for_primary_selection,validation_cohort,added_inputs
+independent_application_features,0.24498746783790948,0.6837384176539593,60000,40595,False,"2014 Q3, 36-month",
+after_LC_grading_DIAGNOSTIC_ONLY,0.24880782040646648,0.6876086834400383,60000,40595,False,"2014 Q3, 36-month","grade, sub_grade, int_rate"

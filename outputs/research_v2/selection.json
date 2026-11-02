@@ -1,0 +1,278 @@
+{
+  "selected": "catboost",
+  "specs": {
+    "lightgbm": {
+      "family": "lightgbm",
+      "params": {
+        "n_estimators": 530,
+        "learning_rate": 0.02588968965098415,
+        "num_leaves": 15,
+        "min_child_samples": 273,
+        "reg_lambda": 2.462300726483128,
+        "reg_alpha": 0.0003745018823436387,
+        "colsample_bytree": 0.798070764044508,
+        "subsample": 0.6620359823903265,
+        "subsample_freq": 1,
+        "scale_pos_weight": 1.0
+      },
+      "recipe": {
+        "name": "stable_36_recent",
+        "mode": "stable",
+        "term": "36 months",
+        "start": "2012-01-01"
+      }
+    },
+    "catboost": {
+      "family": "catboost",
+      "params": {
+        "iterations": 1177,
+        "learning_rate": 0.02205578452420942,
+        "depth": 7,
+        "l2_leaf_reg": 54.12993362140874,
+        "random_strength": 1.9728817186293905,
+        "bagging_temperature": 0.6092275383467414,
+        "rsm": 0.6841852399022343,
+        "auto_class_weights": null
+      },
+      "recipe": {
+        "name": "stable_36_recent",
+        "mode": "stable",
+        "term": "36 months",
+        "start": "2012-01-01"
+      }
+    },
+    "svm_linear": {
+      "family": "svm_linear",
+      "params": {
+        "C": 0.0030605882806936423,
+        "class_weight": "balanced"
+      },
+      "recipe": {
+        "name": "stable_36_recent",
+        "mode": "stable",
+        "term": "36 months",
+        "start": "2012-01-01"
+      }
+    },
+    "svm_rbf": {
+      "family": "svm_rbf",
+      "params": {
+        "C": 0.2801635158716261,
+        "class_weight": "balanced",
+        "gamma": 0.0028887015747659996,
+        "max_iter": 100000
+      },
+      "recipe": {
+        "name": "stable_36_recent",
+        "mode": "stable",
+        "term": "36 months",
+        "start": "2012-01-01"
+      }
+    },
+    "svm_nystroem": {
+      "family": "svm_nystroem",
+      "params": {
+        "C": 1.2649675876166606,
+        "class_weight": null,
+        "gamma": 0.0009187608485161292,
+        "n_components": 600
+      },
+      "recipe": {
+        "name": "stable_36_recent",
+        "mode": "stable",
+        "term": "36 months",
+        "start": "2012-01-01"
+      }
+    },
+    "lightgbm_previous_params": {
+      "family": "lightgbm",
+      "params": {
+        "n_estimators": 143,
+        "learning_rate": 0.05081293756112104,
+        "num_leaves": 28,
+        "min_child_samples": 152,
+        "reg_lambda": 1.4731189846460222,
+        "reg_alpha": 0.001169714009152734,
+        "colsample_bytree": 0.6572989610431703,
+        "subsample": 0.7278140434146148,
+        "subsample_freq": 1,
+        "scale_pos_weight": 1.0
+      },
+      "recipe": {
+        "name": "stable_36_recent",
+        "mode": "stable",
+        "term": "36 months",
+        "start": "2012-01-01"
+      }
+    },
+    "catboost_previous_params": {
+      "family": "catboost",
+      "params": {
+        "iterations": 740,
+        "learning_rate": 0.027359299282470315,
+        "depth": 7,
+        "l2_leaf_reg": 27.333886656404555,
+        "random_strength": 1.5635108708133456,
+        "bagging_temperature": 0.6092275383467414,
+        "rsm": 0.7293016342019151,
+        "auto_class_weights": null
+      },
+      "recipe": {
+        "name": "stable_36_recent",
+        "mode": "stable",
+        "term": "36 months",
+        "start": "2012-01-01"
+      }
+    },
+    "logistic": {
+      "family": "logistic",
+      "params": {
+        "C": 0.013901420350545918,
+        "class_weight": null
+      },
+      "recipe": {
+        "name": "stable_36_recent",
+        "mode": "stable",
+        "term": "36 months",
+        "start": "2012-01-01"
+      }
+    },
+    "random_forest": {
+      "family": "random_forest",
+      "params": {
+        "n_estimators": 250,
+        "max_depth": 12,
+        "min_samples_leaf": 60,
+        "max_features": "sqrt",
+        "max_samples": 0.7737068376069123,
+        "class_weight": "balanced_subsample"
+      },
+      "recipe": {
+        "name": "stable_36_recent",
+        "mode": "stable",
+        "term": "36 months",
+        "start": "2012-01-01"
+      }
+    },
+    "xgboost": {
+      "family": "xgboost",
+      "params": {
+        "n_estimators": 326,
+        "learning_rate": 0.04676664740057031,
+        "max_depth": 3,
+        "min_child_weight": 6.345356893234593,
+        "reg_lambda": 7.400833087122808,
+        "reg_alpha": 2.6202105294222906,
+        "subsample": 0.701271216187201,
+        "colsample_bytree": 0.6780273291927688,
+        "gamma": 0.7056336440801878,
+        "scale_pos_weight": 2.0
+      },
+      "recipe": {
+        "name": "stable_36_recent",
+        "mode": "stable",
+        "term": "36 months",
+        "start": "2012-01-01"
+      }
+    },
+    "lightgbm_from_2013": {
+      "family": "lightgbm",
+      "params": {
+        "n_estimators": 143,
+        "learning_rate": 0.05081293756112104,
+        "num_leaves": 28,
+        "min_child_samples": 152,
+        "reg_lambda": 1.4731189846460222,
+        "reg_alpha": 0.001169714009152734,
+        "colsample_bytree": 0.6572989610431703,
+        "subsample": 0.7278140434146148,
+        "subsample_freq": 1,
+        "scale_pos_weight": 1.0
+      },
+      "recipe": {
+        "name": "stable_36_recent_from_2013",
+        "mode": "stable",
+        "term": "36 months",
+        "start": "2013-01-01"
+      }
+    },
+    "catboost_from_2013": {
+      "family": "catboost",
+      "params": {
+        "iterations": 740,
+        "learning_rate": 0.027359299282470315,
+        "depth": 7,
+        "l2_leaf_reg": 27.333886656404555,
+        "random_strength": 1.5635108708133456,
+        "bagging_temperature": 0.6092275383467414,
+        "rsm": 0.7293016342019151,
+        "auto_class_weights": null
+      },
+      "recipe": {
+        "name": "stable_36_recent_from_2013",
+        "mode": "stable",
+        "term": "36 months",
+        "start": "2013-01-01"
+      }
+    },
+    "svm_linear_from_2013": {
+      "family": "svm_linear",
+      "params": {
+        "C": 0.0030605882806936423,
+        "class_weight": "balanced"
+      },
+      "recipe": {
+        "name": "stable_36_recent_from_2013",
+        "mode": "stable",
+        "term": "36 months",
+        "start": "2013-01-01"
+      }
+    },
+    "svm_rbf_from_2013": {
+      "family": "svm_rbf",
+      "params": {
+        "C": 0.2801635158716261,
+        "class_weight": "balanced",
+        "gamma": 0.0028887015747659996,
+        "max_iter": 100000
+      },
+      "recipe": {
+        "name": "stable_36_recent_from_2013",
+        "mode": "stable",
+        "term": "36 months",
+        "start": "2013-01-01"
+      }
+    },
+    "svm_nystroem_from_2013": {
+      "family": "svm_nystroem",
+      "params": {
+        "C": 1.2649675876166606,
+        "class_weight": null,
+        "gamma": 0.0009187608485161292,
+        "n_components": 600
+      },
+      "recipe": {
+        "name": "stable_36_recent_from_2013",
+        "mode": "stable",
+        "term": "36 months",
+        "start": "2013-01-01"
+      }
+    }
+  },
+  "recipe": {
+    "name": "stable_36_recent",
+    "mode": "stable",
+    "term": "36 months",
+    "start": "2012-01-01"
+  },
+  "base_recipe": {
+    "name": "stable_36_recent",
+    "mode": "stable",
+    "term": "36 months",
+    "start": "2012-01-01"
+  },
+  "selection_AP": 0.25356822880349705,
+  "selection_utc": "2026-11-02T19:12:02.347456+00:00",
+  "previous_benchmark_results_known": true,
+  "new_benchmark_predictions_not_opened": true
+}

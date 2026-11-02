@@ -1,0 +1,120 @@
+[
+  {
+    "original_trial_number": 3,
+    "params": {
+      "C": 2.1368329072358767,
+      "class_weight": null,
+      "gamma": 0.0012030986006692078,
+      "max_iter": 100000
+    },
+    "same_predictive_parameters": true,
+    "solver_iteration_limit": 100000,
+    "state": "COMPLETE",
+    "CV_AP": 0.15474916810484468,
+    "fold_AP": [
+      0.14687887188248963,
+      0.16261946432719976
+    ],
+    "fold_ROC_AUC": [
+      0.5831242230237381,
+      0.5740464197272677
+    ],
+    "fold_iterations": [
+      null,
+      null
+    ],
+    "fold_seconds": [
+      30.93,
+      33.56
+    ],
+    "fold_records": [
+      {
+        "fold": 0,
+        "train_n": 12000,
+        "validation_n": 8000,
+        "train_ids_sha256": "a0aa8157590082701cd94a0dbbb2eeb1de7309eedc05477b17ed30cbd297c407",
+        "validation_ids_sha256": "15df3f364309518b4c7e2d3e07a56babface2a71a83f3a3d420cee041d614dbc",
+        "feature_count": 76,
+        "AP": 0.14687887188248963,
+        "ROC_AUC": 0.5831242230237381
+      },
+      {
+        "fold": 1,
+        "train_n": 12000,
+        "validation_n": 8000,
+        "train_ids_sha256": "28e47d25c0fa9deeb78f71a4497b8549c4c39b325cd0d876af794dae29dbbaa4",
+        "validation_ids_sha256": "59ebce41c9e14d0c1af0ea01a7e8234937d624f3609f76894dbe32cd237dec90",
+        "feature_count": 76,
+        "AP": 0.16261946432719976,
+        "ROC_AUC": 0.5740464197272677
+      }
+    ],
+    "seconds": 65.64239501953125
+  },
+  {
+    "original_trial_number": 6,
+    "params": {
+      "C": 10.0,
+      "class_weight": null,
+      "gamma": 0.0005,
+      "max_iter": 100000
+    },
+    "same_predictive_parameters": true,
+    "solver_iteration_limit": 100000,
+    "state": "FAIL",
+    "reason": "SVM/linear optimization did not converge: Solver terminated early (max_iter=100000).  Consider pre-processing your data with StandardScaler or MinMaxScaler.",
+    "seconds": 70.44774198532104
+  },
+  {
+    "original_trial_number": 7,
+    "params": {
+      "C": 10.0,
+      "class_weight": null,
+      "gamma": 0.005,
+      "max_iter": 100000
+    },
+    "same_predictive_parameters": true,
+    "solver_iteration_limit": 100000,
+    "state": "COMPLETE",
+    "CV_AP": 0.1588300716348362,
+    "fold_AP": [
+      0.15062655494334487,
+      0.16703358832632753
+    ],
+    "fold_ROC_AUC": [
+      0.5785849566780445,
+      0.585143906382835
+    ],
+    "fold_iterations": [
+      null,
+      null
+    ],
+    "fold_seconds": [
+      34.23,
+      34.85
+    ],
+    "fold_records": [
+      {
+        "fold": 0,
+        "train_n": 12000,
+        "validation_n": 8000,
+        "train_ids_sha256": "a0aa8157590082701cd94a0dbbb2eeb1de7309eedc05477b17ed30cbd297c407",
+        "validation_ids_sha256": "15df3f364309518b4c7e2d3e07a56babface2a71a83f3a3d420cee041d614dbc",
+        "feature_count": 76,
+        "AP": 0.15062655494334487,
+        "ROC_AUC": 0.5785849566780445
+      },
+      {
+        "fold": 1,
+        "train_n": 12000,
+        "validation_n": 8000,
+        "train_ids_sha256": "28e47d25c0fa9deeb78f71a4497b8549c4c39b325cd0d876af794dae29dbbaa4",
+        "validation_ids_sha256": "59ebce41c9e14d0c1af0ea01a7e8234937d624f3609f76894dbe32cd237dec90",
+        "feature_count": 76,
+        "AP": 0.16703358832632753,
+        "ROC_AUC": 0.585143906382835
+      }
+    ],
+    "seconds": 70.00885152816772
+  }
+]

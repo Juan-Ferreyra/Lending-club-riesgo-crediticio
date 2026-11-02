@@ -1,0 +1,12 @@
+{
+  "2015": {
+    "n": 20000,
+    "ids_sha256": "0558db4074d89dd72fc6e35d61b57426b1bbed5c87d7f3f334ddf1402eed9055",
+    "sampling": "same stratified seed-42 rows for every model"
+  },
+  "2016": {
+    "n": 20000,
+    "ids_sha256": "159b72516b67750d4edb16d8e5ee65e65b314c766c068bf1aab45ce8221a35b6",
+    "sampling": "same stratified seed-42 rows for every model"
+  }
+}
