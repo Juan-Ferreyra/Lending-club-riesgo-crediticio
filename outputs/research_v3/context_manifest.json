@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-11-02T20:51:10.491958+00:00",
+  "source_sha256": "55c16f75120f897683f02e7aabcf080d0e4a20c4832feb1d592cfa941bd62a2d",
+  "cache_sha256": "7213ae618c0c62d233669ac250ea62171fe23c2ae667cd7a2bdc9b1c2e64c77e",
+  "rows": 1062662,
+  "ids_sha256": "48dd77ce693187c2bf19ef9344de2ef32ffc97dc072f83bbfc8c7c1b69f479ae",
+  "fields": [
+    "emp_title",
+    "zip_code"
+  ],
+  "labels_extracted": false,
+  "purpose": "Application fields only; joining evaluation inputs does not use their labels for selection."
+}

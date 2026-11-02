@@ -1,0 +1,12 @@
+# Preserve the byte conventions used by the frozen experimental receipts.
+.gitattributes text eol=lf
+*.py text eol=lf
+/experiments/protocol*.json text eol=lf
+/experiments/previewed_source_ids.json text eol=lf
+/experiments/development_followup_v3.json text eol=crlf
+/experiments/preparation_followup_v3.json text eol=crlf
+/outputs/**/*.json text eol=crlf
+/outputs/**/*.csv text eol=crlf
+/notebooks/*.ipynb text eol=crlf
+*.gz binary
+*.png binary

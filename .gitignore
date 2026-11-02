@@ -6,6 +6,7 @@ data/accepted_2007_to_2018Q4.csv.gz
 data/accepted_2007_to_2018Q4.csv
 data/processed/
 data/research_v2/
+data/optimization/
 outputs/models/
 outputs/predictions/
 outputs/studies/

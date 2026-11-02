@@ -1,0 +1,273 @@
+{
+  "verified_utc": "2026-11-02T23:44:12.472980+00:00",
+  "checks": {
+    "frozen_artifact_hashes_match": true,
+    "inherited_artifact_hashes_match": true,
+    "all_Q3_candidate_contracts_match_selection_specs": true,
+    "benchmark_completed": true,
+    "benchmark_receipt_matches_lock": true,
+    "benchmark_metrics_hash_matches": true,
+    "benchmark_output_hashes_match": true,
+    "selected_strategy_unchanged": true,
+    "selected_members_unchanged": true,
+    "selected_before_freeze_before_benchmark": true,
+    "no_new_independent_test_claim": true,
+    "development_selection_did_not_open_new_benchmark": true,
+    "checkout_filters_preserve_frozen_bytes": true,
+    "search_protocol_and_budget_unchanged": true,
+    "search_model_contract_unchanged": true,
+    "search_development_population_unchanged": true,
+    "search_started_without_new_benchmark": true,
+    "calibration_and_policy_ids_disjoint": true,
+    "calibration_policy_cover_december": true,
+    "calibration_split_hashes_match": true,
+    "calibration_split_sizes_match": true,
+    "all_final_training_rows_and_dates_match": true,
+    "final_training_metadata_matches_bundle": true,
+    "extra_data_control_uses_expected_rows": true,
+    "extra_data_control_keeps_v2_parameters": true,
+    "development_amendment_hash_matches_selection_and_lock": true,
+    "development_amendment_registered_before_selection_and_freeze": true,
+    "development_amendment_before_new_benchmark": true,
+    "development_amendment_has_exact_two_controls": true,
+    "amendment_controls_change_only_declared_features": true,
+    "amendment_control_artifacts_keep_exact_v2_parameters": true,
+    "amendment_controls_use_identical_full_Q3_and_training_rows": true,
+    "amendment_six_blends_keep_fixed_weights_and_Q3_rows": true,
+    "amendment_all_eight_additional_candidates_retained": true,
+    "preparation_amendment_hash_matches_selection_and_lock": true,
+    "preparation_amendment_registered_before_selection_and_freeze": true,
+    "preparation_amendment_before_new_benchmark": true,
+    "preparation_amendment_has_exact_three_family_controls": true,
+    "preparation_controls_change_only_native_to_log_clip": true,
+    "preparation_completed_controls_use_identical_two_fold_rows": true,
+    "preparation_CV_metrics_and_paired_deltas_recomputed": true,
+    "preparation_promotions_match_mean_CV_AP_rule": true,
+    "preparation_failed_controls_retained_without_promotion": true,
+    "preparation_controls_keep_one_existing_Q3_slot_per_family": true,
+    "sigmoid_slopes_positive_and_finite": true,
+    "2015_same_cohort_n": true,
+    "2015_same_ids_targets_dates": true,
+    "2015_cohort_ids_hash_matches": true,
+    "2015_frozen_reference_predictions_match": true,
+    "2016_same_cohort_n": true,
+    "2016_same_ids_targets_dates": true,
+    "2016_cohort_ids_hash_matches": true,
+    "2016_frozen_reference_predictions_match": true,
+    "all_reported_raw_AP_recomputed": true,
+    "all_reported_probability_AP_recomputed": true,
+    "all_paired_point_deltas_recomputed": true,
+    "calibration_rank_preservation_flags_accurate": true,
+    "bootstrap_point_matches_selected_raw_delta": true,
+    "lightgbm_executed_budget_matches": true,
+    "catboost_executed_budget_matches": true,
+    "xgboost_executed_budget_matches": true,
+    "logistic_executed_budget_matches": true,
+    "svm_linear_executed_budget_matches": true,
+    "svm_nystroem_executed_budget_matches": true,
+    "all_CV_validation_population_hashes_match": true,
+    "all_CV_validation_cohorts_report_two_periods": true,
+    "interpretation_uses_selected_Q3_candidates": true,
+    "interpretation_candidate_hashes_match": true
+  },
+  "details": {
+    "inherited_artifact_hashes_match": {
+      "checked_artifacts": 33
+    },
+    "all_Q3_candidate_contracts_match_selection_specs": {
+      "candidate_count": 13,
+      "matching_count": 13,
+      "candidates": {
+        "v2_catboost": {
+          "path": "outputs/research_v2/models/candidate_catboost.joblib",
+          "sha256": "fd8579099822cfbc6ee36d6306510b6d737652725825a79c1f53cc9967ab2d20",
+          "family": "catboost",
+          "contract_matches": true,
+          "catboost_iteration_count_checked": true
+        },
+        "catboost_context_control": {
+          "path": "outputs/research_v3/models/candidate_catboost_context_control.joblib",
+          "sha256": "739c701f8706072b404194c0d9c216d2be89dd38057054d10789c185a5b3edfd",
+          "family": "catboost",
+          "contract_matches": true,
+          "catboost_iteration_count_checked": true
+        },
+        "catboost_combined_control": {
+          "path": "outputs/research_v3/models/candidate_catboost_combined_control.joblib",
+          "sha256": "22b102028f073e4585973b68fa919996482ad6eb40ba32363a0218cd18d07b0f",
+          "family": "catboost",
+          "contract_matches": true,
+          "catboost_iteration_count_checked": true
+        },
+        "lightgbm_joint": {
+          "path": "outputs/research_v3/models/candidate_lightgbm_joint.joblib",
+          "sha256": "57faa996f2841e1bb242f8eb50f2db643995d288b75cae0ba6a2b3045caee393",
+          "family": "lightgbm",
+          "contract_matches": true,
+          "catboost_iteration_count_checked": false
+        },
+        "lightgbm_joint_runnerup": {
+          "path": "outputs/research_v3/models/candidate_lightgbm_joint_runnerup.joblib",
+          "sha256": "7c5c45320cb977f10ca914cc91a83c7625d08e8dfdfc6870a16f89226ca888b5",
+          "family": "lightgbm",
+          "contract_matches": true,
+          "catboost_iteration_count_checked": false
+        },
+        "catboost_joint": {
+          "path": "outputs/research_v3/models/candidate_catboost_joint.joblib",
+          "sha256": "a2742dea50a6dadcea7b2bc4f0f16b4b12433e90f133d1c7a290f63e1cbd822a",
+          "family": "catboost",
+          "contract_matches": true,
+          "catboost_iteration_count_checked": true
+        },
+        "catboost_joint_runnerup": {
+          "path": "outputs/research_v3/models/candidate_catboost_joint_runnerup.joblib",
+          "sha256": "a7a6f6a7630f38d52dc272ba765ae0e3de4fc78bcbbffb4834da9f9cb7567ed6",
+          "family": "catboost",
+          "contract_matches": true,
+          "catboost_iteration_count_checked": true
+        },
+        "xgboost_joint": {
+          "path": "outputs/research_v3/models/candidate_xgboost_joint.joblib",
+          "sha256": "1c8b7e2e220ca6184995d9221b025eb44737aab5fa120df251cd9be21bb33264",
+          "family": "xgboost",
+          "contract_matches": true,
+          "catboost_iteration_count_checked": false
+        },
+        "logistic_joint": {
+          "path": "outputs/research_v3/models/candidate_logistic_joint.joblib",
+          "sha256": "d2820f1189e720ff8e2d0246acb4fa1ec3dc120ad40a94e46fb49f21ad8e7db8",
+          "family": "logistic",
+          "contract_matches": true,
+          "catboost_iteration_count_checked": false
+        },
+        "svm_linear_joint": {
+          "path": "outputs/research_v3/models/candidate_svm_linear_joint.joblib",
+          "sha256": "b6ae005b19901ac295cac94e2a183071c6854e46b743bf28debbb162957a7173",
+          "family": "svm_linear",
+          "contract_matches": true,
+          "catboost_iteration_count_checked": false
+        },
+        "svm_nystroem_joint": {
+          "path": "outputs/research_v3/models/candidate_svm_nystroem_joint.joblib",
+          "sha256": "b61bd02829b99f1b90f8b07064c5eac5732e2084c1fe098efda068ff9503cca9",
+          "family": "svm_nystroem",
+          "contract_matches": true,
+          "catboost_iteration_count_checked": false
+        },
+        "lightgbm_feature_control": {
+          "path": "outputs/research_v3/models/candidate_lightgbm_feature_control.joblib",
+          "sha256": "f2d8cd006664e36aa2da1c129456af6ad362fe172cbd11cdc8279c749561e304",
+          "family": "lightgbm",
+          "contract_matches": true,
+          "catboost_iteration_count_checked": false
+        },
+        "catboost_seed2026": {
+          "path": "outputs/research_v3/models/candidate_catboost_seed2026.joblib",
+          "sha256": "40dc3a689953461d7466e6a7fb73fa8a8fb325dc8a9a54fdc072f76aa02020a3",
+          "family": "catboost",
+          "contract_matches": true,
+          "catboost_iteration_count_checked": true
+        }
+      },
+      "scope": "Stored estimator parameters, seed and feature/preparation contract; predictions are not recomputed by this check."
+    },
+    "search_runner_revision": "The runner fingerprint at search start is historical provenance, not a required current-file match: the documented amendment changes later development selection only. The model contract, data, main protocol and HPO budget must still match search_design.json.",
+    "development_amendment": {
+      "registered_utc": "2026-11-02T21:17:35.621216+00:00",
+      "additional_candidates": [
+        "catboost_context_control",
+        "blend_v2_catboost_context_control_25",
+        "blend_v2_catboost_context_control_50",
+        "blend_v2_catboost_context_control_75",
+        "catboost_combined_control",
+        "blend_v2_catboost_combined_control_25",
+        "blend_v2_catboost_combined_control_50",
+        "blend_v2_catboost_combined_control_75"
+      ],
+      "role": "Adaptive development-only extension; not part of the original search protocol and not an independent confirmation.",
+      "interpretation": "Adaptive development expansion; neither the original prespecified search nor independent confirmation."
+    },
+    "preparation_failed_controls_retained_without_promotion": {
+      "failed_controls": 0
+    },
+    "preparation_amendment": {
+      "registered_utc": "2026-11-02T22:00:44.681134+00:00",
+      "family_status": {
+        "logistic": "COMPLETE",
+        "svm_linear": "COMPLETE",
+        "svm_nystroem": "COMPLETE"
+      },
+      "additional_CV_configurations": 3,
+      "additional_Q3_slots": 0,
+      "role": "Adaptive development-only coverage repair, separate from the original46 HPO attempts.",
+      "interpretation": "The contrast estimates the combined clipping/logarithmic preparation change. It does not separately identify the effect of each operation."
+    },
+    "calibration_rank_preservation_flags_accurate": [],
+    "executed_search_budget": {
+      "lightgbm": {
+        "RUNNING": 0,
+        "COMPLETE": 10,
+        "PRUNED": 6,
+        "FAIL": 0,
+        "WAITING": 0,
+        "expected_executed": 16
+      },
+      "catboost": {
+        "RUNNING": 0,
+        "COMPLETE": 5,
+        "PRUNED": 1,
+        "FAIL": 0,
+        "WAITING": 0,
+        "expected_executed": 6
+      },
+      "xgboost": {
+        "RUNNING": 0,
+        "COMPLETE": 9,
+        "PRUNED": 3,
+        "FAIL": 0,
+        "WAITING": 0,
+        "expected_executed": 12
+      },
+      "logistic": {
+        "RUNNING": 0,
+        "COMPLETE": 4,
+        "PRUNED": 0,
+        "FAIL": 0,
+        "WAITING": 0,
+        "expected_executed": 4
+      },
+      "svm_linear": {
+        "RUNNING": 0,
+        "COMPLETE": 4,
+        "PRUNED": 0,
+        "FAIL": 0,
+        "WAITING": 0,
+        "expected_executed": 4
+      },
+      "svm_nystroem": {
+        "RUNNING": 0,
+        "COMPLETE": 4,
+        "PRUNED": 0,
+        "FAIL": 0,
+        "WAITING": 0,
+        "expected_executed": 4
+      }
+    },
+    "data_control_interpretation": "Raw AP comparison of v2_catboost versus v2_frozen isolates the fixed V2 pipeline refitted on additional training rows. Brier/log-loss differences also include the changed calibration period and size, so they are not attributed solely to extra training data."
+  },
+  "check_count": 68,
+  "all_checks_passed": true,
+  "auxiliary_sha256": {
+    ".gitattributes": "cbaf92702d1d8ed2c1fbcb9b86d51160384f4e4cfe29e19fb47912637c8ea2fa",
+    "optimization/analysis.py": "86a32a0c3669499f2958733523c640c72ad1522519e9b15264f8cc49e5f980f0",
+    "optimization/documentation.py": "141fd146c2c854880b211328699b1c521da9285726c0a2d18862402bf79f9af5",
+    "optimization/notebook.py": "4eb63b74c26cf19d194ce70fcb9070c4b306da799fb26b9e339193db4b5cb0a0",
+    "optimization/replay.py": "fb69e54710e43c12029739b9b578cd9830c0395551dbcb6abd772b7519cc7b31",
+    "tests/test_optimization_features.py": "18ed3a0c02a576bc70e1f99826ed038626be8d838461a1fff60669d76f7681d7",
+    "tests/test_optimization_models.py": "685b6cf91994c8f847d653b6f8e183dba0d3a35307d7c721752baf1cec0c0a29",
+    "tests/test_optimization_protocol.py": "d613c62a53701efdc6b43f80624ea62a43be6f643e1630da4b0aac1938cc725d",
+    "notebooks/07_optimizacion_predictiva.ipynb": "94da6ef64023e5afb12f37885e5b90af0543616b32d1ac860c1344bbf38bc130"
+  },
+  "role": "Artifact and calculation verification; it does not make reused benchmarks independent."
+}

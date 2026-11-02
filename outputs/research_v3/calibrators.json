@@ -1,0 +1,42 @@
+{
+  "catboost_combined_control": {
+    "slope": 1.0965695218195282,
+    "intercept": 0.17511327444053448,
+    "method": "positive_sigmoid"
+  },
+  "catboost_joint": {
+    "slope": 1.1394137296259927,
+    "intercept": 0.26965465964274293,
+    "method": "positive_sigmoid"
+  },
+  "lightgbm_joint": {
+    "slope": 1.057145682620577,
+    "intercept": 0.12719352324999655,
+    "method": "positive_sigmoid"
+  },
+  "logistic_joint": {
+    "slope": 0.9696041732546007,
+    "intercept": -0.017418707122645326,
+    "method": "positive_sigmoid"
+  },
+  "svm_linear_joint": {
+    "slope": 2.121787302672103,
+    "intercept": -1.8298634516452095,
+    "method": "positive_sigmoid"
+  },
+  "svm_nystroem_joint": {
+    "slope": 3.966861261678484,
+    "intercept": 0.9267977194231283,
+    "method": "positive_sigmoid"
+  },
+  "v2_catboost": {
+    "slope": 1.1178796116890424,
+    "intercept": 0.22950747822187637,
+    "method": "positive_sigmoid"
+  },
+  "xgboost_joint": {
+    "slope": 1.0880955338886535,
+    "intercept": -0.561217604626031,
+    "method": "positive_sigmoid"
+  }
+}

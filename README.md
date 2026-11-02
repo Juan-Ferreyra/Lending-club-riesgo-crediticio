@@ -1,5 +1,7 @@
 # Predicción del riesgo crediticio con Lending Club
 
+**Última fase de optimización:** [Notebook 07](notebooks/07_optimizacion_predictiva.ipynb), con comparación sobre préstamos a **36 meses**.
+
 ## Fase experimental de la entrega final
 
 El repositorio incorpora una fase de investigación y experimentos posterior al avance inicial. Incluye comparación temporal de regresión logística, Random Forest, LightGBM, XGBoost y CatBoost; búsqueda de hiperparámetros; calibración; evaluación congelada; errores por segmentos e interpretación. El informe final y la presentación se elaborarán después.
@@ -11,6 +13,7 @@ El repositorio incorpora una fase de investigación y experimentos posterior al 
 - `notebooks/04_analisis_errores.ipynb`: errores, estabilidad, permutación y explicaciones locales.
 - `notebooks/05_explicacion.ipynb`: fundamentos de los cinco algoritmos, diagramas del ensamble y lectura de los resultados.
 - `notebooks/06_diagnostico_datos_svm.ipynb`: auditoría de población y faltantes, ablaciones, ajuste adicional y SVM lineal/RBF.
+- `notebooks/07_optimizacion_predictiva.ipynb`: optimización conjunta, ensambles, controles y estabilidad temporal.
 - `outputs/`: configuraciones, resultados, huellas y figuras. Los modelos y predicciones grandes se regeneran localmente y están ignorados por Git.
 
 ### Resultado del primer experimento ejecutado
@@ -96,6 +99,47 @@ Para reconstruir solamente los predictores y la evaluación de la segunda fase c
 ```
 
 El comando requiere los datos preparados y los modelos/predicciones de referencia de la primera fase. Genera una salida nueva y compara sus métricas con las publicadas. Rehacer una búsqueda puede cambiar la trayectoria de TPE por reanudaciones y candidatos guiados; los parámetros realmente seleccionados quedan en `selection.json` y permiten reconstruir el resultado predictivo.
+
+<!-- v3-results-start -->
+### Tercera fase: optimización conjunta de la predicción
+
+El [notebook 07](notebooks/07_optimizacion_predictiva.ipynb) documenta la investigación ejecutada sobre datos, variables, preparación por algoritmo, hiperparámetros y ensambles. Se registraron ocho recetas del bloque de ablación, incluida la referencia, y **46 intentos de búsqueda** en seis familias: 36 completos, 10 podados, 0 fallidos. Se añadieron tres controles de preparación y ocho candidatos de contexto/ensamble en ampliaciones adaptativas de desarrollo documentadas antes del benchmark. La selección compara **39 estrategias en la misma cohorte de 2014 Q3: 13 modelos individuales y 26 ensambles**. La estrategia elegida fue: **100% `catboost_combined_control`**. Los ensayos sin mejora, fallidos o descartados se conservan.
+
+La referencia es el CatBoost V2, sobre los mismos **258.856 préstamos de 2015 a 36 meses**:
+
+| Estrategia | AP | ROC-AUC | Recall al revisar el 20% |
+|---|---:|---:|---:|
+| CatBoost V2 congelado | 0.275187 | 0.695059 | 38.66% |
+| Parámetros V2, entrenamiento ampliado hasta noviembre | 0.277484 | 0.696322 | 38.88% |
+| Estrategia V3 seleccionada en desarrollo | 0.280128 | 0.698253 | 39.09% |
+
+La estrategia preseleccionada mejora AP en esta cohorte reutilizada. El cambio frente al CatBoost V2 es **+0.004941 AP** (+1.80% relativo), con intervalo bootstrap pareado por mes **[+0.003767; +0.006188]**. El cambio es positivo en 4 de los 4 trimestres de 2015; se muestran todos los períodos, incluidos los negativos. En la revisión de los cortes anteriores de desarrollo, AP mejora en **0 de 2**; estos cortes también se reutilizaron. La mejora no es uniforme en toda la historia. 2016 se mantiene como estrés afectado por desenlaces aún no observados.
+
+El entrenamiento final desde 2012 llega hasta noviembre de 2014: 299.588 préstamos, 43.146 más que V2. Diciembre se divide mediante hash de ID en grupos disjuntos de calibración y umbral; son grupos del mismo mes. El control con parámetros V2 permite separar el aporte de las filas adicionales al ranking. Sus diferencias de Brier también incluyen el cambio de calibración. AP se calcula sobre puntuaciones originales y se contrasta con probabilidades de una sigmoide de pendiente positiva.
+
+**No es una nueva prueba final independiente.** Los años 2015/2016 ya habían sido observados; ni el intervalo ni la congelación recuperan esa independencia. El archivo disponible tampoco proporciona una cohorte futura madura sin usar. El alcance, controles y límites se detallan en el [protocolo V3](experiments/protocol_v3.json), la [bitácora](experiments/research_v3_notes.md) y el [contrato de variables](experiments/feature_contract_v3.csv). No se compara este AP con 0,4164 de la población original que mezclaba plazos.
+
+Para reconstruir los predictores con las especificaciones publicadas, se necesitan los datos preparados, el archivo original en `data/accepted_2007_to_2018Q4.csv.gz` y los artefactos de referencia V1. La referencia V2 debe ser su reconstrucción fija en `outputs/research_fixed`, obtenida con `python -m research.replay --destination outputs/research_fixed --reference-output outputs/reproduction`, como se explicó en la segunda fase. Una búsqueda nueva de V2 puede elegir otros parámetros y no sirve como referencia de coincidencia exacta.
+
+```powershell
+$env:LENDING_BASE_OUTPUT = 'outputs/reproduction'
+.\.venv\Scripts\python.exe -m optimization.replay --destination outputs/optimization_fixed --v2-output outputs/research_fixed
+```
+
+Para repetir la búsqueda completa de V3 en una salida nueva se utiliza la salida **completa** de V2, `outputs/research_reproduction`, que incluye sus candidatos Q3 y archivos de búsqueda. La reconstrucción fija de V2 solo genera los predictores finales y no contiene esos archivos de desarrollo:
+
+```powershell
+$env:LENDING_BASE_OUTPUT = 'outputs/reproduction'
+$env:LENDING_V2_OUTPUT = 'outputs/research_reproduction'
+$env:LENDING_OPTIMIZATION_OUTPUT = 'outputs/optimization_reproduction'
+.\.venv\Scripts\python.exe -m optimization.experiments --stage prepare
+.\.venv\Scripts\python.exe -m optimization.experiments --stage all
+.\.venv\Scripts\python.exe -m optimization.analysis --stage all
+.\.venv\Scripts\python.exe -m optimization.notebook --output-dir outputs/optimization_reproduction
+```
+
+La reconstrucción fija evita depender de la trayectoria adaptativa de TPE. Repetir los experimentos no crea datos independientes. Los modelos, predicciones individuales y bases de estudio permanecen fuera de Git; los resultados agregados, parámetros, figuras y verificaciones sí se publican. El informe final continúa pendiente.
+<!-- v3-results-end -->
 
 ---
 

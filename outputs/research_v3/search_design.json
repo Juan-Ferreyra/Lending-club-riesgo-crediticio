@@ -1,0 +1,21 @@
+{
+  "protocol_sha256": "d211fdf8fd144f43f435c02053fed4ffbab0bf7694db83b062e2ec0cd881181f",
+  "dependencies_sha256": {
+    "optimization/data.py": "a7ac4265c39438f36f69b33c7a0620fcfc8649bfe8f9234bae105a8de57c8052",
+    "optimization/features.py": "ca9f84049c10d5e4ef9090eac847ff433ff96da386b1c4ce0e06b0c0fa420a03",
+    "optimization/models.py": "9cf5b84388c8b63b88be953e182b25d4cdf364eabd45cb76601262ea39051cb3",
+    "optimization/ensemble.py": "1d08e0a7124318dad73fb4fa9c29211352a6cd06878e57ceff9ffa495a2d127b"
+  },
+  "train_ids_sha256": "4b3429e3cebcbc79a8fda730d887f9f806577f09079bec67d26bb57d08f6951c",
+  "planned_trials": {
+    "lightgbm": 16,
+    "catboost": 6,
+    "xgboost": 12,
+    "logistic": 4,
+    "svm_linear": 4,
+    "svm_nystroem": 4
+  },
+  "benchmark_opened": false,
+  "started_utc": "2026-11-02T20:58:01.331786+00:00",
+  "runner_sha256_at_start": "fb548a1763b598e6ca7743e8cf729b58bd7f2c1c0f80dec2f3dd224137b88b52"
+}

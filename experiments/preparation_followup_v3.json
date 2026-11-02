@@ -1,0 +1,15 @@
+{
+  "role": "Adaptive development-only coverage repair, separate from the original46 HPO attempts.",
+  "reason": "All four executed trials for each linear/kernel family used native preparation; random sampling did not exercise log_clip. Testing a declared search option requires actual measurements rather than assuming coverage.",
+  "families": [
+    "logistic",
+    "svm_linear",
+    "svm_nystroem"
+  ],
+  "additional_CV_configurations": 3,
+  "control": "For each family retain the best completed original CV configuration, including features, start year, recency weights and estimator parameters. Change only preparation from native to log_clip; evaluate both identical earlier folds with the same60000/20000caps. No benchmark use.",
+  "promotion": "Promote the better mean-CV-AP option within each family to the existing Q3 candidate slot; retain both results. A failed supplemental fit remains recorded and cannot replace a valid candidate. No additional Q3 candidate slots or blend weights.",
+  "new_benchmark_predictions_opened": false,
+  "interpretation": "This adds adaptive development comparisons and does not restore independent evaluation. A difference measures the combined clipping/logarithmic preparation pipeline, not each mathematical operation separately.",
+  "registered_utc": "2026-11-02T22:00:44.681134+00:00"
+}

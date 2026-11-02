@@ -1,0 +1,88 @@
+[
+  {
+    "spec": {
+      "family": "logistic",
+      "params": {
+        "C": 2.273843986004399,
+        "class_weight": null
+      },
+      "feature_mode": "financial",
+      "preparation": "native",
+      "start": "2013-01-01",
+      "half_life": 12,
+      "seed": 42
+    },
+    "CV_AP": 0.21897735142238034,
+    "folds": [
+      {
+        "fold": 0,
+        "AP": 0.21371658713001843,
+        "ROC_AUC": 0.6672043008216192,
+        "train_n": 41124,
+        "validation_n": 20000,
+        "train_ids_sha256": "bf8032afad74adc085d25e27dcb3fbfd256f7ae495284ba02c363fbfd062d354",
+        "validation_ids_sha256": "5025bc85d9cc5f06c6f7298de69a35ddd2d0ef88e3aa0cfc9e5a7e4a23a853d3",
+        "best_iteration": null,
+        "features": 96,
+        "seconds": 7.46
+      },
+      {
+        "fold": 1,
+        "AP": 0.22423811571474223,
+        "ROC_AUC": 0.6673646672210849,
+        "train_n": 60000,
+        "validation_n": 20000,
+        "train_ids_sha256": "f5bcb614ae1b84726ee8a3f0d6397cc69b5a07a4e9ac9e7a896a1f935021dc46",
+        "validation_ids_sha256": "27e5aac14b3a95c715af10dbfdb5ad84dd100434258dafed4e1c5c76116561f5",
+        "best_iteration": null,
+        "features": 96,
+        "seconds": 9.81
+      }
+    ],
+    "prediction_label": "logistic_3",
+    "trial_number": 3
+  },
+  {
+    "spec": {
+      "family": "logistic",
+      "params": {
+        "C": 0.013901420350545918,
+        "class_weight": null
+      },
+      "feature_mode": "financial",
+      "preparation": "native",
+      "start": "2012-01-01",
+      "half_life": 12,
+      "seed": 42
+    },
+    "CV_AP": 0.21822868719614713,
+    "folds": [
+      {
+        "fold": 0,
+        "AP": 0.21234583726196848,
+        "ROC_AUC": 0.6693133947758888,
+        "train_n": 60000,
+        "validation_n": 20000,
+        "train_ids_sha256": "e04094ae1fdcd862d9927f4356b337f0a1933670cfbd795aaa1ec28eb24e81c7",
+        "validation_ids_sha256": "5025bc85d9cc5f06c6f7298de69a35ddd2d0ef88e3aa0cfc9e5a7e4a23a853d3",
+        "best_iteration": null,
+        "features": 96,
+        "seconds": 11.24
+      },
+      {
+        "fold": 1,
+        "AP": 0.2241115371303258,
+        "ROC_AUC": 0.665196292913631,
+        "train_n": 60000,
+        "validation_n": 20000,
+        "train_ids_sha256": "cdef2519bbfdb255a01532b6f66f0d7ca8e52996cbb3e3766527701ad74e365c",
+        "validation_ids_sha256": "27e5aac14b3a95c715af10dbfdb5ad84dd100434258dafed4e1c5c76116561f5",
+        "best_iteration": null,
+        "features": 96,
+        "seconds": 11.29
+      }
+    ],
+    "prediction_label": "logistic_2",
+    "trial_number": 2
+  }
+]

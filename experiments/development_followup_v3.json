@@ -1,0 +1,26 @@
+{
+  "registered_utc": "2026-11-02T21:17:35.621216+00:00",
+  "role": "Adaptive development-only extension; not part of the original search protocol and not an independent confirmation.",
+  "reason": "Development audit shows employer-like frequent emp_title values in 2012 and job-title-like values in 2014. Early CV context ablation reduced LightGBM AP by 0.0110 on average. This motivates, but does not prove, temporal heterogeneity of this feature group.",
+  "observed_before_extension": [
+    "V3 LightGBM ablations and joint search",
+    "V3 CatBoost baseline AP early-stopping trial",
+    "development context availability, top values and unseen-category rates"
+  ],
+  "new_benchmark_predictions_opened": false,
+  "controlled_models": [
+    {
+      "name": "catboost_context_control",
+      "feature_mode": "context"
+    },
+    {
+      "name": "catboost_combined_control",
+      "feature_mode": "combined"
+    }
+  ],
+  "control_rule": "Exact V2 CatBoost parameters, 1177 iterations, seed42, 36-month training since2012 throughJune2014, all215847rows, native preparation, no recency weights. Change only the declared feature group. Evaluate the same complete40595 Q3rows.",
+  "extra_blends": "For each of the two controls, blend with unchanged V2 Q3 CatBoost at V2 weights0.25,0.50,0.75. No additional fitting or weights learned from2015/16.",
+  "additional_candidates": 8,
+  "selection_rule_unchanged": "Highest raw AP on the identical Q3 development cohort; retain all prior candidates and all negative results.",
+  "interpretation": "Adaptive expansion increases development selection optimism. Preserve the negative early-CV evidence, report temporal heterogeneity, and freeze before new benchmark predictions. No further choice based on2015/16."
+}

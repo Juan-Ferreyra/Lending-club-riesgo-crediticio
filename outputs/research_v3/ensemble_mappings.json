@@ -1,0 +1,12 @@
+{
+  "svm_linear_joint": {
+    "slope": 1.9472335906562006,
+    "intercept": -1.9126311642511795,
+    "method": "positive_sigmoid"
+  },
+  "svm_nystroem_joint": {
+    "slope": 3.862490705230345,
+    "intercept": 0.8310310400957418,
+    "method": "positive_sigmoid"
+  }
+}

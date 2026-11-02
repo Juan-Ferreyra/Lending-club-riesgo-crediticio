@@ -1,0 +1,14 @@
+{
+  "2015": {
+    "n": 258856,
+    "ids_sha256": "833a99c655cc37127f11e3fe49d22c0ba6b283fcacb6d102d75bf32776351744",
+    "same_ids_targets_order_as_v2": true,
+    "reference_predictions_sha256": "9e40d86c34bdafff5e07b8854933d49213e25de08667f83e74c4bcd9c83dc921"
+  },
+  "2016": {
+    "n": 212482,
+    "ids_sha256": "3e51a123f828f87c3e3044603fb3101bc3cfe11ecbf0ed0e67c062164e882ac1",
+    "same_ids_targets_order_as_v2": true,
+    "reference_predictions_sha256": "68341a78ed008595a99dd445c7195f564d3afdec1340269e3547803439397704"
+  }
+}

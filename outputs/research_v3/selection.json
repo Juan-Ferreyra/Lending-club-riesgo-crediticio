@@ -1,0 +1,371 @@
+{
+  "selected": "catboost_combined_control",
+  "members": {
+    "catboost_combined_control": 1.0
+  },
+  "specs": {
+    "v2_catboost": {
+      "family": "catboost",
+      "params": {
+        "iterations": 1177,
+        "learning_rate": 0.02205578452420942,
+        "depth": 7,
+        "l2_leaf_reg": 54.12993362140874,
+        "random_strength": 1.9728817186293905,
+        "bagging_temperature": 0.6092275383467414,
+        "rsm": 0.6841852399022343,
+        "auto_class_weights": null
+      },
+      "feature_mode": "baseline",
+      "preparation": "native",
+      "start": "2012-01-01",
+      "half_life": 0,
+      "seed": 42,
+      "engine": "v2"
+    },
+    "catboost_context_control": {
+      "family": "catboost",
+      "params": {
+        "iterations": 1177,
+        "learning_rate": 0.02205578452420942,
+        "depth": 7,
+        "l2_leaf_reg": 54.12993362140874,
+        "random_strength": 1.9728817186293905,
+        "bagging_temperature": 0.6092275383467414,
+        "rsm": 0.6841852399022343,
+        "auto_class_weights": null
+      },
+      "feature_mode": "context",
+      "preparation": "native",
+      "start": "2012-01-01",
+      "half_life": 0,
+      "seed": 42
+    },
+    "catboost_combined_control": {
+      "family": "catboost",
+      "params": {
+        "iterations": 1177,
+        "learning_rate": 0.02205578452420942,
+        "depth": 7,
+        "l2_leaf_reg": 54.12993362140874,
+        "random_strength": 1.9728817186293905,
+        "bagging_temperature": 0.6092275383467414,
+        "rsm": 0.6841852399022343,
+        "auto_class_weights": null
+      },
+      "feature_mode": "combined",
+      "preparation": "native",
+      "start": "2012-01-01",
+      "half_life": 0,
+      "seed": 42
+    },
+    "lightgbm_joint": {
+      "family": "lightgbm",
+      "params": {
+        "n_estimators": 646,
+        "learning_rate": 0.02588968965098415,
+        "num_leaves": 15,
+        "min_child_samples": 273,
+        "reg_lambda": 2.462300726483128,
+        "reg_alpha": 0.0003745018823436387,
+        "colsample_bytree": 0.798070764044508,
+        "subsample": 0.6620359823903265,
+        "subsample_freq": 1,
+        "scale_pos_weight": 1.0
+      },
+      "feature_mode": "financial",
+      "preparation": "native",
+      "start": "2012-01-01",
+      "half_life": 12,
+      "seed": 42
+    },
+    "lightgbm_joint_runnerup": {
+      "family": "lightgbm",
+      "params": {
+        "n_estimators": 530,
+        "learning_rate": 0.02588968965098415,
+        "num_leaves": 15,
+        "min_child_samples": 273,
+        "reg_lambda": 2.462300726483128,
+        "reg_alpha": 0.0003745018823436387,
+        "colsample_bytree": 0.798070764044508,
+        "subsample": 0.6620359823903265,
+        "subsample_freq": 1,
+        "scale_pos_weight": 1.0
+      },
+      "feature_mode": "baseline",
+      "preparation": "native",
+      "start": "2012-01-01",
+      "half_life": 0,
+      "seed": 42
+    },
+    "catboost_joint": {
+      "family": "catboost",
+      "params": {
+        "iterations": 777,
+        "learning_rate": 0.02205578452420942,
+        "depth": 7,
+        "l2_leaf_reg": 54.12993362140874,
+        "random_strength": 1.9728817186293905,
+        "bagging_temperature": 0.6092275383467414,
+        "rsm": 0.6841852399022343,
+        "max_ctr_complexity": 1,
+        "auto_class_weights": null
+      },
+      "feature_mode": "baseline",
+      "preparation": "native",
+      "start": "2012-01-01",
+      "half_life": 0,
+      "seed": 42
+    },
+    "catboost_joint_runnerup": {
+      "family": "catboost",
+      "params": {
+        "iterations": 723,
+        "learning_rate": 0.02205578452420942,
+        "depth": 7,
+        "l2_leaf_reg": 54.12993362140874,
+        "random_strength": 1.9728817186293905,
+        "bagging_temperature": 0.6092275383467414,
+        "rsm": 0.6841852399022343,
+        "max_ctr_complexity": 1,
+        "auto_class_weights": null
+      },
+      "feature_mode": "financial",
+      "preparation": "native",
+      "start": "2012-01-01",
+      "half_life": 12,
+      "seed": 42
+    },
+    "xgboost_joint": {
+      "family": "xgboost",
+      "params": {
+        "n_estimators": 634,
+        "learning_rate": 0.04676664740057031,
+        "max_depth": 3,
+        "min_child_weight": 6.345356893234593,
+        "reg_lambda": 7.400833087122808,
+        "reg_alpha": 2.6202105294222906,
+        "gamma": 0.7056336440801878,
+        "subsample": 0.701271216187201,
+        "colsample_bytree": 0.6780273291927688,
+        "scale_pos_weight": 2.0
+      },
+      "feature_mode": "baseline",
+      "preparation": "native",
+      "start": "2012-01-01",
+      "half_life": 0,
+      "seed": 42
+    },
+    "logistic_joint": {
+      "family": "logistic",
+      "params": {
+        "C": 2.273843986004399,
+        "class_weight": null
+      },
+      "feature_mode": "financial",
+      "preparation": "log_clip",
+      "start": "2013-01-01",
+      "half_life": 12,
+      "seed": 42
+    },
+    "svm_linear_joint": {
+      "family": "svm_linear",
+      "params": {
+        "C": 0.0030605882806936423,
+        "class_weight": "balanced"
+      },
+      "feature_mode": "financial",
+      "preparation": "log_clip",
+      "start": "2012-01-01",
+      "half_life": 12,
+      "seed": 42
+    },
+    "svm_nystroem_joint": {
+      "family": "svm_nystroem",
+      "params": {
+        "C": 2.273843986004399,
+        "class_weight": null,
+        "gamma": 0.0006438036013348905,
+        "n_components": 600
+      },
+      "feature_mode": "financial",
+      "preparation": "log_clip",
+      "start": "2013-01-01",
+      "half_life": 12,
+      "seed": 42
+    },
+    "lightgbm_feature_control": {
+      "family": "lightgbm",
+      "params": {
+        "n_estimators": 530,
+        "learning_rate": 0.02588968965098415,
+        "num_leaves": 15,
+        "min_child_samples": 273,
+        "reg_lambda": 2.462300726483128,
+        "reg_alpha": 0.0003745018823436387,
+        "colsample_bytree": 0.798070764044508,
+        "subsample": 0.6620359823903265,
+        "subsample_freq": 1,
+        "scale_pos_weight": 1.0
+      },
+      "feature_mode": "financial",
+      "preparation": "native",
+      "start": "2012-01-01",
+      "half_life": 0,
+      "seed": 42
+    },
+    "catboost_seed2026": {
+      "family": "catboost",
+      "params": {
+        "iterations": 777,
+        "learning_rate": 0.02205578452420942,
+        "depth": 7,
+        "l2_leaf_reg": 54.12993362140874,
+        "random_strength": 1.9728817186293905,
+        "bagging_temperature": 0.6092275383467414,
+        "rsm": 0.6841852399022343,
+        "max_ctr_complexity": 1,
+        "auto_class_weights": null
+      },
+      "feature_mode": "baseline",
+      "preparation": "native",
+      "start": "2012-01-01",
+      "half_life": 0,
+      "seed": 2026
+    }
+  },
+  "family_best": {
+    "lightgbm": "lightgbm_joint",
+    "catboost": "catboost_joint",
+    "xgboost": "xgboost_joint",
+    "logistic": "logistic_joint",
+    "svm_linear": "svm_linear_joint",
+    "svm_nystroem": "svm_nystroem_joint"
+  },
+  "finalists": [
+    "catboost_combined_control",
+    "catboost_joint",
+    "lightgbm_joint",
+    "logistic_joint",
+    "svm_linear_joint",
+    "svm_nystroem_joint",
+    "v2_catboost",
+    "xgboost_joint"
+  ],
+  "ensembles": {
+    "blend_v2_lightgbm_joint_25": {
+      "v2_catboost": 0.25,
+      "lightgbm_joint": 0.75
+    },
+    "blend_v2_lightgbm_joint_50": {
+      "v2_catboost": 0.5,
+      "lightgbm_joint": 0.5
+    },
+    "blend_v2_lightgbm_joint_75": {
+      "v2_catboost": 0.75,
+      "lightgbm_joint": 0.25
+    },
+    "blend_v2_catboost_joint_25": {
+      "v2_catboost": 0.25,
+      "catboost_joint": 0.75
+    },
+    "blend_v2_catboost_joint_50": {
+      "v2_catboost": 0.5,
+      "catboost_joint": 0.5
+    },
+    "blend_v2_catboost_joint_75": {
+      "v2_catboost": 0.75,
+      "catboost_joint": 0.25
+    },
+    "blend_v2_xgboost_joint_25": {
+      "v2_catboost": 0.25,
+      "xgboost_joint": 0.75
+    },
+    "blend_v2_xgboost_joint_50": {
+      "v2_catboost": 0.5,
+      "xgboost_joint": 0.5
+    },
+    "blend_v2_xgboost_joint_75": {
+      "v2_catboost": 0.75,
+      "xgboost_joint": 0.25
+    },
+    "blend_v2_logistic_joint_25": {
+      "v2_catboost": 0.25,
+      "logistic_joint": 0.75
+    },
+    "blend_v2_logistic_joint_50": {
+      "v2_catboost": 0.5,
+      "logistic_joint": 0.5
+    },
+    "blend_v2_logistic_joint_75": {
+      "v2_catboost": 0.75,
+      "logistic_joint": 0.25
+    },
+    "blend_v2_svm_linear_joint_25": {
+      "v2_catboost": 0.25,
+      "svm_linear_joint": 0.75
+    },
+    "blend_v2_svm_linear_joint_50": {
+      "v2_catboost": 0.5,
+      "svm_linear_joint": 0.5
+    },
+    "blend_v2_svm_linear_joint_75": {
+      "v2_catboost": 0.75,
+      "svm_linear_joint": 0.25
+    },
+    "blend_v2_svm_nystroem_joint_25": {
+      "v2_catboost": 0.25,
+      "svm_nystroem_joint": 0.75
+    },
+    "blend_v2_svm_nystroem_joint_50": {
+      "v2_catboost": 0.5,
+      "svm_nystroem_joint": 0.5
+    },
+    "blend_v2_svm_nystroem_joint_75": {
+      "v2_catboost": 0.75,
+      "svm_nystroem_joint": 0.25
+    },
+    "blend_v2_catboost_context_control_25": {
+      "v2_catboost": 0.25,
+      "catboost_context_control": 0.75
+    },
+    "blend_v2_catboost_context_control_50": {
+      "v2_catboost": 0.5,
+      "catboost_context_control": 0.5
+    },
+    "blend_v2_catboost_context_control_75": {
+      "v2_catboost": 0.75,
+      "catboost_context_control": 0.25
+    },
+    "blend_v2_catboost_combined_control_25": {
+      "v2_catboost": 0.25,
+      "catboost_combined_control": 0.75
+    },
+    "blend_v2_catboost_combined_control_50": {
+      "v2_catboost": 0.5,
+      "catboost_combined_control": 0.5
+    },
+    "blend_v2_catboost_combined_control_75": {
+      "v2_catboost": 0.75,
+      "catboost_combined_control": 0.25
+    },
+    "catboost_two_seeds": {
+      "catboost_joint": 0.5,
+      "catboost_seed2026": 0.5
+    },
+    "three_tree_families": {
+      "catboost_joint": 0.3333333333333333,
+      "lightgbm_joint": 0.3333333333333333,
+      "xgboost_joint": 0.3333333333333333
+    }
+  },
+  "selection_AP": 0.256478783546773,
+  "selected_utc": "2026-11-02T22:45:26.659276+00:00",
+  "protocol_sha256": "d211fdf8fd144f43f435c02053fed4ffbab0bf7694db83b062e2ec0cd881181f",
+  "previous_benchmark_results_known": true,
+  "development_followup_sha256": "9383425c69bb8ec20e6fcb38e89bafe91b13444d5ea610c8901d243ee69dee25",
+  "preparation_followup_sha256": "b48a6d8e93889b845b4664f8b7bc4417a6418446148756d3da5289bedec1679d",
+  "additional_development_candidates": 8,
+  "new_benchmark_predictions_opened": false
+}

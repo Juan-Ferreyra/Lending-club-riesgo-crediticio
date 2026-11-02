@@ -1,0 +1,47 @@
+{
+  "2015_36_vs_v2_frozen": {
+    "row": {
+      "AP": {
+        "low": 0.27601309620243997,
+        "high": 0.28460658184449944
+      },
+      "ROC_AUC": {
+        "low": 0.6953472934178042,
+        "high": 0.7012179643346642
+      },
+      "Brier": {
+        "low": 0.1175496610410041,
+        "high": 0.11919217794046984
+      },
+      "paired_AP_delta_vs_baseline": {
+        "low": 0.0039218549255211664,
+        "high": 0.006109315534660473
+      },
+      "repetitions": 300
+    },
+    "issue_month_block": {
+      "AP": {
+        "low": 0.27315759194803485,
+        "high": 0.2866060327669278
+      },
+      "ROC_AUC": {
+        "low": 0.6952369749666422,
+        "high": 0.7004894620351296
+      },
+      "Brier": {
+        "low": 0.11665727037561952,
+        "high": 0.12010305591742755
+      },
+      "paired_AP_delta_vs_baseline": {
+        "low": 0.0037668508027215316,
+        "high": 0.006188129320335687
+      },
+      "repetitions": 300
+    },
+    "selected": "catboost_combined_control",
+    "point_delta_AP": 0.004941070901408273,
+    "raw_AP_primary": true,
+    "calibration_AP_preserved": true,
+    "interpretation": "Conditional paired sampling uncertainty on a reused benchmark; does not restore independence."
+  }
+}
