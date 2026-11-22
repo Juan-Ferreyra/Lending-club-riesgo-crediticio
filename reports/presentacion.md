@@ -30,7 +30,7 @@ Machine Learning, entrega final
 - **Control de leakage:** lista blanca de 82 variables de originación; se excluyen pagos, recuperaciones, FICO posterior y la nota/tasa de Lending Club.
 - 29 pruebas automáticas, incluida la de etiquetas barajadas.
 
-![w:520](figures/05_eda_panel.png)
+![w:360](figures/05_eda_panel.png)
 
 ---
 
@@ -69,7 +69,7 @@ Machine Learning, entrega final
 
 ## 6. El hallazgo: el límite está en la información
 
-![w:620](figures/08_familias_2015_36m.png)
+![w:420](figures/08_familias_2015_36m.png)
 
 - Las familias empatan; los hiperparámetros aportan +0,002 a +0,003.
 - Más filas: rendimientos decrecientes. La nota de LC solo suma +0,004.
