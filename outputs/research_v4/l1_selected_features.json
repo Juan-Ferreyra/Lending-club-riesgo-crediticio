@@ -1,0 +1,192 @@
+{
+  "l1_coefficients": [
+    {
+      "feature": "purpose_credit_card",
+      "coef": -0.29221417305699304
+    },
+    {
+      "feature": "term_36 months",
+      "coef": -0.2736967895479351
+    },
+    {
+      "feature": "application_type_Individual",
+      "coef": -0.2736967895479351
+    },
+    {
+      "feature": "home_ownership_MORTGAGE",
+      "coef": -0.15418083898859078
+    },
+    {
+      "feature": "acc_open_past_24mths",
+      "coef": 0.14376174578147935
+    },
+    {
+      "feature": "purpose_debt_consolidation",
+      "coef": -0.11129293082563053
+    },
+    {
+      "feature": "log1p_revol_bal",
+      "coef": -0.11032878248451267
+    },
+    {
+      "feature": "dti",
+      "coef": 0.10898365615931933
+    },
+    {
+      "feature": "inq_last_6mths",
+      "coef": 0.10372113611466009
+    },
+    {
+      "feature": "loan_to_income",
+      "coef": 0.09514853443135175
+    },
+    {
+      "feature": "loan_to_monthly_income",
+      "coef": 0.09514853443134969
+    },
+    {
+      "feature": "percent_bc_gt_75",
+      "coef": 0.09383191456936175
+    },
+    {
+      "feature": "total_acc",
+      "coef": -0.08874185091844095
+    },
+    {
+      "feature": "fico_range_high",
+      "coef": -0.08854509884867717
+    },
+    {
+      "feature": "fico_midpoint",
+      "coef": -0.08854124633331593
+    },
+    {
+      "feature": "fico_range_low",
+      "coef": -0.08853736578491055
+    },
+    {
+      "feature": "num_tl_op_past_12m",
+      "coef": 0.0874821283504317
+    },
+    {
+      "feature": "mths_since_recent_bc",
+      "coef": -0.06366995994011206
+    },
+    {
+      "feature": "pct_tl_nvr_dlq",
+      "coef": 0.05593189381039345
+    },
+    {
+      "feature": "delinq_2yrs",
+      "coef": 0.053615935955141227
+    },
+    {
+      "feature": "total_bc_limit",
+      "coef": -0.05345317518860647
+    },
+    {
+      "feature": "missingindicator_employment_years",
+      "coef": 0.050661603399973304
+    },
+    {
+      "feature": "verification_status_Not Verified",
+      "coef": -0.048586152074252174
+    },
+    {
+      "feature": "num_rev_tl_bal_gt_0",
+      "coef": 0.040069978513296904
+    },
+    {
+      "feature": "revol_util",
+      "coef": 0.03151282047079519
+    },
+    {
+      "feature": "log1p_annual_inc",
+      "coef": -0.03138652395659645
+    },
+    {
+      "feature": "num_il_tl",
+      "coef": -0.029573083633107507
+    },
+    {
+      "feature": "missingindicator_mo_sin_old_il_acct",
+      "coef": 0.02592413150352333
+    },
+    {
+      "feature": "missingindicator_mths_since_recent_inq",
+      "coef": -0.022673794017541635
+    },
+    {
+      "feature": "log1p_tot_cur_bal",
+      "coef": -0.016443244785474487
+    },
+    {
+      "feature": "mo_sin_old_rev_tl_op",
+      "coef": -0.01638007445306881
+    },
+    {
+      "feature": "log1p_tot_coll_amt",
+      "coef": -0.015126782904263374
+    },
+    {
+      "feature": "mort_acc",
+      "coef": -0.014842922699142277
+    },
+    {
+      "feature": "tot_hi_cred_lim",
+      "coef": -0.01481747042821601
+    },
+    {
+      "feature": "mths_since_last_record",
+      "coef": 0.01441472567703635
+    },
+    {
+      "feature": "revolving_debt_to_income",
+      "coef": 0.014017237874852474
+    },
+    {
+      "feature": "mo_sin_rcnt_tl",
+      "coef": -0.013565829586488134
+    },
+    {
+      "feature": "mths_since_recent_inq",
+      "coef": -0.013538130799892266
+    },
+    {
+      "feature": "open_to_total_accounts",
+      "coef": 0.011040996935308175
+    },
+    {
+      "feature": "pub_rec_bankruptcies",
+      "coef": -0.008632162601189042
+    },
+    {
+      "feature": "missingindicator_bc_util",
+      "coef": 0.006356584437390039
+    },
+    {
+      "feature": "num_tl_30dpd",
+      "coef": 0.004516181017813
+    },
+    {
+      "feature": "tot_cur_bal",
+      "coef": -0.003929138452590846
+    },
+    {
+      "feature": "mths_since_last_delinq",
+      "coef": -0.0035036523605120116
+    },
+    {
+      "feature": "revolving_balance_to_limit",
+      "coef": 0.0029569188672882037
+    },
+    {
+      "feature": "missingindicator_revol_util",
+      "coef": 0.001061736055732533
+    },
+    {
+      "feature": "mths_since_last_major_derog",
+      "coef": 0.0009731706240206378
+    }
+  ]
+}

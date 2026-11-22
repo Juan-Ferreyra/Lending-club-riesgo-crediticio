@@ -1,0 +1,18 @@
+datos: train=256442 valid=50020 feats=96 (39s)
+  lightgbm_referencia: AP=0.2641 AUC=0.6896 (7s)
+  lightgbm_sin_geografia: AP=0.2635 AUC=0.6888 (7s)
+  hist_gradient_boosting: FALLÓ ValueError('window shape cannot be larger than input array shape')
+  logistica_l2: AP=0.2502 AUC=0.6793 (9s)
+  logistica_l1: AP=0.2481 AUC=0.6742 (33s)
+  logistica_cuantiles: AP=0.2492 AUC=0.6754 (47s)
+  pca_logistica: AP=0.2444 AUC=0.6724 (4s)
+  naive_bayes: AP=0.1976 AUC=0.6191 (7s)
+  arbol_decision: AP=0.2115 AUC=0.6326 (6s)
+  extra_trees: AP=0.2428 AUC=0.6692 (31s)
+  mlp: AP=0.2506 AUC=0.6767 (15s)
+  curva n=15000: AP=0.2262
+  curva n=30000: AP=0.2445
+  curva n=60000: AP=0.2475
+  curva n=120000: AP=0.2574
+  curva n=256442: AP=0.2641
+FIN 256 s
