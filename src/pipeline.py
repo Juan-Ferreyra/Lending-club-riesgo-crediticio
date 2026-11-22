@@ -40,8 +40,8 @@ def run_sample(output: Path, threads: int):
     from src.models import LoanModel
     from src.utils import write_json, utc_now
 
-    if (output / "final_test.json").exists():
-        raise SystemExit(f"{output} ya contiene una evaluación final; usa otro --output.")
+    # La demo con la muestra puede sobrescribir su salida; el modo full conserva su guarda
+    # (scripts/run_experiments.py rechaza un directorio que ya tiene una evaluación externa).
     output.mkdir(parents=True, exist_ok=True)
     np.random.seed(SEED)
     t0 = time.time()
