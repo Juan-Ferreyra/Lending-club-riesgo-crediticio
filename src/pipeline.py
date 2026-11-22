@@ -40,8 +40,8 @@ def run_sample(output: Path, threads: int):
     from src.models import LoanModel
     from src.utils import write_json, utc_now
 
-    # La demo con la muestra puede sobrescribir su salida; el modo full conserva su guarda
-    # (scripts/run_experiments.py rechaza un directorio que ya tiene una evaluación externa).
+    # La demo sobrescribe su salida en cada ejecución. El modo full no pasa por aquí:
+    # scripts/run_experiments.py rechaza un directorio que ya tiene una evaluación externa.
     output.mkdir(parents=True, exist_ok=True)
     np.random.seed(SEED)
     t0 = time.time()
