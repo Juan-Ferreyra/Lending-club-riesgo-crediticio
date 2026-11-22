@@ -7,7 +7,7 @@
 
 ## Fase experimental de la entrega final
 
-El repositorio incorpora una fase de investigación y experimentos posterior al avance inicial. Incluye comparación temporal de regresión logística, Random Forest, LightGBM, XGBoost y CatBoost; búsqueda de hiperparámetros; calibración; evaluación congelada; errores por segmentos e interpretación. El informe final y la presentación se elaborarán después.
+El repositorio incorpora una fase de investigación y experimentos posterior al avance inicial. Incluye comparación temporal de regresión logística, Random Forest, LightGBM, XGBoost y CatBoost; búsqueda de hiperparámetros; calibración; evaluación congelada; errores por segmentos e interpretación. El informe final se elaborará después.
 
 - `experiments/protocol.json`: fechas, objetivo, métricas, presupuesto y reglas fijadas antes de evaluar.
 - `experiments/research_notes.md`: artículos consultados y decisiones técnicas.

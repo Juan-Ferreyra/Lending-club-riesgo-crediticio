@@ -1,6 +1,6 @@
 # Bitácora técnica de investigación
 
-Estas notas sustentan los experimentos. El informe académico y la presentación quedan para una etapa posterior. El protocolo ejecutable está en `experiments/protocol.json`; sus hashes se conservan con los datos preparados y con la selección congelada.
+Estas notas sustentan los experimentos. El informe académico queda para una etapa posterior. El protocolo ejecutable está en `experiments/protocol.json`; sus hashes se conservan con los datos preparados y con la selección congelada.
 
 ## Fuentes primarias y decisiones
 

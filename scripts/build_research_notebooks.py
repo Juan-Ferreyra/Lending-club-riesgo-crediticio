@@ -22,7 +22,7 @@ def image(name):
 
 def build(root, output):
     common = code("from pathlib import Path\nimport json\nimport pandas as pd\nfrom IPython.display import display, Image\nROOT = Path.cwd()\nif ROOT.name == 'notebooks':\n    ROOT = ROOT.parent\nOUT = ROOT / "+repr(output)+"\npd.set_option('display.max_columns', 15)\npd.set_option('display.max_rows', 30)\nprotocol = json.loads((ROOT/'experiments'/'protocol.json').read_text(encoding='utf-8'))")
-    intro = "Estos notebooks documentan experimentos ejecutados y leen sus artefactos. El entrenamiento completo se reproduce con `scripts/run_experiments.py`; las celdas de revisión no ajustan modelos ni cambian la selección. El informe final y la presentación corresponden a una etapa posterior."
+    intro = "Estos notebooks documentan experimentos ejecutados y leen sus artefactos. El entrenamiento completo se reproduce con `scripts/run_experiments.py`; las celdas de revisión no ajustan modelos ni cambian la selección. El informe final corresponde a una etapa posterior."
     limitations = "**Alcance de la evaluación:** clasificación retrospectiva de `Charged Off` frente a `Fully Paid` entre préstamos aceptados con resultado registrado. El split es por fecha de emisión, con IDs externos a la muestra inicial en 2015 y 2016. El snapshot no reconstruye todas las fechas históricas de disponibilidad de las etiquetas. Deben leerse la censura y los plazos junto a las métricas."
     datasets = [
         ("02_limpieza_features.ipynb", [
