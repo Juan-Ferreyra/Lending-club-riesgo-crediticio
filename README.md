@@ -22,7 +22,7 @@ La mejora de V1 sobre el baseline es de +0,0274 AP, con IC95 pareado [+0,0252; +
 
 ```
 data/          muestra de 115.000 préstamos (incluida) y README del dataset
-notebooks/     01 exploración · 02 limpieza · 03 modelos · 04 errores · 05 explicación · 06 diagnóstico/SVM · 07 optimización V3
+notebooks/     01 exploración · 02 limpieza · 03 modelos · 04 errores · 05 explicación · 06 diagnóstico/SVM · 07 optimización V3 · 08 técnicas del curso (V4)
 src/           código principal (datos, variables, modelos, evaluación, entrenamiento) y src/pipeline.py
 research/      módulos de la fase V2 · optimization/ módulos de la fase V3 · fase4/ técnicas del curso (V4)
 experiments/   protocolos fijados antes de evaluar (protocol*.json) y bitácoras
@@ -31,7 +31,7 @@ reports/       informe final, presentación y figures/
 tests/         29 pruebas de integridad, leakage y protocolo
 ```
 
-Los notebooks 02 a 07 **leen artefactos ya generados** y no entrenan modelos. El código de V1 a V3 está congelado con hashes SHA-256: no se edita, solo se agregan archivos nuevos.
+Los notebooks 02 a 08 **leen artefactos ya generados** y no entrenan modelos. El código de V1 a V3 está congelado con hashes SHA-256: no se edita, solo se agregan archivos nuevos.
 
 ## Instalación
 

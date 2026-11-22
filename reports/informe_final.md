@@ -209,6 +209,7 @@ Resultados en `outputs/research_v4/leaderboard_q4.csv`, `paired_vs_reference.jso
 - **Quitar la geografía no cuesta nada.** El IC95 incluye el 0, y las tasas de detección (TPR) y de falsos positivos (FPR) por segmento cambian menos de 0,02 al revisar el 20% de mayor riesgo.
 - **La disparidad viene del ingreso, no de la geografía.** El FPR del quintil de ingreso más bajo es del 36,5%, frente a 5,1% en el más alto, con y sin `addr_state`. Ver §13.
 - **Curva de aprendizaje** (`learning_curve.csv`): AP 0,226 (15.000 filas) → 0,245 (30.000) → 0,248 (60.000) → 0,257 (120.000) → 0,264 (256.442). Los rendimientos son decrecientes, unas +0,007 por cada duplicación al final, pero no nulos. No hay más filas maduras del mismo período para seguir creciendo.
+- **Sesgo y varianza en la misma curva.** El AP sobre las filas de entrenamiento cae de 0,94 a 0,36 mientras el de selección sube. Con pocas filas el modelo sobreajusta, porque domina la varianza. Con todas, la brecha se reduce a unas 0,10 y lo que queda es sobre todo el sesgo y el ruido irreducible. Detalle en el notebook 08.
 
 ![Curva de aprendizaje](figures/08_curva_aprendizaje.png)
 
