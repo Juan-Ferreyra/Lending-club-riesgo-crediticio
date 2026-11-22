@@ -5,6 +5,7 @@
 Se estima la probabilidad de que un préstamo personal aceptado por Lending Club termine en `Charged Off` (1) en lugar de `Fully Paid` (0). Solo se usa información disponible al originar el préstamo. La métrica principal es la **Average Precision (AP)**, adecuada para clases desbalanceadas. Las métricas secundarias son ROC-AUC, Brier y recall al revisar el 20% de mayor riesgo.
 
 - **Informe final:** [reports/informe_final.md](reports/informe_final.md) · [PDF](reports/informe_final.pdf)
+- **Presentación breve:** [reports/presentacion.md](reports/presentacion.md) · [PDF](reports/presentacion.pdf)
 - **Historial completo de las fases** (avance S1, V1, V2, V3): [docs/historial_de_fases.md](docs/historial_de_fases.md)
 
 ## Resultados principales
