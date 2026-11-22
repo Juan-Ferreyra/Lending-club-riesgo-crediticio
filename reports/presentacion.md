@@ -30,7 +30,7 @@ Machine Learning, entrega final
 - **Control de leakage:** lista blanca de 82 variables de originación; se excluyen pagos, recuperaciones, FICO posterior y la nota/tasa de Lending Club.
 - 29 pruebas automáticas, incluida la de etiquetas barajadas.
 
-![w:360](figures/05_eda_panel.png)
+![bg right:34% fit](figures/05_eda_panel.png)
 
 ---
 
