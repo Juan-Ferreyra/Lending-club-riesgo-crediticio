@@ -62,7 +62,7 @@ Machine Learning, entrega final
 | **Ensamble CatBoost + LightGBM** | **0,416** | **0,733** |
 
 - Mejora **+0,027 AP**, IC95 [+0,025; +0,030].
-- Revisando el 20% de mayor riesgo: precisión 44%, recall 40%.
+- Al marcar ≈18% (umbral de capacidad): precisión 44%, recall 40%.
 - Modelo recomendado a 36 meses (CatBoost V3): AP 0,280 frente a 0,272 del ensamble V1, sobre un benchmark reutilizado.
 
 ---
@@ -91,7 +91,8 @@ Machine Learning, entrega final
 - Falsos positivos concentrados en **ingreso < 40k (FPR 46%)**, FICO 640–680 (42%) y 60 meses (72%).
 - Falsos negativos en FICO ≥ 760: solo detecta el 20%.
 - Calibración: subestima el riesgo cuando la prevalencia sube (2016: 18,0% predicho, 23,3% observado).
-- Quitar `addr_state` cuesta solo −0,0006 AP: **recomendamos retirar la geografía** (proxy de redlining).
+- Quitar `addr_state` cuesta solo −0,0006 AP (LightGBM, Fase 4): **recomendamos retirar la geografía** en producción (proxy de redlining).
+- El modelo V3 recomendado incluye prefijo de código postal y título del empleo (aporte ≈ 0); retirarlos no se midió.
 - Solo préstamos aceptados (sesgo de selección) y sin atributos protegidos: no se puede certificar equidad.
 
 ---

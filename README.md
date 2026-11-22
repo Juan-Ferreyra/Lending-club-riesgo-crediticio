@@ -4,8 +4,8 @@
 
 Se estima la probabilidad de que un préstamo personal aceptado por Lending Club termine en `Charged Off` (1) en lugar de `Fully Paid` (0). Solo se usa información disponible al originar el préstamo. La métrica principal es la **Average Precision (AP)**, adecuada para clases desbalanceadas. Las métricas secundarias son ROC-AUC, Brier y recall al revisar el 20% de mayor riesgo.
 
-- **Informe final:** [reports/informe_final.md](reports/informe_final.md)
-- **Presentación:** [reports/presentacion.md](reports/presentacion.md)
+- **Informe final:** [reports/informe_final.md](reports/informe_final.md) · [PDF](reports/informe_final.pdf)
+- **Presentación:** [reports/presentacion.md](reports/presentacion.md) · [PDF](reports/presentacion.pdf)
 - **Historial completo de las fases** (avance S1, V1, V2, V3): [docs/historial_de_fases.md](docs/historial_de_fases.md)
 
 ## Resultados principales
@@ -35,7 +35,7 @@ Los notebooks 02 a 08 **leen artefactos ya generados** y no entrenan modelos. El
 
 ## Instalación
 
-Se requiere Python 3.12 o superior (probado con 3.12 en Windows y 3.13 en Linux).
+Se requiere Python 3.12 o superior (probado con 3.12 en Windows).
 
 ```bash
 python -m venv .venv
@@ -50,7 +50,7 @@ python -m unittest discover -s tests # 29 pruebas, segundos
 python -m src.pipeline --mode sample
 ```
 
-Usa solo la muestra incluida. Entrena con préstamos hasta 2013, selecciona en 2014 entre regresión logística, LightGBM y CatBoost, y evalúa una sola vez en 2015. Guarda los resultados en `outputs/sample_demo/`. **Es una demostración:** con unas 20.000 filas de entrenamiento sus cifras son ruidosas y no reproducen las del archivo completo.
+Usa solo la muestra incluida. Entrena con préstamos hasta 2013, selecciona en 2014 entre regresión logística, LightGBM y CatBoost, y evalúa una sola vez en 2015. Guarda los resultados en `outputs/sample_demo/` y sobrescribe los que ya existan. **Es una demostración:** con unas 20.000 filas de entrenamiento sus cifras son ruidosas y no reproducen las del archivo completo.
 
 ## Reproducción completa (horas de CPU)
 
@@ -70,7 +70,7 @@ python scripts/build_reports.py
 
 La Fase 4 también puede ejecutarse por separado (unos 15 minutos y no abre 2015/2016): `python -m fase4.experiment --output outputs/research_v4`.
 
-Todas las semillas son 42. Una salida que ya contiene una evaluación final no puede reutilizarse para ajustar modelos: hay que usar un directorio nuevo.
+Todas las semillas son 42. En el modo `full`, una salida que ya contiene una evaluación final no puede reutilizarse para ajustar modelos: hay que usar un directorio nuevo.
 
 ## Datos
 

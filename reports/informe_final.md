@@ -18,8 +18,8 @@ Repositorio: este proyecto. Las cifras provienen de archivos versionados en `out
 **Resultados.**
 
 - **Prueba confirmatoria (V1, nunca reutilizada para decidir).** En 343.507 préstamos de 2015, un ensamble de 60% CatBoost y 40% LightGBM logra **AP 0,4164**, frente a 0,3890 de una regresión logística baseline reentrenada con los mismos datos. La mejora pareada es **+0,0274 (IC95 [+0,0252; +0,0296])** y el ROC-AUC es 0,733.
-- **Modelo recomendado (V3, a 36 meses).** Un CatBoost con variables financieras adicionales y entrenamiento ampliado alcanza **AP 0,2801** en 258.856 préstamos de 2015 a 36 meses, frente a 0,2718 del ensamble V1 en las mismas filas. Ese benchmark ya se había observado, así que esta cifra se presenta como evidencia secundaria y no como una prueba independiente.
-- **Hallazgo central.** Se probaron 16 familias o estrategias, entre ellas logística, árboles, bosques, cuatro implementaciones de boosting, tres variantes de SVM, Naive Bayes, red neuronal y ensambles. Todas quedan en un rango estrecho: en 2015 a 36 meses, los modelos ajustados de V1 a V3 van de AP 0,252 (Random Forest) a 0,280 (CatBoost V3), y 11 de los 17 resultados de la figura 8.1 están entre 0,271 y 0,280. Ni la búsqueda de hiperparámetros, ni más filas, ni la calificación de la propia plataforma mueven el resultado más de unas milésimas. **El límite está en la información disponible al originar el préstamo, no en el algoritmo.**
+- **Modelo recomendado (V3, a 36 meses).** Un CatBoost con variables financieras adicionales y entrenamiento ampliado alcanza **AP 0,2801** en 258.856 préstamos de 2015 a 36 meses, frente a 0,2718 del ensamble V1 en las mismas filas. Ese benchmark ya se había observado, así que esta cifra se presenta como evidencia secundaria y no como una prueba independiente. Este modelo incluye como contexto el prefijo de tres dígitos del código postal y el título del empleo (`feature_mode: combined`); su aporte medido fue ≈0 (§11). La recomendación de retirar la geografía (§13) es para una versión de producción cuyo efecto no se midió.
+- **Hallazgo central.** Se compararon familias y estrategias muy distintas, entre ellas logística, árboles, bosques, cuatro implementaciones de boosting, tres variantes de SVM, Naive Bayes, red neuronal y ensambles. Todas quedan en un rango estrecho: en 2015 a 36 meses, los modelos ajustados de V1 a V3 van de AP 0,252 (Random Forest) a 0,280 (CatBoost V3), y 11 de los 16 modelos de la figura 8.1 (el baseline incluido; el ensamble V1, que aparece dos veces, se cuenta una) están entre 0,271 y 0,280. Ni la búsqueda de hiperparámetros, ni más filas, ni la calificación de la propia plataforma mueven el resultado más de unas milésimas. **El límite está en la información disponible al originar el préstamo, no en el algoritmo.**
 
 **Uso responsable.** El modelo sirve para priorizar la revisión, por ejemplo del 20% de mayor riesgo, donde captura alrededor del 39% de los incumplimientos a 36 meses. No sirve para aprobar o rechazar solicitudes de forma automática. Sus diferencias entre segmentos se discuten en §12 y §13.
 
@@ -27,7 +27,7 @@ Repositorio: este proyecto. Las cifras provienen de archivos versionados en `out
 
 ## 2. Descripción del problema
 
-En el préstamo entre personas, el prestamista asume la pérdida si el prestatario deja de pagar. Ordenar bien las solicitudes por riesgo permite revisar con más cuidado las de riesgo alto, fijar límites de exposición y fijar un precio coherente con el riesgo.
+En el préstamo entre personas, el prestamista asume la pérdida si el prestatario deja de pagar. Ordenar bien las solicitudes por riesgo permite revisar con más cuidado las de riesgo alto, establecer límites de exposición y fijar un precio coherente con el riesgo.
 
 - **Pregunta predictiva:** ¿cuál es la probabilidad de que un préstamo personal aceptado termine en incumplimiento, usando las características del solicitante, del préstamo y de su historial crediticio registradas antes del otorgamiento?
 - **Variable objetivo:** `1 = Charged Off` y `0 = Fully Paid`. Los préstamos vigentes, atrasados o en otros estados no se convierten en negativos: se excluyen, y su cobertura se reporta en §3.
@@ -176,9 +176,9 @@ Con las mismas 12.000 filas para todas las familias, la mejor SVM (Nyström, 0,2
 
 - Préstamos a 36 meses.
 - Entrenamiento desde 2012-01 hasta 2014-09, con 256.442 préstamos.
-- Selección y diagnóstico en Q4 2014, con 50.020 préstamos y prevalencia del 13,6%.
+- Selección y diagnóstico en Q4 2014, con 50.020 préstamos y prevalencia del 14,5%.
 - **No se abrió 2015 ni 2016.**
-- Mismas 96 variables (`FeatureBuilder`) y mismas filas para todos los candidatos.
+- Mismas 96 variables (`FeatureBuilder`) y mismas filas de selección para todos los candidatos; L1 y ExtraTrees se entrenaron con 60.000 filas por costo.
 - Parámetros fijos razonables, sin búsqueda: se comparan familias, no óptimos.
 - La referencia interna es LightGBM con parámetros fijos.
 
@@ -202,11 +202,11 @@ Resultados en `outputs/research_v4/leaderboard_q4.csv`, `paired_vs_reference.jso
 
 **Lectura:**
 
-- **Ningún candidato supera a la referencia.** Por la regla del protocolo, ninguno reemplaza a V3, y el benchmark de 2015 no se volvió a abrir.
+- **Ningún candidato supera a la referencia de V4.** V4 no compara contra V3 directamente (la referencia es LightGBM con las variables de V1); V3 se mantiene por la evidencia de §10.2.
 - **El ranking confirma el patrón de V1 a V3.** El boosting está arriba, las familias lineales y la red neuronal quedan unas 0,014 por debajo, y los modelos de baja capacidad (árbol simple, Naive Bayes) muy por debajo. Naive Bayes además da probabilidades mal calibradas (Brier 0,26), porque supone independencia entre variables muy correlacionadas.
 - **PCA (reducción de dimensionalidad) empeora a la logística en −0,006.** Con unas 100 variables y 256.000 filas no hay maldición de la dimensionalidad que corregir, y PCA, al no ser supervisado, puede descartar direcciones de poca varianza que sí predicen.
 - **L1 reduce el modelo sin perder casi nada.** Conserva 47 de 231 coeficientes (20%) y pierde 0,002 AP frente a la logística L2, aun entrenando con la cuarta parte de las filas. Las variables retenidas coinciden con SHAP: plazo, propósito, cuentas recientes, DTI, consultas y préstamo/ingreso (`outputs/research_v4/l1_selected_features.json`).
-- **Quitar la geografía no cuesta nada.** El IC95 incluye el 0, y las tasas de detección (TPR) y de falsos positivos (FPR) por segmento cambian menos de 0,02 al revisar el 20% de mayor riesgo.
+- **Quitar `addr_state` no cuesta nada medible.** El IC95 incluye el 0, y las tasas de detección (TPR) y de falsos positivos (FPR) por segmento cambian menos de 0,02 al revisar el 20% de mayor riesgo.
 - **La disparidad viene del ingreso, no de la geografía.** El FPR del quintil de ingreso más bajo es del 36,5%, frente a 5,1% en el más alto, con y sin `addr_state`. Ver §13.
 - **Curva de aprendizaje** (`learning_curve.csv`): AP 0,226 (15.000 filas) → 0,245 (30.000) → 0,248 (60.000) → 0,257 (120.000) → 0,264 (256.442). Los rendimientos son decrecientes, unas +0,007 por cada duplicación al final, pero no nulos. No hay más filas maduras del mismo período para seguir creciendo.
 - **Sesgo y varianza en la misma curva.** El AP sobre las filas de entrenamiento cae de 0,94 a 0,36 mientras el de selección sube. Con pocas filas el modelo sobreajusta, porque domina la varianza. Con todas, la brecha se reduce a unas 0,10 y lo que queda es sobre todo el sesgo y el ruido irreducible. Detalle en el notebook 08.
@@ -257,7 +257,7 @@ Archivos: `outputs/search_*.csv`, `outputs/best_*.json`, `outputs/research_v2/se
 | Capacidad: revisar el 20% | 0,299 | 18,4% | 0,438 | 0,401 |
 | Umbral 0,5 | 0,500 | 3,1% | 0,603 | 0,094 |
 
-El umbral 0,5 no sirve con una prevalencia del 20%. El umbral se elige según la capacidad de revisión.
+El umbral de capacidad es el percentil 80 de las probabilidades de 2014 Q4: marca el 20% en desarrollo y el 18,4% en 2015. El umbral 0,5 no sirve con una prevalencia del 20%. El umbral se elige según la capacidad de revisión.
 
 En el estrés de 2016 (prevalencia 23,3%, cohorte censurada), el ensamble obtiene AP 0,4248 frente a 0,3958 del baseline.
 
@@ -341,13 +341,14 @@ Las mismas 258.856 filas de 2015 a 36 meses (`outputs/research_v3/benchmark_metr
 
 - **Sesgo de selección:** solo hay préstamos aceptados. El modelo no sabe nada de los rechazados (no hay *reject inference*) y no debe usarse para decidir sobre toda la población solicitante.
 - **Proxies de atributos protegidos.** No hay raza, sexo ni edad, pero el estado (`addr_state`), el código postal, el ingreso y la vivienda pueden actuar como proxies.
-  - Decisión: el código postal se dejó fuera del modelo V1; en V3 su aporte fue ≈0.
-  - En la Fase 4, el modelo sin `addr_state` pierde solo −0,0006 AP y deja tasas de detección y de falsos positivos casi idénticas por segmento (§8.4). **Recomendamos retirar las variables geográficas.** El costo predictivo es despreciable y reduce el riesgo de discriminación geográfica (*redlining*).
+  - El código postal no se usó en V1. El modelo V3 recomendado sí incluye como contexto el prefijo de tres dígitos del código postal y el título del empleo (`feature_mode: combined`). Su aporte medido fue ≈0: la permutación de `zip_code` y `emp_title` cambia el AP en +0,0004 y −0,0002 (`outputs/research_v3/interpretability.csv`).
+  - En la Fase 4, el modelo LightGBM sin `addr_state` pierde solo −0,0006 AP y deja tasas de detección y de falsos positivos casi idénticas por segmento (§8.4). **Recomendamos retirar las variables geográficas en una versión de producción**, porque el costo predictivo observado es despreciable y se reduce el riesgo de discriminación geográfica (*redlining*). Ese efecto no se midió para el modelo V3: la Fase 4 solo quitó `addr_state` y no probó retirar el prefijo del código postal ni el título del empleo.
   - Sin atributos protegidos, ninguna métrica por segmento puede certificar que el modelo sea equitativo.
 - **Impacto desigual de los errores.** Los falsos positivos se concentran en ingresos bajos y FICO bajo (§12). En la Fase 4, al revisar el 20% de mayor riesgo, el FPR del quintil de ingreso más bajo es 36,5% y el del más alto 5,1%. Parte de la diferencia refleja una prevalencia real distinta, pero implica que pagadores de bajo ingreso serían revisados con mucha más frecuencia. Un uso automático de rechazo amplificaría la exclusión financiera. **Uso recomendado:** priorizar la revisión humana, no rechazar de forma automática.
 - **Cambio temporal y censura.** La prevalencia y la población cambian entre años, y las cohortes recientes están incompletas. El modelo debe recalibrarse y monitorearse.
 - **Evaluación retrospectiva.** No se conoce cuándo estuvo disponible cada etiqueta, así que no es un backtest de producción.
 - **Reutilización del benchmark.** Las mejoras de V2 y V3 se midieron en 2015 después de haberlo observado en V1. Solo V1 es confirmatoria.
+- **Alcance de V4.** V4 no compara contra V3 directamente: su referencia es LightGBM con las variables de V1 y no abre 2015 ni 2016. V3 se mantiene como modelo recomendado por la evidencia de §10.2, no por V4.
 - **Transportabilidad.** Los resultados corresponden a Lending Club en EE. UU. entre 2012 y 2016. No se extrapolan a otras entidades, países ni ciclos económicos.
 - **No causalidad.** Las explicaciones describen asociaciones del modelo, no efectos de intervenir sobre una variable.
 
