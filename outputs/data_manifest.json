@@ -1,0 +1,37 @@
+{
+  "source_name": "accepted_2007_to_2018Q4.csv.gz",
+  "source_sha256": "55c16f75120f897683f02e7aabcf080d0e4a20c4832feb1d592cfa941bd62a2d",
+  "source_rows": 2260701,
+  "initial_sample_sha256": "c863e3348c96428195f158bf456c8abc289515737d77f59981804c1f5eed82da",
+  "protocol_sha256": "f099cf024b7578c1b2c0bd81de3613572ea011251e8cc6ac01e36744542f5106",
+  "all_sample_ids_found_in_source": true,
+  "partitions": {
+    "development": {
+      "rows": 451059,
+      "ids_sha256": "4b3429e3cebcbc79a8fda730d887f9f806577f09079bec67d26bb57d08f6951c",
+      "file_sha256": "6b065a38a544d3601bd537393c78f5cfbe19bd84efbd704686cab4dc6c1ba115",
+      "original_sample_overlap": 38592
+    },
+    "holdout_2015": {
+      "rows": 343507,
+      "ids_sha256": "707ff67445186f2a0876fb3fee431be72334e7379320273473c8fe19947a7556",
+      "file_sha256": "24c604b89693d9bc9d8e6fc5647d179297ed01b583b5657235a677e545fc01a9",
+      "original_sample_overlap": 0,
+      "schema_preview_overlap": 0
+    },
+    "holdout_2016": {
+      "rows": 268096,
+      "ids_sha256": "497a8703fc67ebc5f6f24e9d69dbb8f17db96c1681785c20fd82ffb9b76e8c43",
+      "file_sha256": "682113d4acfb7bf834875c9e2a4c37000361b66e0d6a5f5b61829da5e7714c65",
+      "original_sample_overlap": 0,
+      "schema_preview_overlap": 0
+    }
+  },
+  "preparation_seconds": 342.67,
+  "schema_preview_excluded_ids": [
+    "68341763",
+    "68355089",
+    "68407277",
+    "68476715"
+  ]
+}

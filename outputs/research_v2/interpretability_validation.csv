@@ -1,0 +1,15 @@
+model,feature_group,validation_n,baseline_AP,mean_AP_drop,permutation_sd,repetitions,scope,correlated_predictors_can_share_importance
+catboost,loan_amnt,5000,0.25813373336141016,0.02970199062890642,0.002108477623697703,3,"2014 Q3 development validation; descriptive, not causal",True
+catboost,FICO,5000,0.25813373336141016,0.02055344985729121,0.004025783019802459,3,"2014 Q3 development validation; descriptive, not causal",True
+catboost,annual_inc,5000,0.25813373336141016,0.014894833569686775,0.004853686951268494,3,"2014 Q3 development validation; descriptive, not causal",True
+catboost,total_acc,5000,0.25813373336141016,0.006350153675660959,0.0008830014908108443,3,"2014 Q3 development validation; descriptive, not causal",True
+catboost,purpose,5000,0.25813373336141016,0.0031218932286833554,0.003350714988658404,3,"2014 Q3 development validation; descriptive, not causal",True
+catboost,earliest_cr_line,5000,0.25813373336141016,0.0027045966759267626,0.00036278218206651467,3,"2014 Q3 development validation; descriptive, not causal",True
+catboost,dti,5000,0.25813373336141016,0.0026293277983673127,0.0021947624475092127,3,"2014 Q3 development validation; descriptive, not causal",True
+catboost,total_rev_hi_lim,5000,0.25813373336141016,0.0026006221304890795,0.0013709521372542491,3,"2014 Q3 development validation; descriptive, not causal",True
+catboost,revol_bal,5000,0.25813373336141016,0.002192509499083876,0.0037655248699291098,3,"2014 Q3 development validation; descriptive, not causal",True
+catboost,revol_util,5000,0.25813373336141016,0.001899126905955506,0.0015693134546543657,3,"2014 Q3 development validation; descriptive, not causal",True
+catboost,home_ownership,5000,0.25813373336141016,0.0018681669689668556,0.0019509338237055276,3,"2014 Q3 development validation; descriptive, not causal",True
+catboost,tot_cur_bal,5000,0.25813373336141016,-0.00017507039917239822,0.00045635735878136373,3,"2014 Q3 development validation; descriptive, not causal",True
+catboost,emp_length,5000,0.25813373336141016,-0.000530467053272384,0.0017707980736095552,3,"2014 Q3 development validation; descriptive, not causal",True
+catboost,open_acc,5000,0.25813373336141016,-0.0005924401117916219,0.0008303889589942762,3,"2014 Q3 development validation; descriptive, not causal",True

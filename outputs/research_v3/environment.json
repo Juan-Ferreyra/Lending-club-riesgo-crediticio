@@ -1,0 +1,22 @@
+{
+  "recorded_utc": "2026-11-02T21:10:43.470895+00:00",
+  "python": "3.12.14",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "scikit-learn": "1.9.1",
+    "catboost": "1.2.10",
+    "lightgbm": "4.7.0",
+    "xgboost": "3.4.1",
+    "optuna": "5.0.0",
+    "pyarrow": "26.0.0"
+  },
+  "training_threads": 3,
+  "device": "CPU",
+  "unit_tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "passed": 29,
+    "failed": 0
+  }
+}

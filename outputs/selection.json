@@ -1,0 +1,1068 @@
+{
+  "selected": "ensemble",
+  "selection_AP": 0.34012818403373596,
+  "weights": {
+    "catboost": 0.19999999999999998,
+    "catboost_seed43": 0.19999999999999998,
+    "catboost_seed44": 0.19999999999999998,
+    "lightgbm": 0.13333333333333333,
+    "lightgbm_seed43": 0.13333333333333333,
+    "lightgbm_seed44": 0.13333333333333333
+  },
+  "specs": {
+    "logistic": {
+      "family": "logistic",
+      "params": {
+        "C": 0.013901420350545918,
+        "class_weight": null
+      },
+      "extended": true,
+      "seed": 42
+    },
+    "random_forest": {
+      "family": "random_forest",
+      "params": {
+        "n_estimators": 250,
+        "max_depth": 12,
+        "min_samples_leaf": 60,
+        "max_features": "sqrt",
+        "max_samples": 0.7737068376069123,
+        "class_weight": "balanced_subsample"
+      },
+      "extended": true,
+      "seed": 42
+    },
+    "lightgbm": {
+      "family": "lightgbm",
+      "params": {
+        "n_estimators": 143,
+        "learning_rate": 0.05081293756112104,
+        "num_leaves": 28,
+        "min_child_samples": 152,
+        "reg_lambda": 1.4731189846460222,
+        "reg_alpha": 0.001169714009152734,
+        "colsample_bytree": 0.6572989610431703,
+        "subsample": 0.7278140434146148,
+        "subsample_freq": 1,
+        "scale_pos_weight": 1.0
+      },
+      "extended": true,
+      "seed": 42
+    },
+    "xgboost": {
+      "family": "xgboost",
+      "params": {
+        "n_estimators": 326,
+        "learning_rate": 0.04676664740057031,
+        "max_depth": 3,
+        "min_child_weight": 6.345356893234593,
+        "reg_lambda": 7.400833087122808,
+        "reg_alpha": 2.6202105294222906,
+        "subsample": 0.701271216187201,
+        "colsample_bytree": 0.6780273291927688,
+        "gamma": 0.7056336440801878,
+        "scale_pos_weight": 2.0
+      },
+      "extended": true,
+      "seed": 42
+    },
+    "catboost": {
+      "family": "catboost",
+      "params": {
+        "iterations": 740,
+        "learning_rate": 0.027359299282470315,
+        "depth": 7,
+        "l2_leaf_reg": 27.333886656404555,
+        "random_strength": 1.5635108708133456,
+        "bagging_temperature": 0.6092275383467414,
+        "rsm": 0.7293016342019151,
+        "auto_class_weights": null
+      },
+      "extended": true,
+      "seed": 42
+    },
+    "baseline19": {
+      "family": "logistic",
+      "params": {
+        "C": 1.0,
+        "class_weight": "balanced",
+        "max_iter": 1000
+      },
+      "extended": false,
+      "seed": 42
+    },
+    "catboost_seed43": {
+      "family": "catboost",
+      "params": {
+        "iterations": 740,
+        "learning_rate": 0.027359299282470315,
+        "depth": 7,
+        "l2_leaf_reg": 27.333886656404555,
+        "random_strength": 1.5635108708133456,
+        "bagging_temperature": 0.6092275383467414,
+        "rsm": 0.7293016342019151,
+        "auto_class_weights": null
+      },
+      "extended": true,
+      "seed": 43
+    },
+    "catboost_seed44": {
+      "family": "catboost",
+      "params": {
+        "iterations": 740,
+        "learning_rate": 0.027359299282470315,
+        "depth": 7,
+        "l2_leaf_reg": 27.333886656404555,
+        "random_strength": 1.5635108708133456,
+        "bagging_temperature": 0.6092275383467414,
+        "rsm": 0.7293016342019151,
+        "auto_class_weights": null
+      },
+      "extended": true,
+      "seed": 44
+    },
+    "lightgbm_seed43": {
+      "family": "lightgbm",
+      "params": {
+        "n_estimators": 143,
+        "learning_rate": 0.05081293756112104,
+        "num_leaves": 28,
+        "min_child_samples": 152,
+        "reg_lambda": 1.4731189846460222,
+        "reg_alpha": 0.001169714009152734,
+        "colsample_bytree": 0.6572989610431703,
+        "subsample": 0.7278140434146148,
+        "subsample_freq": 1,
+        "scale_pos_weight": 1.0
+      },
+      "extended": true,
+      "seed": 43
+    },
+    "lightgbm_seed44": {
+      "family": "lightgbm",
+      "params": {
+        "n_estimators": 143,
+        "learning_rate": 0.05081293756112104,
+        "num_leaves": 28,
+        "min_child_samples": 152,
+        "reg_lambda": 1.4731189846460222,
+        "reg_alpha": 0.001169714009152734,
+        "colsample_bytree": 0.6572989610431703,
+        "subsample": 0.7278140434146148,
+        "subsample_freq": 1,
+        "scale_pos_weight": 1.0
+      },
+      "extended": true,
+      "seed": 44
+    },
+    "catboost_19features": {
+      "family": "catboost",
+      "params": {
+        "iterations": 740,
+        "learning_rate": 0.027359299282470315,
+        "depth": 7,
+        "l2_leaf_reg": 27.333886656404555,
+        "random_strength": 1.5635108708133456,
+        "bagging_temperature": 0.6092275383467414,
+        "rsm": 0.7293016342019151,
+        "auto_class_weights": null
+      },
+      "extended": false,
+      "seed": 42
+    }
+  },
+  "single_best": {
+    "name": "catboost",
+    "family": "catboost",
+    "extended": true,
+    "seed": 42,
+    "n": 99469,
+    "positive_n": 17517,
+    "prevalence": 0.17610511817752264,
+    "AP": 0.3387146019260612,
+    "ROC_AUC": 0.7100146517455671,
+    "Brier": 0.13314169980996968,
+    "log_loss": 0.42485792113057563,
+    "precision": 0.5703422053231939,
+    "recall": 0.008563110121596164,
+    "F1": 0.01687289088863892,
+    "threshold": 0.5,
+    "flag_rate": 0.00264403985161206,
+    "FPR": 0.0013788559156579462,
+    "FNR": 0.9914368898784038,
+    "KS": 0.30994162177971946,
+    "recall_at_top20": 0.3993834560712451,
+    "precision_at_top20": 0.35166381823665427
+  },
+  "ensemble_search": [
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "AP": 0.3339456794862633
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.0,
+        0.1,
+        0.9
+      ],
+      "AP": 0.3344626226047466
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.0,
+        0.2,
+        0.8
+      ],
+      "AP": 0.3349578487897431
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.0,
+        0.3,
+        0.7
+      ],
+      "AP": 0.3354323178520597
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.0,
+        0.4,
+        0.6
+      ],
+      "AP": 0.3358721252321581
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.0,
+        0.5,
+        0.5
+      ],
+      "AP": 0.33626525165095067
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.0,
+        0.6,
+        0.4
+      ],
+      "AP": 0.3366029964496676
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.0,
+        0.7,
+        0.3
+      ],
+      "AP": 0.33687019945278923
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.0,
+        0.8,
+        0.2
+      ],
+      "AP": 0.3370803103819173
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.0,
+        0.9,
+        0.1
+      ],
+      "AP": 0.3372387576911435
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "AP": 0.33726579299100606
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.1,
+        0.0,
+        0.9
+      ],
+      "AP": 0.3349120968711408
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.1,
+        0.1,
+        0.8
+      ],
+      "AP": 0.3354577629949203
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.1,
+        0.2,
+        0.7
+      ],
+      "AP": 0.3359560560509113
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.1,
+        0.3,
+        0.6
+      ],
+      "AP": 0.3364461310902688
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.1,
+        0.4,
+        0.5
+      ],
+      "AP": 0.33687112378295836
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.1,
+        0.5,
+        0.4
+      ],
+      "AP": 0.33725593360244766
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.1,
+        0.6,
+        0.3
+      ],
+      "AP": 0.33757896719979835
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.1,
+        0.7,
+        0.2
+      ],
+      "AP": 0.33786159796301507
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.1,
+        0.8,
+        0.1
+      ],
+      "AP": 0.33802281186397465
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.1,
+        0.9,
+        0.0
+      ],
+      "AP": 0.33811487481651525
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.2,
+        0.0,
+        0.8
+      ],
+      "AP": 0.3358369256198855
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.2,
+        0.1,
+        0.7
+      ],
+      "AP": 0.3363700856201953
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.2,
+        0.2,
+        0.6
+      ],
+      "AP": 0.33687400605886597
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.2,
+        0.3,
+        0.5
+      ],
+      "AP": 0.3373575810812088
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.2,
+        0.4,
+        0.4
+      ],
+      "AP": 0.3377707405652879
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.2,
+        0.5,
+        0.3
+      ],
+      "AP": 0.3381334748958654
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.2,
+        0.6,
+        0.2
+      ],
+      "AP": 0.33845565587523235
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.2,
+        0.7,
+        0.1
+      ],
+      "AP": 0.3386928963888787
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.2,
+        0.8,
+        0.0
+      ],
+      "AP": 0.33883725021213845
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.3,
+        0.0,
+        0.7
+      ],
+      "AP": 0.33664792354267736
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.3,
+        0.1,
+        0.6
+      ],
+      "AP": 0.33717977590136494
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.3,
+        0.2,
+        0.5
+      ],
+      "AP": 0.3376599552317793
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.3,
+        0.3,
+        0.4
+      ],
+      "AP": 0.33814245824036737
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.3,
+        0.4,
+        0.3
+      ],
+      "AP": 0.3385510674600172
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.3,
+        0.5,
+        0.2
+      ],
+      "AP": 0.33890525419000905
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.3,
+        0.6,
+        0.1
+      ],
+      "AP": 0.33920622849622606
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.3,
+        0.7,
+        0.0
+      ],
+      "AP": 0.3394000134053279
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.4,
+        0.0,
+        0.6
+      ],
+      "AP": 0.3373836014947683
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.4,
+        0.1,
+        0.5
+      ],
+      "AP": 0.33791116757213374
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.4,
+        0.2,
+        0.4
+      ],
+      "AP": 0.3383791907077258
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.4,
+        0.3,
+        0.3
+      ],
+      "AP": 0.3388321707892647
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.4,
+        0.4,
+        0.2
+      ],
+      "AP": 0.33922854815782677
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.4,
+        0.5,
+        0.1
+      ],
+      "AP": 0.3395374567778255
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.4,
+        0.6,
+        0.0
+      ],
+      "AP": 0.3397882172825313
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.5,
+        0.0,
+        0.5
+      ],
+      "AP": 0.3379914859161232
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.5,
+        0.1,
+        0.4
+      ],
+      "AP": 0.33851735487194523
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.5,
+        0.2,
+        0.3
+      ],
+      "AP": 0.3389648166149861
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.5,
+        0.3,
+        0.2
+      ],
+      "AP": 0.33938527984860306
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.5,
+        0.4,
+        0.1
+      ],
+      "AP": 0.33973566878965455
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.5,
+        0.5,
+        0.0
+      ],
+      "AP": 0.34001322960399005
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.6,
+        0.0,
+        0.4
+      ],
+      "AP": 0.33849856292038544
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.6,
+        0.1,
+        0.3
+      ],
+      "AP": 0.33898671263503305
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.6,
+        0.2,
+        0.2
+      ],
+      "AP": 0.3394252026338271
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.6,
+        0.3,
+        0.1
+      ],
+      "AP": 0.33982304196196766
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.6,
+        0.4,
+        0.0
+      ],
+      "AP": 0.34012818403373596
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.7,
+        0.0,
+        0.3
+      ],
+      "AP": 0.33887246496393186
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.7,
+        0.1,
+        0.2
+      ],
+      "AP": 0.33933496550714615
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.7,
+        0.2,
+        0.1
+      ],
+      "AP": 0.33974312797587586
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.7,
+        0.3,
+        0.0
+      ],
+      "AP": 0.3400570660697917
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.8,
+        0.0,
+        0.2
+      ],
+      "AP": 0.33911002841515137
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.8,
+        0.1,
+        0.1
+      ],
+      "AP": 0.33950248996219756
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.8,
+        0.2,
+        0.0
+      ],
+      "AP": 0.33983505200034964
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.9,
+        0.0,
+        0.1
+      ],
+      "AP": 0.33913153413691843
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        0.9,
+        0.1,
+        0.0
+      ],
+      "AP": 0.33945709234695
+    },
+    {
+      "groups": [
+        "catboost",
+        "lightgbm",
+        "xgboost"
+      ],
+      "weights": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "AP": 0.3389106688079158
+    }
+  ],
+  "group_AP": {
+    "logistic": 0.3287700469653864,
+    "random_forest": 0.32620828989570105,
+    "lightgbm": 0.33726579299100606,
+    "xgboost": 0.3339456794862633,
+    "catboost": 0.3389106688079158,
+    "baseline19": 0.3086020559058362,
+    "catboost_19features": 0.3194596656898972
+  },
+  "selected_utc": "2026-10-27T16:59:56.170225+00:00",
+  "test_outcomes_accessed": false
+}

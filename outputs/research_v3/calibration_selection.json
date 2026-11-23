@@ -1,0 +1,298 @@
+[
+  {
+    "model": "catboost_combined_control",
+    "method": "positive_sigmoid",
+    "calibration_n": 3371,
+    "sigmoid_slope": 1.0965695218195282,
+    "sigmoid_intercept": 0.17511327444053448,
+    "n": 3503,
+    "positive_n": 491,
+    "prevalence": 0.14016557236654295,
+    "AP": 0.28114062877473533,
+    "ROC_AUC": 0.7071841621971043,
+    "Brier": 0.11210037971000643,
+    "log_loss": 0.371191455596168,
+    "precision": 0.24847958297132927,
+    "recall": 0.5824847250509165,
+    "F1": 0.3483556638246042,
+    "threshold": 0.15972564252254268,
+    "flag_rate": 0.3285755067085355,
+    "FPR": 0.2871845949535193,
+    "FNR": 0.4175152749490835,
+    "KS": 0.31109912015211383,
+    "recall_at_top20": 0.39918533604887985,
+    "precision_at_top20": 0.2796005706134094,
+    "confusion_matrix": [
+      [
+        2147,
+        865
+      ],
+      [
+        205,
+        286
+      ]
+    ],
+    "raw_AP": 0.28114062877473533,
+    "raw_ROC_AUC": 0.7071841621971043,
+    "calibration_AP_preserved": true
+  },
+  {
+    "model": "catboost_joint",
+    "method": "positive_sigmoid",
+    "calibration_n": 3371,
+    "sigmoid_slope": 1.1394137296259927,
+    "sigmoid_intercept": 0.26965465964274293,
+    "n": 3503,
+    "positive_n": 491,
+    "prevalence": 0.14016557236654295,
+    "AP": 0.2778126175991299,
+    "ROC_AUC": 0.7022527676125101,
+    "Brier": 0.11249154964837076,
+    "log_loss": 0.37289931255977365,
+    "precision": 0.2635574837310195,
+    "recall": 0.49490835030549896,
+    "F1": 0.3439490445859872,
+    "threshold": 0.17777608612830922,
+    "flag_rate": 0.2632029688838139,
+    "FPR": 0.22543160690571049,
+    "FNR": 0.505091649694501,
+    "KS": 0.30377539401119213,
+    "recall_at_top20": 0.3910386965376782,
+    "precision_at_top20": 0.2738944365192582,
+    "confusion_matrix": [
+      [
+        2333,
+        679
+      ],
+      [
+        248,
+        243
+      ]
+    ],
+    "raw_AP": 0.2778126175991299,
+    "raw_ROC_AUC": 0.7022527676125101,
+    "calibration_AP_preserved": true
+  },
+  {
+    "model": "lightgbm_joint",
+    "method": "positive_sigmoid",
+    "calibration_n": 3371,
+    "sigmoid_slope": 1.057145682620577,
+    "sigmoid_intercept": 0.12719352324999655,
+    "n": 3503,
+    "positive_n": 491,
+    "prevalence": 0.14016557236654295,
+    "AP": 0.28941543852961776,
+    "ROC_AUC": 0.7054267654433184,
+    "Brier": 0.11213428023842605,
+    "log_loss": 0.37146523962724615,
+    "precision": 0.240432612312812,
+    "recall": 0.5885947046843177,
+    "F1": 0.34140578854105136,
+    "threshold": 0.15100381989770698,
+    "flag_rate": 0.34313445618041677,
+    "FPR": 0.30312084993359895,
+    "FNR": 0.41140529531568226,
+    "KS": 0.3071204658622807,
+    "recall_at_top20": 0.3971486761710794,
+    "precision_at_top20": 0.2781740370898716,
+    "confusion_matrix": [
+      [
+        2099,
+        913
+      ],
+      [
+        202,
+        289
+      ]
+    ],
+    "raw_AP": 0.28941543852961776,
+    "raw_ROC_AUC": 0.7054267654433184,
+    "calibration_AP_preserved": true
+  },
+  {
+    "model": "logistic_joint",
+    "method": "positive_sigmoid",
+    "calibration_n": 3371,
+    "sigmoid_slope": 0.9696041732546007,
+    "sigmoid_intercept": -0.017418707122645326,
+    "n": 3503,
+    "positive_n": 491,
+    "prevalence": 0.14016557236654295,
+    "AP": 0.2829511435078154,
+    "ROC_AUC": 0.7025469067382879,
+    "Brier": 0.11236646700165777,
+    "log_loss": 0.37251648313996205,
+    "precision": 0.2461799660441426,
+    "recall": 0.5906313645621182,
+    "F1": 0.347513481126423,
+    "threshold": 0.1540740538536801,
+    "flag_rate": 0.336283185840708,
+    "FPR": 0.2948207171314741,
+    "FNR": 0.4093686354378819,
+    "KS": 0.2978527167636312,
+    "recall_at_top20": 0.39918533604887985,
+    "precision_at_top20": 0.2796005706134094,
+    "confusion_matrix": [
+      [
+        2124,
+        888
+      ],
+      [
+        201,
+        290
+      ]
+    ],
+    "raw_AP": 0.2829511435078154,
+    "raw_ROC_AUC": 0.7025469067382879,
+    "calibration_AP_preserved": true
+  },
+  {
+    "model": "svm_linear_joint",
+    "method": "positive_sigmoid",
+    "calibration_n": 3371,
+    "sigmoid_slope": 2.121787302672103,
+    "sigmoid_intercept": -1.8298634516452095,
+    "n": 3503,
+    "positive_n": 491,
+    "prevalence": 0.14016557236654295,
+    "AP": 0.2805822428502754,
+    "ROC_AUC": 0.7027132474852795,
+    "Brier": 0.11245939446552686,
+    "log_loss": 0.3727160210585102,
+    "precision": 0.23311061618411286,
+    "recall": 0.639511201629328,
+    "F1": 0.3416757344940152,
+    "threshold": 0.14340818237904843,
+    "flag_rate": 0.38452754781615756,
+    "FPR": 0.3429614873837981,
+    "FNR": 0.3604887983706721,
+    "KS": 0.29654971424552984,
+    "recall_at_top20": 0.395112016293279,
+    "precision_at_top20": 0.2767475035663338,
+    "confusion_matrix": [
+      [
+        1979,
+        1033
+      ],
+      [
+        177,
+        314
+      ]
+    ],
+    "raw_AP": 0.2805822428502754,
+    "raw_ROC_AUC": 0.7027132474852795,
+    "calibration_AP_preserved": true
+  },
+  {
+    "model": "svm_nystroem_joint",
+    "method": "positive_sigmoid",
+    "calibration_n": 3371,
+    "sigmoid_slope": 3.966861261678484,
+    "sigmoid_intercept": 0.9267977194231283,
+    "n": 3503,
+    "positive_n": 491,
+    "prevalence": 0.14016557236654295,
+    "AP": 0.28017793592550155,
+    "ROC_AUC": 0.7070509543631313,
+    "Brier": 0.11237222405532123,
+    "log_loss": 0.3731024500263207,
+    "precision": 0.2411290322580645,
+    "recall": 0.6089613034623218,
+    "F1": 0.3454650491045638,
+    "threshold": 0.1398898192028423,
+    "flag_rate": 0.35398230088495575,
+    "FPR": 0.31241699867197875,
+    "FNR": 0.3910386965376782,
+    "KS": 0.3090232417242098,
+    "recall_at_top20": 0.39918533604887985,
+    "precision_at_top20": 0.2796005706134094,
+    "confusion_matrix": [
+      [
+        2071,
+        941
+      ],
+      [
+        192,
+        299
+      ]
+    ],
+    "raw_AP": 0.28017793592550155,
+    "raw_ROC_AUC": 0.7070509543631313,
+    "calibration_AP_preserved": true
+  },
+  {
+    "model": "v2_catboost",
+    "method": "positive_sigmoid",
+    "calibration_n": 3371,
+    "sigmoid_slope": 1.1178796116890424,
+    "sigmoid_intercept": 0.22950747822187637,
+    "n": 3503,
+    "positive_n": 491,
+    "prevalence": 0.14016557236654295,
+    "AP": 0.281242082605379,
+    "ROC_AUC": 0.7056735718362126,
+    "Brier": 0.11224073972092846,
+    "log_loss": 0.37191613334128376,
+    "precision": 0.25229357798165136,
+    "recall": 0.560081466395112,
+    "F1": 0.34788108791903855,
+    "threshold": 0.16253596563029127,
+    "flag_rate": 0.31116186126177564,
+    "FPR": 0.27058432934926957,
+    "FNR": 0.439918533604888,
+    "KS": 0.30265090351425256,
+    "recall_at_top20": 0.39307535641547864,
+    "precision_at_top20": 0.275320970042796,
+    "confusion_matrix": [
+      [
+        2197,
+        815
+      ],
+      [
+        216,
+        275
+      ]
+    ],
+    "raw_AP": 0.281242082605379,
+    "raw_ROC_AUC": 0.7056735718362126,
+    "calibration_AP_preserved": true
+  },
+  {
+    "model": "xgboost_joint",
+    "method": "positive_sigmoid",
+    "calibration_n": 3371,
+    "sigmoid_slope": 1.0880955338886535,
+    "sigmoid_intercept": -0.561217604626031,
+    "n": 3503,
+    "positive_n": 491,
+    "prevalence": 0.14016557236654295,
+    "AP": 0.2835875158875086,
+    "ROC_AUC": 0.7072030952902578,
+    "Brier": 0.11204804187852982,
+    "log_loss": 0.37107607960956523,
+    "precision": 0.29155313351498635,
+    "recall": 0.43584521384928715,
+    "F1": 0.34938775510204073,
+    "threshold": 0.19663637470220952,
+    "flag_rate": 0.20953468455609478,
+    "FPR": 0.17264276228419656,
+    "FNR": 0.5641547861507128,
+    "KS": 0.30293287136586045,
+    "recall_at_top20": 0.4215885947046843,
+    "precision_at_top20": 0.29529243937232524,
+    "confusion_matrix": [
+      [
+        2492,
+        520
+      ],
+      [
+        277,
+        214
+      ]
+    ],
+    "raw_AP": 0.2835875158875086,
+    "raw_ROC_AUC": 0.7072030952902578,
+    "calibration_AP_preserved": true
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-11-02T21:02:49.308945+00:00",
+  "partition": "development",
+  "years": [
+    2012,
+    2013,
+    2014
+  ],
+  "term": "36 months",
+  "fields": [
+    "emp_title",
+    "zip_code"
+  ],
+  "labels_used_for_summary_or_encoding": false,
+  "targets_used_only_for_shared_stratified_sampling": true,
+  "normalization": "Same _context_values implementation as the V3 feature contract.",
+  "shift_denominator": "All validation rows, including missing; missing/unseen/known-rare/retained are separate categories.",
+  "interpretation": "Changes in text representation can exist even when missingness rates are stable. These summaries do not date a platform-wide schema change."
+}

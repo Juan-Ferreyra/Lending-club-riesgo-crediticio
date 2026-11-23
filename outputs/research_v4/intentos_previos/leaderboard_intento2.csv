@@ -1,0 +1,12 @@
+model,topic,status,train_n,selection_n,seconds,notes,AP,ROC_AUC,Brier,recall_at_top20,nonzero_coefficients,total_coefficients,pca_components,tree_leaves
+lightgbm_referencia,6.6.5 Boosting,OK,256442.0,50020.0,7.2,Referencia interna con parámetros fijos; mismas variables que todos,0.2641470394426638,0.6896233265393688,0.1170747695555352,0.37966148341819184,,,,
+lightgbm_sin_geografia,6.10.1 Sesgo algorítmico,OK,256442.0,50020.0,6.9,Igual que la referencia pero sin addr_state (proxy geográfico),0.2635066350791736,0.6887925940389259,0.11713609884356348,0.3791110499518371,,,,
+hist_gradient_boosting,6.6.5 Boosting (sklearn),FAILED: ValueError('window shape cannot be larger than input array shape'),,,,,,,,,,,,
+logistica_l2,6.6.1 Regresión logística,OK,256442.0,50020.0,9.3,Baseline lineal (regularización L2),0.250227077824809,0.679307443384383,0.11812459599877989,0.3670015136920325,,,,
+logistica_l1,6.3.1 Regularización L1,OK,60000.0,50020.0,33.5,Selección de variables por L1; se reportan coeficientes no nulos,0.24814237427747482,0.6741929041416796,0.11834040641214331,0.3667262969588551,47.0,231.0,,
+logistica_cuantiles,6.4.3 Transformaciones,OK,256442.0,50020.0,46.8,Feature map por cuantiles normales (robusto a colas pesadas),0.249182825330585,0.6753768388526719,0.11835473602158131,0.3608091371955415,,,,
+pca_logistica,6.8.1 PCA,OK,256442.0,50020.0,4.4,PCA conservando 95% de varianza antes de la logística,0.24441549266616214,0.6723539706003729,0.11856981157138909,0.3617723957616623,,,54.0,
+naive_bayes,6.5.4 Naive Bayes,OK,256442.0,50020.0,7.0,Gaussiano sobre variables transformadas a normal,0.19755011804334555,0.6190873467956243,0.2624824709719182,0.29269299573414065,,,,
+arbol_decision,6.6.3 Árboles de decisión,OK,256442.0,50020.0,5.9,Árbol poco profundo e interpretable,0.21150420630169614,0.6326156689924904,0.12092720321871055,0.31773771845328197,,,,58.0
+extra_trees,6.6.5 Bagging,OK,60000.0,50020.0,31.4,Submuestra de 60000 filas por costo,0.24281880812960696,0.6692039901076858,0.11882285811428238,0.353515893766341,,,,
+mlp,6.7 Redes neuronales,OK,256442.0,50020.0,14.9,"Feed-forward 64-32, regularización L2 (alpha) y early stopping",0.25057873841495476,0.6766745379244593,0.11831824626211374,0.3668639053254438,,,,

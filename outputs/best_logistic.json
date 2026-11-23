@@ -1,0 +1,23 @@
+{
+  "family": "logistic",
+  "params": {
+    "C": 0.013901420350545918,
+    "class_weight": null
+  },
+  "search_params": {
+    "C": 0.013901420350545918,
+    "class_weight": null
+  },
+  "CV_AP": 0.28339198845090985,
+  "best_trial": 8,
+  "fold_AP": [
+    0.291927172256824,
+    0.2748568046449956
+  ],
+  "fold_best_iterations": [
+    null,
+    null
+  ],
+  "trial_count": 10,
+  "search_seconds_this_call": 1.75
+}

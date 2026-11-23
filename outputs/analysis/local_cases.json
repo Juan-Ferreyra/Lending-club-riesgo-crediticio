@@ -1,0 +1,4682 @@
+[
+  {
+    "id": "56129626",
+    "case": "FP",
+    "component": "catboost",
+    "component_weight": 0.19999999999999998,
+    "target": 0,
+    "selected_probability": 0.7773252070733463,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.7114493521413887,
+    "base_value": -1.8324146383702267,
+    "sum_contributions": 2.7348482423685345,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "bc_util",
+        "contribution": 0.3837286927546705,
+        "value": "103.5"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.3536630872456531,
+        "value": "60 months"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": 0.21896349367193446,
+        "value": "6.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": 0.2174819093030872,
+        "value": "60"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.19087101786842567,
+        "value": "0.5"
+      },
+      {
+        "feature": "revol_util",
+        "contribution": 0.1618067539144301,
+        "value": "102.19999694824219"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.11574766870052564,
+        "value": "27.600000381469727"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": 0.09758120756240424,
+        "value": "0.0"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.09236490493612325,
+        "value": "5.0"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.07381363693636478,
+        "value": "0.0"
+      }
+    ]
+  },
+  {
+    "id": "40960541",
+    "case": "FP",
+    "component": "catboost",
+    "component_weight": 0.19999999999999998,
+    "target": 0,
+    "selected_probability": 0.7658370168452677,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.755904793723943,
+    "base_value": -1.8324146383702267,
+    "sum_contributions": 2.9627717335468056,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.49647525645189583,
+        "value": "15.0"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.35760308083992964,
+        "value": "60 months"
+      },
+      {
+        "feature": "term_months",
+        "contribution": 0.23326765053926254,
+        "value": "60"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.18898975590251885,
+        "value": "38.189998626708984"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.1481538313335866,
+        "value": "4.0"
+      },
+      {
+        "feature": "delinq_2yrs",
+        "contribution": 0.14729367941671767,
+        "value": "3.0"
+      },
+      {
+        "feature": "revol_bal",
+        "contribution": 0.13925517497701784,
+        "value": "380.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.11717833919636556,
+        "value": "0.3095"
+      },
+      {
+        "feature": "log1p_revol_bal",
+        "contribution": 0.11116784107813595,
+        "value": "5.942799375126701"
+      },
+      {
+        "feature": "total_bc_limit",
+        "contribution": 0.10882909506856775,
+        "value": "2400.0"
+      }
+    ]
+  },
+  {
+    "id": "43661015",
+    "case": "FP",
+    "component": "catboost",
+    "component_weight": 0.19999999999999998,
+    "target": 0,
+    "selected_probability": 0.7362642648631379,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.6697437050040262,
+    "base_value": -1.8324146383702267,
+    "sum_contributions": 2.539440743201534,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.4320546028223226,
+        "value": "14.0"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.35311955471627193,
+        "value": "60 months"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.2423930865777022,
+        "value": "7.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": 0.22732575448508033,
+        "value": "60"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": 0.20349360693316604,
+        "value": "5.033665325790006"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.1983991128215123,
+        "value": "0.4194721104825005"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.15462649981468282,
+        "value": "32.95000076293945"
+      },
+      {
+        "feature": "total_bc_limit",
+        "contribution": 0.1531173197506169,
+        "value": "1200.0"
+      },
+      {
+        "feature": "mo_sin_old_rev_tl_op",
+        "contribution": 0.10207891210178194,
+        "value": "49.0"
+      },
+      {
+        "feature": "open_to_total_accounts",
+        "contribution": -0.08910456926335225,
+        "value": "0.11666666666666667"
+      }
+    ]
+  },
+  {
+    "id": "44016868",
+    "case": "FN",
+    "component": "catboost",
+    "component_weight": 0.19999999999999998,
+    "target": 1,
+    "selected_probability": 0.009621006657618149,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.010913984424122815,
+    "base_value": -1.8324146383702267,
+    "sum_contributions": -2.6743217201249845,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.28156330402360147,
+        "value": "820.0"
+      },
+      {
+        "feature": "fico_midpoint",
+        "contribution": -0.2784568168148875,
+        "value": "822.0"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.2186396346101687,
+        "value": "824.0"
+      },
+      {
+        "feature": "term",
+        "contribution": -0.157164016793154,
+        "value": "36 months"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": -0.13224976739706898,
+        "value": "0.64"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.12792476983529755,
+        "value": "0.05333333333333334"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.12527963104570686,
+        "value": "1.0"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.11699857921036974,
+        "value": "credit_card"
+      },
+      {
+        "feature": "dti",
+        "contribution": -0.11608293271599511,
+        "value": "6.929999828338623"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.11315692101105636,
+        "value": "0.0"
+      }
+    ]
+  },
+  {
+    "id": "67406916",
+    "case": "FN",
+    "component": "catboost",
+    "component_weight": 0.19999999999999998,
+    "target": 1,
+    "selected_probability": 0.010436255345623454,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.011143488654108774,
+    "base_value": -1.8324146383702267,
+    "sum_contributions": -2.653279248027106,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_midpoint",
+        "contribution": -0.2747991304493257,
+        "value": "832.0"
+      },
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.271511340308917,
+        "value": "830.0"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.22377152310851142,
+        "value": "834.0"
+      },
+      {
+        "feature": "term",
+        "contribution": -0.15018992654930188,
+        "value": "36 months"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": -0.14651266879818184,
+        "value": "170.0"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.1375201863736415,
+        "value": "0.0"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.12932349711370802,
+        "value": "credit_card"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": -0.12549401124676668,
+        "value": "198932.0"
+      },
+      {
+        "feature": "dti",
+        "contribution": -0.11677708654539076,
+        "value": "3.4000000953674316"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.10845984524527033,
+        "value": "2.0"
+      }
+    ]
+  },
+  {
+    "id": "63919895",
+    "case": "FN",
+    "component": "catboost",
+    "component_weight": 0.19999999999999998,
+    "target": 1,
+    "selected_probability": 0.01070379327817742,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.013103140774504,
+    "base_value": -1.8324146383702267,
+    "sum_contributions": -2.4892989410881805,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.2744889498032031,
+        "value": "805.0"
+      },
+      {
+        "feature": "fico_midpoint",
+        "contribution": -0.26021168321066734,
+        "value": "807.0"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.20963269627309875,
+        "value": "809.0"
+      },
+      {
+        "feature": "term",
+        "contribution": -0.1553196815530194,
+        "value": "36 months"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.1367741317825955,
+        "value": "0.0"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.12190581207436445,
+        "value": "0.0"
+      },
+      {
+        "feature": "dti",
+        "contribution": -0.11396894472317506,
+        "value": "2.440000057220459"
+      },
+      {
+        "feature": "purpose",
+        "contribution": 0.10921908468232053,
+        "value": "home_improvement"
+      },
+      {
+        "feature": "total_bc_limit",
+        "contribution": -0.09928431201212029,
+        "value": "24000.0"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": -0.09269021657025489,
+        "value": "24000.0"
+      }
+    ]
+  },
+  {
+    "id": "55942889",
+    "case": "TP",
+    "component": "catboost",
+    "component_weight": 0.19999999999999998,
+    "target": 1,
+    "selected_probability": 0.8173248138243266,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.7419069109039778,
+    "base_value": -1.8324146383702267,
+    "sum_contributions": 2.8883180863696154,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "term",
+        "contribution": 0.3540429521578851,
+        "value": "60 months"
+      },
+      {
+        "feature": "term_months",
+        "contribution": 0.22214557854702136,
+        "value": "60"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.21629815659866428,
+        "value": "7.0"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": 0.17417023999619763,
+        "value": "4.363636363636363"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.16134480482151686,
+        "value": "4.0"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.153634634908378,
+        "value": "30.719999313354492"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.14805598909512163,
+        "value": "0.36363636363636365"
+      },
+      {
+        "feature": "total_bc_limit",
+        "contribution": 0.14724757295699734,
+        "value": "700.0"
+      },
+      {
+        "feature": "revol_bal",
+        "contribution": 0.12127548369497969,
+        "value": "972.0"
+      },
+      {
+        "feature": "revolving_debt_to_income",
+        "contribution": 0.11663053057638045,
+        "value": "0.017672727272727274"
+      }
+    ]
+  },
+  {
+    "id": "55240726",
+    "case": "TP",
+    "component": "catboost",
+    "component_weight": 0.19999999999999998,
+    "target": 1,
+    "selected_probability": 0.8066777505982918,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.7223858798952816,
+    "base_value": -1.8324146383702267,
+    "sum_contributions": 2.7887420019094837,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "purpose",
+        "contribution": 0.4379566300820272,
+        "value": "small_business"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.38784164233515234,
+        "value": "14.0"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.32195132737618454,
+        "value": "60 months"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.3034931350346482,
+        "value": "13.0"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": 0.21139778526171205,
+        "value": "3.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": 0.1804233574071556,
+        "value": "60"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": 0.1570852161441092,
+        "value": "4.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.11108872076743567,
+        "value": "0.3333333333333333"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.07078322683432053,
+        "value": "21.15999984741211"
+      },
+      {
+        "feature": "log1p_annual_inc",
+        "contribution": 0.07022411686256153,
+        "value": "10.308985993422082"
+      }
+    ]
+  },
+  {
+    "id": "39732445",
+    "case": "TP",
+    "component": "catboost",
+    "component_weight": 0.19999999999999998,
+    "target": 1,
+    "selected_probability": 0.7855217382346737,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.7094367539422916,
+    "base_value": -1.8324146383702267,
+    "sum_contributions": 2.7250647221866053,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.4555716403025013,
+        "value": "17.0"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.3598369988401556,
+        "value": "60 months"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.24977379154323096,
+        "value": "9.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": 0.2165733549851862,
+        "value": "60"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": 0.16446401698626337,
+        "value": "5.0131578947368425"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.15951739757799405,
+        "value": "30.700000762939453"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.14085590406526,
+        "value": "0.41776315789473684"
+      },
+      {
+        "feature": "fico_range_low",
+        "contribution": 0.09124626761411235,
+        "value": "665.0"
+      },
+      {
+        "feature": "fico_midpoint",
+        "contribution": 0.09066694171039161,
+        "value": "667.0"
+      },
+      {
+        "feature": "num_actv_rev_tl",
+        "contribution": 0.08447039378482443,
+        "value": "21.0"
+      }
+    ]
+  },
+  {
+    "id": "58912781",
+    "case": "TN",
+    "component": "catboost",
+    "component_weight": 0.19999999999999998,
+    "target": 0,
+    "selected_probability": 0.007173566885966879,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.007351397092846233,
+    "base_value": -1.8324146383702267,
+    "sum_contributions": -3.0730717130132916,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_midpoint",
+        "contribution": -0.2767492607507191,
+        "value": "827.0"
+      },
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.2653621127924814,
+        "value": "825.0"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.21133509101015016,
+        "value": "829.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.20406798095152318,
+        "value": "0.025"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": -0.1985542471809331,
+        "value": "0.30000000000000004"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": -0.16459137659778303,
+        "value": "171.0"
+      },
+      {
+        "feature": "term",
+        "contribution": -0.14845895192196343,
+        "value": "36 months"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": -0.14506547012819765,
+        "value": "73406.0"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.13424823246636128,
+        "value": "0.0"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.11893022752498864,
+        "value": "1.0"
+      }
+    ]
+  },
+  {
+    "id": "51879140",
+    "case": "TN",
+    "component": "catboost",
+    "component_weight": 0.19999999999999998,
+    "target": 0,
+    "selected_probability": 0.007533654842236631,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.008835967562738531,
+    "base_value": -1.8324146383702267,
+    "sum_contributions": -2.8876347898824095,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_midpoint",
+        "contribution": -0.27796811351326695,
+        "value": "802.0"
+      },
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.277090157767934,
+        "value": "800.0"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.219629647933066,
+        "value": "804.0"
+      },
+      {
+        "feature": "term",
+        "contribution": -0.15067808020712803,
+        "value": "36 months"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.14211633543687077,
+        "value": "0.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.12678492199611385,
+        "value": "0.05641025641025641"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.12564525384875921,
+        "value": "1.0"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": -0.12277811346613443,
+        "value": "0.676923076923077"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.12251248431341116,
+        "value": "credit_card"
+      },
+      {
+        "feature": "dti",
+        "contribution": -0.1164196739823238,
+        "value": "7.929999828338623"
+      }
+    ]
+  },
+  {
+    "id": "62206419",
+    "case": "TN",
+    "component": "catboost",
+    "component_weight": 0.19999999999999998,
+    "target": 0,
+    "selected_probability": 0.007581685515589165,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.008342314685472639,
+    "base_value": -1.8324146383702267,
+    "sum_contributions": -2.9456226159866556,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_midpoint",
+        "contribution": -0.26961852033020023,
+        "value": "802.0"
+      },
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.2673392683792909,
+        "value": "800.0"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.2229127144091038,
+        "value": "804.0"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": -0.15721854141561115,
+        "value": "114.0"
+      },
+      {
+        "feature": "term",
+        "contribution": -0.15297732648094545,
+        "value": "36 months"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.1412002931563433,
+        "value": "0.0"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.1274855694302226,
+        "value": "credit_card"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.1274153336654145,
+        "value": "1.0"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": -0.11479319321690205,
+        "value": "1.0766355140186916"
+      },
+      {
+        "feature": "dti",
+        "contribution": -0.10451256033828678,
+        "value": "10.9399995803833"
+      }
+    ]
+  },
+  {
+    "id": "56129626",
+    "case": "FP",
+    "component": "catboost_seed43",
+    "component_weight": 0.19999999999999998,
+    "target": 0,
+    "selected_probability": 0.7773252070733463,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.7005532142925968,
+    "base_value": -1.8323521676169512,
+    "sum_contributions": 2.6822857719999598,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "bc_util",
+        "contribution": 0.36568060735739266,
+        "value": "103.5"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.32679160378660826,
+        "value": "60 months"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.23903593933846112,
+        "value": "0.5"
+      },
+      {
+        "feature": "term_months",
+        "contribution": 0.23723781937278057,
+        "value": "60"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": 0.16827488723663298,
+        "value": "6.0"
+      },
+      {
+        "feature": "revol_util",
+        "contribution": 0.14480564759903958,
+        "value": "102.19999694824219"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.10476224682857434,
+        "value": "27.600000381469727"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.0921261238335845,
+        "value": "5.0"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": 0.09040983196922145,
+        "value": "0.0"
+      },
+      {
+        "feature": "total_bc_limit",
+        "contribution": 0.08700667574114179,
+        "value": "5100.0"
+      }
+    ]
+  },
+  {
+    "id": "40960541",
+    "case": "FP",
+    "component": "catboost_seed43",
+    "component_weight": 0.19999999999999998,
+    "target": 0,
+    "selected_probability": 0.7658370168452677,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.79126029545428,
+    "base_value": -1.8323521676169512,
+    "sum_contributions": 3.1648911096500165,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.5387254301016915,
+        "value": "15.0"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.3235710095761657,
+        "value": "60 months"
+      },
+      {
+        "feature": "term_months",
+        "contribution": 0.2699469224020539,
+        "value": "60"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.20540016512831008,
+        "value": "38.189998626708984"
+      },
+      {
+        "feature": "delinq_2yrs",
+        "contribution": 0.15362507023431324,
+        "value": "3.0"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.14647961987718122,
+        "value": "4.0"
+      },
+      {
+        "feature": "log1p_revol_bal",
+        "contribution": 0.13558093315102757,
+        "value": "5.942799375126701"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.12757783954684065,
+        "value": "0.3095"
+      },
+      {
+        "feature": "revolving_debt_to_income",
+        "contribution": 0.12229077103359656,
+        "value": "0.0076"
+      },
+      {
+        "feature": "revol_bal",
+        "contribution": 0.12198579157371559,
+        "value": "380.0"
+      }
+    ]
+  },
+  {
+    "id": "43661015",
+    "case": "FP",
+    "component": "catboost_seed43",
+    "component_weight": 0.19999999999999998,
+    "target": 0,
+    "selected_probability": 0.7362642648631379,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.7114483215489897,
+    "base_value": -1.8323521676169512,
+    "sum_contributions": 2.7347807514220497,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.47808120914139596,
+        "value": "14.0"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.31939969874701185,
+        "value": "60 months"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.2650526057589422,
+        "value": "7.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": 0.2631223956936329,
+        "value": "60"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.2301762157305005,
+        "value": "0.4194721104825005"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": 0.20357937414038998,
+        "value": "5.033665325790006"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.17915307738118505,
+        "value": "32.95000076293945"
+      },
+      {
+        "feature": "total_bc_limit",
+        "contribution": 0.14982157207428787,
+        "value": "1200.0"
+      },
+      {
+        "feature": "mo_sin_old_rev_tl_op",
+        "contribution": 0.10613347484767027,
+        "value": "49.0"
+      },
+      {
+        "feature": "revolving_debt_to_income",
+        "contribution": 0.08878759763821632,
+        "value": "0.05876911824811237"
+      }
+    ]
+  },
+  {
+    "id": "44016868",
+    "case": "FN",
+    "component": "catboost_seed43",
+    "component_weight": 0.19999999999999998,
+    "target": 1,
+    "selected_probability": 0.009621006657618149,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.011088903046899383,
+    "base_value": -1.8323521676169512,
+    "sum_contributions": -2.658307385353038,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.2940634257585558,
+        "value": "820.0"
+      },
+      {
+        "feature": "fico_midpoint",
+        "contribution": -0.2747536897377654,
+        "value": "822.0"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.2147630706079195,
+        "value": "824.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.14348236178521093,
+        "value": "0.05333333333333334"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.14005442188118206,
+        "value": "1.0"
+      },
+      {
+        "feature": "term",
+        "contribution": -0.1322591380942937,
+        "value": "36 months"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.11888897766441872,
+        "value": "36"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.1108054679024213,
+        "value": "0.0"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.10664377686414225,
+        "value": "credit_card"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": -0.10475719666296726,
+        "value": "0.64"
+      }
+    ]
+  },
+  {
+    "id": "67406916",
+    "case": "FN",
+    "component": "catboost_seed43",
+    "component_weight": 0.19999999999999998,
+    "target": 1,
+    "selected_probability": 0.010436255345623454,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.011582722253843106,
+    "base_value": -1.8323521676169512,
+    "sum_contributions": -2.614238259977716,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.28779305111465403,
+        "value": "830.0"
+      },
+      {
+        "feature": "fico_midpoint",
+        "contribution": -0.2685890640008837,
+        "value": "832.0"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.2153746295140698,
+        "value": "834.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.13281357854893994,
+        "value": "0.10121457489878542"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": -0.1305600508230289,
+        "value": "170.0"
+      },
+      {
+        "feature": "term",
+        "contribution": -0.1289589249790178,
+        "value": "36 months"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.12557669401278182,
+        "value": "0.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.11169236206207629,
+        "value": "36"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.11043473849232628,
+        "value": "credit_card"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.10769269731470907,
+        "value": "2.0"
+      }
+    ]
+  },
+  {
+    "id": "63919895",
+    "case": "FN",
+    "component": "catboost_seed43",
+    "component_weight": 0.19999999999999998,
+    "target": 1,
+    "selected_probability": 0.01070379327817742,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.014139891696673994,
+    "base_value": -1.8323521676169512,
+    "sum_contributions": -2.4121622978507085,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.2660971150205131,
+        "value": "805.0"
+      },
+      {
+        "feature": "fico_midpoint",
+        "contribution": -0.26026852379658716,
+        "value": "807.0"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.20786279283985626,
+        "value": "809.0"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.12796950321819425,
+        "value": "0.0"
+      },
+      {
+        "feature": "term",
+        "contribution": -0.12661634697420196,
+        "value": "36 months"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.12426874519503744,
+        "value": "0.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.11151043919097031,
+        "value": "36"
+      },
+      {
+        "feature": "purpose",
+        "contribution": 0.10964264069610143,
+        "value": "home_improvement"
+      },
+      {
+        "feature": "dti",
+        "contribution": -0.10090557351851942,
+        "value": "2.440000057220459"
+      },
+      {
+        "feature": "total_bc_limit",
+        "contribution": -0.08960527988723067,
+        "value": "24000.0"
+      }
+    ]
+  },
+  {
+    "id": "55942889",
+    "case": "TP",
+    "component": "catboost_seed43",
+    "component_weight": 0.19999999999999998,
+    "target": 1,
+    "selected_probability": 0.8173248138243266,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.7521574036529165,
+    "base_value": -1.8323521676169512,
+    "sum_contributions": 2.9425039305182494,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "term",
+        "contribution": 0.322020852673469,
+        "value": "60 months"
+      },
+      {
+        "feature": "term_months",
+        "contribution": 0.260683404296805,
+        "value": "60"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.2026325366291058,
+        "value": "7.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.1963652471092943,
+        "value": "0.36363636363636365"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": 0.1564704355197769,
+        "value": "4.363636363636363"
+      },
+      {
+        "feature": "total_bc_limit",
+        "contribution": 0.15611868005453974,
+        "value": "700.0"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.1533941645700297,
+        "value": "4.0"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.1490528248584103,
+        "value": "30.719999313354492"
+      },
+      {
+        "feature": "log1p_revol_bal",
+        "contribution": 0.14607952678645061,
+        "value": "6.880384082186005"
+      },
+      {
+        "feature": "revol_bal",
+        "contribution": 0.11893156537419977,
+        "value": "972.0"
+      }
+    ]
+  },
+  {
+    "id": "55240726",
+    "case": "TP",
+    "component": "catboost_seed43",
+    "component_weight": 0.19999999999999998,
+    "target": 1,
+    "selected_probability": 0.8066777505982918,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.7425047200043592,
+    "base_value": -1.8323521676169512,
+    "sum_contributions": 2.8913800053600562,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "purpose",
+        "contribution": 0.3969410306010432,
+        "value": "small_business"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.3726314242670709,
+        "value": "13.0"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.36992340533408646,
+        "value": "14.0"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.2601413079342073,
+        "value": "60 months"
+      },
+      {
+        "feature": "term_months",
+        "contribution": 0.23214016724776626,
+        "value": "60"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": 0.22598880991832107,
+        "value": "3.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.1467294153645387,
+        "value": "0.3333333333333333"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": 0.1099986125527604,
+        "value": "4.0"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": 0.08702151961801333,
+        "value": "1.0"
+      },
+      {
+        "feature": "mo_sin_old_rev_tl_op",
+        "contribution": -0.07114832593656716,
+        "value": "258.0"
+      }
+    ]
+  },
+  {
+    "id": "39732445",
+    "case": "TP",
+    "component": "catboost_seed43",
+    "component_weight": 0.19999999999999998,
+    "target": 1,
+    "selected_probability": 0.7855217382346737,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.7238615551396773,
+    "base_value": -1.8323521676169512,
+    "sum_contributions": 2.7960499677698474,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.48234451345272755,
+        "value": "17.0"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.31330592743302454,
+        "value": "60 months"
+      },
+      {
+        "feature": "term_months",
+        "contribution": 0.25899675093627783,
+        "value": "60"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.2579194689156131,
+        "value": "9.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.20327662983429753,
+        "value": "0.41776315789473684"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.16198178152753104,
+        "value": "30.700000762939453"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": 0.15025999735974746,
+        "value": "5.0131578947368425"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": 0.10220643276554235,
+        "value": "669.0"
+      },
+      {
+        "feature": "mo_sin_old_rev_tl_op",
+        "contribution": 0.09445357155373707,
+        "value": "73.0"
+      },
+      {
+        "feature": "fico_midpoint",
+        "contribution": 0.07800701023435072,
+        "value": "667.0"
+      }
+    ]
+  },
+  {
+    "id": "58912781",
+    "case": "TN",
+    "component": "catboost_seed43",
+    "component_weight": 0.19999999999999998,
+    "target": 0,
+    "selected_probability": 0.007173566885966879,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.008319512693925842,
+    "base_value": -1.8323521676169512,
+    "sum_contributions": -2.948445115700584,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_midpoint",
+        "contribution": -0.2812436249871356,
+        "value": "827.0"
+      },
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.28102137443537406,
+        "value": "825.0"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.20567558676356684,
+        "value": "829.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.20156678826645522,
+        "value": "0.025"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": -0.15125043056762263,
+        "value": "0.30000000000000004"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.13314925380678333,
+        "value": "0.0"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.13262255851276103,
+        "value": "1.0"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": -0.13234564530154166,
+        "value": "171.0"
+      },
+      {
+        "feature": "term",
+        "contribution": -0.12729251889617094,
+        "value": "36 months"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.1107487823462543,
+        "value": "36"
+      }
+    ]
+  },
+  {
+    "id": "51879140",
+    "case": "TN",
+    "component": "catboost_seed43",
+    "component_weight": 0.19999999999999998,
+    "target": 0,
+    "selected_probability": 0.007533654842236631,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.007988346171071886,
+    "base_value": -1.8323521676169512,
+    "sum_contributions": -2.9893989364071842,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.2948606626534952,
+        "value": "800.0"
+      },
+      {
+        "feature": "fico_midpoint",
+        "contribution": -0.278695290327181,
+        "value": "802.0"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.2223823551961163,
+        "value": "804.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.13431055211784448,
+        "value": "0.05641025641025641"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.13333636429543108,
+        "value": "1.0"
+      },
+      {
+        "feature": "term",
+        "contribution": -0.13045592226817615,
+        "value": "36 months"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.12742302630766203,
+        "value": "0.0"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.11791580689250457,
+        "value": "credit_card"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.11496113417697906,
+        "value": "36"
+      },
+      {
+        "feature": "dti",
+        "contribution": -0.11066665133600664,
+        "value": "7.929999828338623"
+      }
+    ]
+  },
+  {
+    "id": "62206419",
+    "case": "TN",
+    "component": "catboost_seed43",
+    "component_weight": 0.19999999999999998,
+    "target": 0,
+    "selected_probability": 0.007581685515589165,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.008438363108423138,
+    "base_value": -1.8323521676169512,
+    "sum_contributions": -2.9341405984087436,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.2824595845333489,
+        "value": "800.0"
+      },
+      {
+        "feature": "fico_midpoint",
+        "contribution": -0.26732724387495616,
+        "value": "802.0"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.21935705212180406,
+        "value": "804.0"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": -0.14230960218244368,
+        "value": "114.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.13562039344994245,
+        "value": "0.08971962616822429"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.13353415251109635,
+        "value": "1.0"
+      },
+      {
+        "feature": "term",
+        "contribution": -0.13127155117759454,
+        "value": "36 months"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.1312441876297078,
+        "value": "0.0"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.11669148269563918,
+        "value": "credit_card"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.11427375882656375,
+        "value": "36"
+      }
+    ]
+  },
+  {
+    "id": "56129626",
+    "case": "FP",
+    "component": "catboost_seed44",
+    "component_weight": 0.19999999999999998,
+    "target": 0,
+    "selected_probability": 0.7773252070733463,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.6715520798131569,
+    "base_value": -1.8312519802527578,
+    "sum_contributions": 2.5464652635248655,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "bc_util",
+        "contribution": 0.3440903916135147,
+        "value": "103.5"
+      },
+      {
+        "feature": "term_months",
+        "contribution": 0.2911262048753711,
+        "value": "60"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.2767968853667406,
+        "value": "60 months"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.22406652153397782,
+        "value": "0.5"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": 0.1985457525800448,
+        "value": "6.0"
+      },
+      {
+        "feature": "revol_util",
+        "contribution": 0.14657522817336086,
+        "value": "102.19999694824219"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.09944267611824784,
+        "value": "5.0"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.09133947380826198,
+        "value": "27.600000381469727"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": 0.0909193407154482,
+        "value": "0.0"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.07919569938000867,
+        "value": "0.0"
+      }
+    ]
+  },
+  {
+    "id": "40960541",
+    "case": "FP",
+    "component": "catboost_seed44",
+    "component_weight": 0.19999999999999998,
+    "target": 0,
+    "selected_probability": 0.7658370168452677,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.7008649946666544,
+    "base_value": -1.8312519802527578,
+    "sum_contributions": 2.682672264766792,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.41683273277249594,
+        "value": "15.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": 0.3162648059467475,
+        "value": "60"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.25954739936585736,
+        "value": "60 months"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.15406844215401713,
+        "value": "38.189998626708984"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.14743720324197324,
+        "value": "4.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.14070640462616008,
+        "value": "0.3095"
+      },
+      {
+        "feature": "total_bc_limit",
+        "contribution": 0.12429200650256429,
+        "value": "2400.0"
+      },
+      {
+        "feature": "revol_bal",
+        "contribution": 0.11895395244111943,
+        "value": "380.0"
+      },
+      {
+        "feature": "delinq_2yrs",
+        "contribution": 0.11628852492436471,
+        "value": "3.0"
+      },
+      {
+        "feature": "revolving_debt_to_income",
+        "contribution": 0.11538293565575275,
+        "value": "0.0076"
+      }
+    ]
+  },
+  {
+    "id": "43661015",
+    "case": "FP",
+    "component": "catboost_seed44",
+    "component_weight": 0.19999999999999998,
+    "target": 0,
+    "selected_probability": 0.7362642648631379,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.6691901498475358,
+    "base_value": -1.8312519802527578,
+    "sum_contributions": 2.535776490494729,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.48102070757562504,
+        "value": "14.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": 0.29121561156607617,
+        "value": "60"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.2563035647746673,
+        "value": "60 months"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.25421205327519686,
+        "value": "7.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.23190494832885236,
+        "value": "0.4194721104825005"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": 0.18365375963586023,
+        "value": "5.033665325790006"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.1521615511607136,
+        "value": "32.95000076293945"
+      },
+      {
+        "feature": "total_bc_limit",
+        "contribution": 0.13200323354612983,
+        "value": "1200.0"
+      },
+      {
+        "feature": "mo_sin_old_rev_tl_op",
+        "contribution": 0.10511945697537768,
+        "value": "49.0"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": 0.08736162200744137,
+        "value": "72.0"
+      }
+    ]
+  },
+  {
+    "id": "44016868",
+    "case": "FN",
+    "component": "catboost_seed44",
+    "component_weight": 0.19999999999999998,
+    "target": 1,
+    "selected_probability": 0.009621006657618149,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.01178955544952765,
+    "base_value": -1.8312519802527578,
+    "sum_contributions": -2.597429687255312,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.31746838665777616,
+        "value": "820.0"
+      },
+      {
+        "feature": "fico_midpoint",
+        "contribution": -0.24097986772946997,
+        "value": "822.0"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.18762166327143442,
+        "value": "824.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.15056517185665047,
+        "value": "0.05333333333333334"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.12831976655674315,
+        "value": "36"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.12635958749908663,
+        "value": "1.0"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.11778921718199153,
+        "value": "0.0"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.11473600524003606,
+        "value": "credit_card"
+      },
+      {
+        "feature": "term",
+        "contribution": -0.11426955146832274,
+        "value": "36 months"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": -0.10864047688312493,
+        "value": "0.64"
+      }
+    ]
+  },
+  {
+    "id": "67406916",
+    "case": "FN",
+    "component": "catboost_seed44",
+    "component_weight": 0.19999999999999998,
+    "target": 1,
+    "selected_probability": 0.010436255345623454,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.01292479535770159,
+    "base_value": -1.8312519802527578,
+    "sum_contributions": -2.504346664248329,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.30932971038338114,
+        "value": "830.0"
+      },
+      {
+        "feature": "fico_midpoint",
+        "contribution": -0.23937673770516235,
+        "value": "832.0"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.20414087461609354,
+        "value": "834.0"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": -0.1619533183851471,
+        "value": "170.0"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.1328198973465657,
+        "value": "0.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.12751522866156795,
+        "value": "0.10121457489878542"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.12074174027224001,
+        "value": "36"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.11602817148378097,
+        "value": "2.0"
+      },
+      {
+        "feature": "term",
+        "contribution": -0.11523232567542385,
+        "value": "36 months"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.11235933900058442,
+        "value": "credit_card"
+      }
+    ]
+  },
+  {
+    "id": "63919895",
+    "case": "FN",
+    "component": "catboost_seed44",
+    "component_weight": 0.19999999999999998,
+    "target": 1,
+    "selected_probability": 0.01070379327817742,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.012604124430383489,
+    "base_value": -1.8312519802527578,
+    "sum_contributions": -2.529794972362425,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.30463190979324917,
+        "value": "805.0"
+      },
+      {
+        "feature": "fico_midpoint",
+        "contribution": -0.2289053218731079,
+        "value": "807.0"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.18599025552254492,
+        "value": "809.0"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.13998585576116013,
+        "value": "0.0"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.12721913770025017,
+        "value": "0.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.12307628678124084,
+        "value": "36"
+      },
+      {
+        "feature": "term",
+        "contribution": -0.11185818342580382,
+        "value": "36 months"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": -0.11060585118133462,
+        "value": "48.0"
+      },
+      {
+        "feature": "dti",
+        "contribution": -0.10131383857796668,
+        "value": "2.440000057220459"
+      },
+      {
+        "feature": "log1p_annual_inc",
+        "contribution": -0.09952717548433165,
+        "value": "11.461642696843066"
+      }
+    ]
+  },
+  {
+    "id": "55942889",
+    "case": "TP",
+    "component": "catboost_seed44",
+    "component_weight": 0.19999999999999998,
+    "target": 1,
+    "selected_probability": 0.8173248138243266,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.7547642058939269,
+    "base_value": -1.8312519802527578,
+    "sum_contributions": 2.955437198015018,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "term_months",
+        "contribution": 0.3008447868764194,
+        "value": "60"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.26671507883481843,
+        "value": "60 months"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.22821170870889165,
+        "value": "7.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.1878106779951062,
+        "value": "0.36363636363636365"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.15757174941224975,
+        "value": "30.719999313354492"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.156460526689456,
+        "value": "4.0"
+      },
+      {
+        "feature": "revol_bal",
+        "contribution": 0.1518248651677974,
+        "value": "972.0"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": 0.1492810747065253,
+        "value": "4.363636363636363"
+      },
+      {
+        "feature": "total_bc_limit",
+        "contribution": 0.13786906853447936,
+        "value": "700.0"
+      },
+      {
+        "feature": "log1p_revol_bal",
+        "contribution": 0.13459130471727318,
+        "value": "6.880384082186005"
+      }
+    ]
+  },
+  {
+    "id": "55240726",
+    "case": "TP",
+    "component": "catboost_seed44",
+    "component_weight": 0.19999999999999998,
+    "target": 1,
+    "selected_probability": 0.8066777505982918,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.7844776934375959,
+    "base_value": -1.8312519802527578,
+    "sum_contributions": 3.1232057029902736,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.43782969079675604,
+        "value": "14.0"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.4207587117568283,
+        "value": "13.0"
+      },
+      {
+        "feature": "purpose",
+        "contribution": 0.4030593507499059,
+        "value": "small_business"
+      },
+      {
+        "feature": "term_months",
+        "contribution": 0.26825143223125547,
+        "value": "60"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": 0.2629154280634334,
+        "value": "3.0"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.2062019288191639,
+        "value": "60 months"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.15578411227777714,
+        "value": "0.3333333333333333"
+      },
+      {
+        "feature": "log1p_annual_inc",
+        "contribution": 0.09625478463015104,
+        "value": "10.308985993422082"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": 0.09556089615433196,
+        "value": "4.0"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": 0.0873127913035036,
+        "value": "1.0"
+      }
+    ]
+  },
+  {
+    "id": "39732445",
+    "case": "TP",
+    "component": "catboost_seed44",
+    "component_weight": 0.19999999999999998,
+    "target": 1,
+    "selected_probability": 0.7855217382346737,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.6913370203449275,
+    "base_value": -1.8312519802527578,
+    "sum_contributions": 2.637629412604522,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.43236562364495407,
+        "value": "17.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": 0.29212643114335135,
+        "value": "60"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.27512571342963105,
+        "value": "60 months"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.23768824893503315,
+        "value": "9.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.1557675447422644,
+        "value": "0.41776315789473684"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": 0.14722284226835688,
+        "value": "5.0131578947368425"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.1388499640027814,
+        "value": "30.700000762939453"
+      },
+      {
+        "feature": "fico_midpoint",
+        "contribution": 0.10913005270907325,
+        "value": "667.0"
+      },
+      {
+        "feature": "num_actv_rev_tl",
+        "contribution": 0.09395374661325655,
+        "value": "21.0"
+      },
+      {
+        "feature": "fico_range_low",
+        "contribution": 0.08852792326629877,
+        "value": "665.0"
+      }
+    ]
+  },
+  {
+    "id": "58912781",
+    "case": "TN",
+    "component": "catboost_seed44",
+    "component_weight": 0.19999999999999998,
+    "target": 0,
+    "selected_probability": 0.007173566885966879,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.007853816922508845,
+    "base_value": -1.8312519802527578,
+    "sum_contributions": -3.007618832360193,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.31319556527430736,
+        "value": "825.0"
+      },
+      {
+        "feature": "fico_midpoint",
+        "contribution": -0.23666978979649475,
+        "value": "827.0"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.20167992372465685,
+        "value": "829.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.2008071364329559,
+        "value": "0.025"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": -0.1781790638121327,
+        "value": "171.0"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": -0.15435510090811055,
+        "value": "0.30000000000000004"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.14223521869611125,
+        "value": "0.0"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.13008025509817012,
+        "value": "1.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.11929598675121492,
+        "value": "36"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": -0.11535803878500554,
+        "value": "73406.0"
+      }
+    ]
+  },
+  {
+    "id": "51879140",
+    "case": "TN",
+    "component": "catboost_seed44",
+    "component_weight": 0.19999999999999998,
+    "target": 0,
+    "selected_probability": 0.007533654842236631,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.00904602981406823,
+    "base_value": -1.8312519802527578,
+    "sum_contributions": -2.8650901382747023,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.3128074874323848,
+        "value": "800.0"
+      },
+      {
+        "feature": "fico_midpoint",
+        "contribution": -0.24232928238583454,
+        "value": "802.0"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.19551806297392865,
+        "value": "804.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.141514118422752,
+        "value": "0.05641025641025641"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.1397012601794084,
+        "value": "0.0"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.13276015189878584,
+        "value": "1.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.12957301415475528,
+        "value": "36"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.11984092524611796,
+        "value": "credit_card"
+      },
+      {
+        "feature": "term",
+        "contribution": -0.11379847366826615,
+        "value": "36 months"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": -0.1047100737309959,
+        "value": "0.676923076923077"
+      }
+    ]
+  },
+  {
+    "id": "62206419",
+    "case": "TN",
+    "component": "catboost_seed44",
+    "component_weight": 0.19999999999999998,
+    "target": 0,
+    "selected_probability": 0.007581685515589165,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.009471881371579076,
+    "base_value": -1.8312519802527578,
+    "sum_contributions": -2.8186587198524924,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.306244789650613,
+        "value": "800.0"
+      },
+      {
+        "feature": "fico_midpoint",
+        "contribution": -0.23756986958865842,
+        "value": "802.0"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.1935411937885445,
+        "value": "804.0"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": -0.14923128485720602,
+        "value": "114.0"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.13614477158571323,
+        "value": "0.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.13514609017243723,
+        "value": "0.08971962616822429"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.1312094620163132,
+        "value": "36"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.12844038843079686,
+        "value": "1.0"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.12042462977172846,
+        "value": "credit_card"
+      },
+      {
+        "feature": "term",
+        "contribution": -0.11457781662990842,
+        "value": "36 months"
+      }
+    ]
+  },
+  {
+    "id": "56129626",
+    "case": "FP",
+    "component": "lightgbm",
+    "component_weight": 0.13333333333333333,
+    "target": 0,
+    "selected_probability": 0.7773252070733463,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.6308226806649743,
+    "base_value": -1.8219939582138704,
+    "sum_contributions": 2.35774169923286,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "term_months",
+        "contribution": 0.4042580147889336,
+        "value": "60"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.28110591299126997,
+        "value": "0.5"
+      },
+      {
+        "feature": "bc_util",
+        "contribution": 0.17194625323056625,
+        "value": "103.5"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": 0.1431972409522385,
+        "value": "0.0"
+      },
+      {
+        "feature": "fico_range_low",
+        "contribution": 0.13021999674167323,
+        "value": "680.0"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.12769656980891428,
+        "value": "60 months"
+      },
+      {
+        "feature": "revol_util",
+        "contribution": 0.11853192538219398,
+        "value": "102.19999694824219"
+      },
+      {
+        "feature": "total_bc_limit",
+        "contribution": 0.10995681902076143,
+        "value": "5100.0"
+      },
+      {
+        "feature": "addr_state",
+        "contribution": 0.07528760816825071,
+        "value": "AZ"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": 0.06458412639217644,
+        "value": "6.0"
+      }
+    ]
+  },
+  {
+    "id": "40960541",
+    "case": "FP",
+    "component": "lightgbm",
+    "component_weight": 0.13333333333333333,
+    "target": 0,
+    "selected_probability": 0.7658370168452677,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.5347541121252789,
+    "base_value": -1.8219939582138704,
+    "sum_contributions": 1.961234939000636,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "term_months",
+        "contribution": 0.44065946780189397,
+        "value": "60"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.2883040426745601,
+        "value": "15.0"
+      },
+      {
+        "feature": "addr_state",
+        "contribution": -0.2346324483517393,
+        "value": "OR"
+      },
+      {
+        "feature": "total_bc_limit",
+        "contribution": 0.16007101404052407,
+        "value": "2400.0"
+      },
+      {
+        "feature": "fico_range_low",
+        "contribution": 0.15844636516036556,
+        "value": "665.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.1553387031779235,
+        "value": "0.3095"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.12380276658926245,
+        "value": "60 months"
+      },
+      {
+        "feature": "mo_sin_old_rev_tl_op",
+        "contribution": 0.1097184807474521,
+        "value": "64.0"
+      },
+      {
+        "feature": "revolving_debt_to_income",
+        "contribution": 0.0949259445236512,
+        "value": "0.0076"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.08981487343113634,
+        "value": "38.189998626708984"
+      }
+    ]
+  },
+  {
+    "id": "43661015",
+    "case": "FP",
+    "component": "lightgbm",
+    "component_weight": 0.13333333333333333,
+    "target": 0,
+    "selected_probability": 0.7362642648631379,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.5189438162074912,
+    "base_value": -1.8219939582138704,
+    "sum_contributions": 1.8978055120785324,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "term_months",
+        "contribution": 0.45908071177351206,
+        "value": "60"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.27568210220557665,
+        "value": "0.4194721104825005"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.2730045640494408,
+        "value": "14.0"
+      },
+      {
+        "feature": "total_bc_limit",
+        "contribution": 0.15838231644010242,
+        "value": "1200.0"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.15243528272268722,
+        "value": "7.0"
+      },
+      {
+        "feature": "fico_range_low",
+        "contribution": 0.13616135402332033,
+        "value": "675.0"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.1114853239530177,
+        "value": "60 months"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.10244593646859328,
+        "value": "32.95000076293945"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": 0.10166960444043269,
+        "value": "72.0"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": -0.09118998408129275,
+        "value": "40.0"
+      }
+    ]
+  },
+  {
+    "id": "44016868",
+    "case": "FN",
+    "component": "lightgbm",
+    "component_weight": 0.13333333333333333,
+    "target": 1,
+    "selected_probability": 0.009621006657618149,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.017965546357530903,
+    "base_value": -1.8219939582138704,
+    "sum_contributions": -2.1791766022664687,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.4205830509685009,
+        "value": "820.0"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.2173319425489729,
+        "value": "824.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.1941004599056513,
+        "value": "0.05333333333333334"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.15767606152409028,
+        "value": "36"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.10878835795605743,
+        "value": "credit_card"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.10061494366968286,
+        "value": "1.0"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.08475983873106568,
+        "value": "0.0"
+      },
+      {
+        "feature": "dti",
+        "contribution": -0.07617488544805971,
+        "value": "6.929999828338623"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": -0.07377565925396566,
+        "value": "38606.0"
+      },
+      {
+        "feature": "annual_inc",
+        "contribution": -0.07170555165380373,
+        "value": "300000.0"
+      }
+    ]
+  },
+  {
+    "id": "67406916",
+    "case": "FN",
+    "component": "lightgbm",
+    "component_weight": 0.13333333333333333,
+    "target": 1,
+    "selected_probability": 0.010436255345623454,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.019913602067217658,
+    "base_value": -1.8219939582138704,
+    "sum_contributions": -2.0742437515185874,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.4490930045150351,
+        "value": "830.0"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.20455850777911425,
+        "value": "834.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.16619679636143467,
+        "value": "36"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.13560122041896971,
+        "value": "0.10121457489878542"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.10958318446129564,
+        "value": "credit_card"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.10568354503521842,
+        "value": "0.0"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": -0.10210286452708975,
+        "value": "198932.0"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": -0.09731866391715603,
+        "value": "170.0"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.09500413356736467,
+        "value": "2.0"
+      },
+      {
+        "feature": "annual_inc",
+        "contribution": -0.08808110530996342,
+        "value": "98800.0"
+      }
+    ]
+  },
+  {
+    "id": "63919895",
+    "case": "FN",
+    "component": "lightgbm",
+    "component_weight": 0.13333333333333333,
+    "target": 1,
+    "selected_probability": 0.01070379327817742,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.01669751056003165,
+    "base_value": -1.8219939582138704,
+    "sum_contributions": -2.2536631952393704,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.45483910617428075,
+        "value": "805.0"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.210216437277915,
+        "value": "809.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.157443863008373,
+        "value": "36"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.1082845653722314,
+        "value": "0.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.09649819024039025,
+        "value": "0.15789473684210525"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.09601569373738737,
+        "value": "0.0"
+      },
+      {
+        "feature": "annual_inc",
+        "contribution": -0.08692153639838923,
+        "value": "95000.0"
+      },
+      {
+        "feature": "dti",
+        "contribution": -0.08397912707502947,
+        "value": "2.440000057220459"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": -0.08110998104004084,
+        "value": "24000.0"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": -0.07231959507533842,
+        "value": "48.0"
+      }
+    ]
+  },
+  {
+    "id": "55942889",
+    "case": "TP",
+    "component": "lightgbm",
+    "component_weight": 0.13333333333333333,
+    "target": 1,
+    "selected_probability": 0.8173248138243266,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.6587852712379014,
+    "base_value": -1.8219939582138704,
+    "sum_contributions": 2.479879617093855,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "term_months",
+        "contribution": 0.45186368867689897,
+        "value": "60"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.2217803711554728,
+        "value": "0.36363636363636365"
+      },
+      {
+        "feature": "fico_range_low",
+        "contribution": 0.16858266104596256,
+        "value": "665.0"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.1622533462408164,
+        "value": "7.0"
+      },
+      {
+        "feature": "total_bc_limit",
+        "contribution": 0.15074339806422457,
+        "value": "700.0"
+      },
+      {
+        "feature": "mo_sin_old_rev_tl_op",
+        "contribution": 0.12531226603362128,
+        "value": "14.0"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.11196203943952765,
+        "value": "4.0"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.10755345976794206,
+        "value": "60 months"
+      },
+      {
+        "feature": "revolving_debt_to_income",
+        "contribution": 0.10201506132044545,
+        "value": "0.017672727272727274"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.09429901668945415,
+        "value": "30.719999313354492"
+      }
+    ]
+  },
+  {
+    "id": "55240726",
+    "case": "TP",
+    "component": "lightgbm",
+    "component_weight": 0.13333333333333333,
+    "target": 1,
+    "selected_probability": 0.8066777505982918,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.6297856965271813,
+    "base_value": -1.8219939582138704,
+    "sum_contributions": 2.353291518945198,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "term_months",
+        "contribution": 0.3901432583209705,
+        "value": "60"
+      },
+      {
+        "feature": "purpose",
+        "contribution": 0.3706588784764179,
+        "value": "small_business"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.22477883356922304,
+        "value": "14.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.18221730915265544,
+        "value": "0.3333333333333333"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": 0.13452329845076982,
+        "value": "3.0"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.13183934818441198,
+        "value": "13.0"
+      },
+      {
+        "feature": "fico_range_low",
+        "contribution": 0.11237096571201742,
+        "value": "675.0"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.10892080972690377,
+        "value": "60 months"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": 0.08782890721671412,
+        "value": "1.0"
+      },
+      {
+        "feature": "annual_inc",
+        "contribution": 0.07316923397487031,
+        "value": "30000.0"
+      }
+    ]
+  },
+  {
+    "id": "39732445",
+    "case": "TP",
+    "component": "lightgbm",
+    "component_weight": 0.13333333333333333,
+    "target": 1,
+    "selected_probability": 0.7855217382346737,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.6574200946729507,
+    "base_value": -1.8219939582138704,
+    "sum_contributions": 2.473812255149042,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "term_months",
+        "contribution": 0.42720587155787376,
+        "value": "60"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.3565367885942532,
+        "value": "17.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.21715985754558315,
+        "value": "0.41776315789473684"
+      },
+      {
+        "feature": "addr_state",
+        "contribution": 0.20590094015950708,
+        "value": "NY"
+      },
+      {
+        "feature": "fico_range_low",
+        "contribution": 0.17779544938393999,
+        "value": "665.0"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.161362874571366,
+        "value": "9.0"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.11317283355530296,
+        "value": "60 months"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.1101257242302185,
+        "value": "30.700000762939453"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": 0.08806686272869137,
+        "value": "669.0"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": 0.08525082903879373,
+        "value": "3.0"
+      }
+    ]
+  },
+  {
+    "id": "58912781",
+    "case": "TN",
+    "component": "lightgbm",
+    "component_weight": 0.13333333333333333,
+    "target": 0,
+    "selected_probability": 0.007173566885966879,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.014112752631599352,
+    "base_value": -1.8219939582138704,
+    "sum_contributions": -2.4244692056878057,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.4442631081725132,
+        "value": "825.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.20837555160587354,
+        "value": "0.025"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.20246264933841748,
+        "value": "829.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.15583013615122052,
+        "value": "36"
+      },
+      {
+        "feature": "annual_inc",
+        "contribution": -0.10440028594374856,
+        "value": "120000.0"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.09937970483646699,
+        "value": "1.0"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": -0.09873895620516727,
+        "value": "171.0"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.0938724354672676,
+        "value": "0.0"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": -0.09319803579383554,
+        "value": "73406.0"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.09048117898915892,
+        "value": "car"
+      }
+    ]
+  },
+  {
+    "id": "51879140",
+    "case": "TN",
+    "component": "lightgbm",
+    "component_weight": 0.13333333333333333,
+    "target": 0,
+    "selected_probability": 0.007533654842236631,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.014884312460533093,
+    "base_value": -1.8219939582138704,
+    "sum_contributions": -2.3704573220277663,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.4510192683660281,
+        "value": "800.0"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.20523292832702383,
+        "value": "804.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.16796442572872902,
+        "value": "0.05641025641025641"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.1572821395591364,
+        "value": "36"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.11932535557630058,
+        "value": "credit_card"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.09971494328591836,
+        "value": "1.0"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.0965107438863198,
+        "value": "0.0"
+      },
+      {
+        "feature": "dti",
+        "contribution": -0.08755537801534155,
+        "value": "7.929999828338623"
+      },
+      {
+        "feature": "annual_inc",
+        "contribution": -0.08513437889379126,
+        "value": "117000.0"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": -0.08390814039895485,
+        "value": "40.0"
+      }
+    ]
+  },
+  {
+    "id": "62206419",
+    "case": "TN",
+    "component": "lightgbm",
+    "component_weight": 0.13333333333333333,
+    "target": 0,
+    "selected_probability": 0.007581685515589165,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.014669903452005055,
+    "base_value": -1.8219939582138704,
+    "sum_contributions": -2.3851847394047425,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.4382544917474127,
+        "value": "800.0"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.20035780419889332,
+        "value": "804.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.16579215486606583,
+        "value": "36"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.16541615520323816,
+        "value": "0.08971962616822429"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.12568426492569199,
+        "value": "credit_card"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": -0.114435725429515,
+        "value": "114.0"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.10969511810973921,
+        "value": "1.0"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.1016184573466706,
+        "value": "0.0"
+      },
+      {
+        "feature": "annual_inc",
+        "contribution": -0.08502124165667148,
+        "value": "107000.0"
+      },
+      {
+        "feature": "dti",
+        "contribution": -0.0671361526972859,
+        "value": "10.9399995803833"
+      }
+    ]
+  },
+  {
+    "id": "56129626",
+    "case": "FP",
+    "component": "lightgbm_seed43",
+    "component_weight": 0.13333333333333333,
+    "target": 0,
+    "selected_probability": 0.7773252070733463,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.6129960370467086,
+    "base_value": -1.8207594589469964,
+    "sum_contributions": 2.280682996845181,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "term_months",
+        "contribution": 0.3319753756994699,
+        "value": "60"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.2589070318238438,
+        "value": "0.5"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": 0.22131329343962536,
+        "value": "0.0"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.19366410320671973,
+        "value": "60 months"
+      },
+      {
+        "feature": "bc_util",
+        "contribution": 0.16097811188683592,
+        "value": "103.5"
+      },
+      {
+        "feature": "fico_range_low",
+        "contribution": 0.14968117329282615,
+        "value": "680.0"
+      },
+      {
+        "feature": "revol_util",
+        "contribution": 0.12126985474590608,
+        "value": "102.19999694824219"
+      },
+      {
+        "feature": "total_bc_limit",
+        "contribution": 0.09447852972941512,
+        "value": "5100.0"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.08589513702170315,
+        "value": "5.0"
+      },
+      {
+        "feature": "annual_inc",
+        "contribution": 0.0852023024035056,
+        "value": "36000.0"
+      }
+    ]
+  },
+  {
+    "id": "40960541",
+    "case": "FP",
+    "component": "lightgbm_seed43",
+    "component_weight": 0.13333333333333333,
+    "target": 0,
+    "selected_probability": 0.7658370168452677,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.5317516670969645,
+    "base_value": -1.8207594589469964,
+    "sum_contributions": 1.9479372670898931,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.34444839511454656,
+        "value": "15.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": 0.33688548951671793,
+        "value": "60"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.21541233665075837,
+        "value": "60 months"
+      },
+      {
+        "feature": "addr_state",
+        "contribution": -0.20074045882418337,
+        "value": "OR"
+      },
+      {
+        "feature": "fico_range_low",
+        "contribution": 0.17480952040816058,
+        "value": "665.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.14655678013825477,
+        "value": "0.3095"
+      },
+      {
+        "feature": "total_bc_limit",
+        "contribution": 0.13683198937846838,
+        "value": "2400.0"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.12434301820319159,
+        "value": "38.189998626708984"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.10394658903153965,
+        "value": "4.0"
+      },
+      {
+        "feature": "mo_sin_old_rev_tl_op",
+        "contribution": 0.08296374541514615,
+        "value": "64.0"
+      }
+    ]
+  },
+  {
+    "id": "43661015",
+    "case": "FP",
+    "component": "lightgbm_seed43",
+    "component_weight": 0.13333333333333333,
+    "target": 0,
+    "selected_probability": 0.7362642648631379,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.6034787531173842,
+    "base_value": -1.8207594589469964,
+    "sum_contributions": 2.2407406670387346,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "term_months",
+        "contribution": 0.36633006613813146,
+        "value": "60"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.3224985901423161,
+        "value": "14.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.25164851485621254,
+        "value": "0.4194721104825005"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.22178054426572844,
+        "value": "60 months"
+      },
+      {
+        "feature": "total_bc_limit",
+        "contribution": 0.17311678873574973,
+        "value": "1200.0"
+      },
+      {
+        "feature": "fico_range_low",
+        "contribution": 0.15409695493503076,
+        "value": "675.0"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.12393561116438047,
+        "value": "32.95000076293945"
+      },
+      {
+        "feature": "mo_sin_old_rev_tl_op",
+        "contribution": 0.12279323913114462,
+        "value": "49.0"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.11836575128212043,
+        "value": "7.0"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": 0.10702238578769115,
+        "value": "72.0"
+      }
+    ]
+  },
+  {
+    "id": "44016868",
+    "case": "FN",
+    "component": "lightgbm_seed43",
+    "component_weight": 0.13333333333333333,
+    "target": 1,
+    "selected_probability": 0.009621006657618149,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.01832684598564304,
+    "base_value": -1.8207594589469964,
+    "sum_contributions": -2.1601319783381037,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.5764628701237973,
+        "value": "820.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.2034451910104276,
+        "value": "0.05333333333333334"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.13839544624098457,
+        "value": "36"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.1231023765837051,
+        "value": "credit_card"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.10242991716922985,
+        "value": "824.0"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.08554024711467653,
+        "value": "1.0"
+      },
+      {
+        "feature": "annual_inc",
+        "contribution": -0.08015818168943209,
+        "value": "300000.0"
+      },
+      {
+        "feature": "revolving_debt_to_income",
+        "contribution": 0.07736793953293176,
+        "value": "0.004313333333333333"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": -0.07694466899097983,
+        "value": "38606.0"
+      },
+      {
+        "feature": "term",
+        "contribution": -0.07571484009273363,
+        "value": "36 months"
+      }
+    ]
+  },
+  {
+    "id": "67406916",
+    "case": "FN",
+    "component": "lightgbm_seed43",
+    "component_weight": 0.13333333333333333,
+    "target": 1,
+    "selected_probability": 0.010436255345623454,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.02057918600664704,
+    "base_value": -1.8207594589469964,
+    "sum_contributions": -2.0419217548928073,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.5573716042454768,
+        "value": "830.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.15299578852521023,
+        "value": "36"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.13462668408561024,
+        "value": "0.10121457489878542"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.13103553246383193,
+        "value": "credit_card"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.10513028966689313,
+        "value": "834.0"
+      },
+      {
+        "feature": "annual_inc",
+        "contribution": -0.10205731825495097,
+        "value": "98800.0"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.0876570294363511,
+        "value": "0.0"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": -0.08747900633293598,
+        "value": "170.0"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": -0.08660593095575608,
+        "value": "198932.0"
+      },
+      {
+        "feature": "term",
+        "contribution": -0.08378851538171403,
+        "value": "36 months"
+      }
+    ]
+  },
+  {
+    "id": "63919895",
+    "case": "FN",
+    "component": "lightgbm_seed43",
+    "component_weight": 0.13333333333333333,
+    "target": 1,
+    "selected_probability": 0.01070379327817742,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.02086403964871971,
+    "base_value": -1.8207594589469964,
+    "sum_contributions": -2.0278839646206603,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.5460415529509735,
+        "value": "805.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.13407398197192177,
+        "value": "36"
+      },
+      {
+        "feature": "annual_inc",
+        "contribution": -0.1037007196093573,
+        "value": "95000.0"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.09959634108920162,
+        "value": "0.0"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.09819484707600575,
+        "value": "809.0"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": -0.08153676705860996,
+        "value": "24000.0"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": -0.07963950551386778,
+        "value": "48.0"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.07930073517574544,
+        "value": "0.0"
+      },
+      {
+        "feature": "dti",
+        "contribution": -0.07841507138362519,
+        "value": "2.440000057220459"
+      },
+      {
+        "feature": "term",
+        "contribution": -0.07303938600056889,
+        "value": "36 months"
+      }
+    ]
+  },
+  {
+    "id": "55942889",
+    "case": "TP",
+    "component": "lightgbm_seed43",
+    "component_weight": 0.13333333333333333,
+    "target": 1,
+    "selected_probability": 0.8173248138243266,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.6509872429109048,
+    "base_value": -1.8207594589469964,
+    "sum_contributions": 2.4441410300223003,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "term_months",
+        "contribution": 0.3286763733528194,
+        "value": "60"
+      },
+      {
+        "feature": "fico_range_low",
+        "contribution": 0.19976775537323732,
+        "value": "665.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.19884712097315163,
+        "value": "0.36363636363636365"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.19243840438849644,
+        "value": "60 months"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.16695925494280914,
+        "value": "7.0"
+      },
+      {
+        "feature": "total_bc_limit",
+        "contribution": 0.15175503070078042,
+        "value": "700.0"
+      },
+      {
+        "feature": "mo_sin_old_rev_tl_op",
+        "contribution": 0.13726057586903806,
+        "value": "14.0"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.11101785656240219,
+        "value": "4.0"
+      },
+      {
+        "feature": "revolving_debt_to_income",
+        "contribution": 0.10780017669094788,
+        "value": "0.017672727272727274"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": 0.10046891767529839,
+        "value": "112.0"
+      }
+    ]
+  },
+  {
+    "id": "55240726",
+    "case": "TP",
+    "component": "lightgbm_seed43",
+    "component_weight": 0.13333333333333333,
+    "target": 1,
+    "selected_probability": 0.8066777505982918,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.641033912329172,
+    "base_value": -1.8207594589469964,
+    "sum_contributions": 2.4006138991040675,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "purpose",
+        "contribution": 0.4099407489365549,
+        "value": "small_business"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.29964966090549494,
+        "value": "14.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": 0.280959952758598,
+        "value": "60"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.18732380295144402,
+        "value": "0.3333333333333333"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.17256366197031692,
+        "value": "60 months"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": 0.1411904891611802,
+        "value": "3.0"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.10718386533159081,
+        "value": "13.0"
+      },
+      {
+        "feature": "fico_range_low",
+        "contribution": 0.10433282829851846,
+        "value": "675.0"
+      },
+      {
+        "feature": "addr_state",
+        "contribution": 0.10222120514189989,
+        "value": "FL"
+      },
+      {
+        "feature": "annual_inc",
+        "contribution": 0.09311112582764572,
+        "value": "30000.0"
+      }
+    ]
+  },
+  {
+    "id": "39732445",
+    "case": "TP",
+    "component": "lightgbm_seed43",
+    "component_weight": 0.13333333333333333,
+    "target": 1,
+    "selected_probability": 0.7855217382346737,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.6230556067443251,
+    "base_value": -1.8207594589469964,
+    "sum_contributions": 2.323297551589217,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.3471791819317168,
+        "value": "17.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": 0.3424989655529403,
+        "value": "60"
+      },
+      {
+        "feature": "fico_range_low",
+        "contribution": 0.19982582122081183,
+        "value": "665.0"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.1949150409362583,
+        "value": "60 months"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.18560088986304446,
+        "value": "0.41776315789473684"
+      },
+      {
+        "feature": "addr_state",
+        "contribution": 0.1480330389690602,
+        "value": "NY"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.12415518670702907,
+        "value": "9.0"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.11545620627590888,
+        "value": "30.700000762939453"
+      },
+      {
+        "feature": "mo_sin_old_rev_tl_op",
+        "contribution": 0.07719254937182753,
+        "value": "73.0"
+      },
+      {
+        "feature": "num_rev_tl_bal_gt_0",
+        "contribution": 0.07123971600115868,
+        "value": "21.0"
+      }
+    ]
+  },
+  {
+    "id": "58912781",
+    "case": "TN",
+    "component": "lightgbm_seed43",
+    "component_weight": 0.13333333333333333,
+    "target": 0,
+    "selected_probability": 0.007173566885966879,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.015917089989045514,
+    "base_value": -1.8207594589469964,
+    "sum_contributions": -2.303557318621595,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.5669670572107057,
+        "value": "825.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.20603130503914102,
+        "value": "0.025"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.13631430256557026,
+        "value": "36"
+      },
+      {
+        "feature": "annual_inc",
+        "contribution": -0.10860458582636216,
+        "value": "120000.0"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": -0.10769819285376836,
+        "value": "171.0"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.10542254853364134,
+        "value": "car"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.10157984703793169,
+        "value": "829.0"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.09398822163241309,
+        "value": "1.0"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": -0.08875002909190494,
+        "value": "0.30000000000000004"
+      },
+      {
+        "feature": "dti",
+        "contribution": -0.0876149621672923,
+        "value": "0.44999998807907104"
+      }
+    ]
+  },
+  {
+    "id": "51879140",
+    "case": "TN",
+    "component": "lightgbm_seed43",
+    "component_weight": 0.13333333333333333,
+    "target": 0,
+    "selected_probability": 0.007533654842236631,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.016127341155230165,
+    "base_value": -1.8207594589469964,
+    "sum_contributions": -2.2902209779233753,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.5641944569809756,
+        "value": "800.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.1723521944833587,
+        "value": "0.05641025641025641"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.13684603917715615,
+        "value": "36"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.12440811060555224,
+        "value": "credit_card"
+      },
+      {
+        "feature": "annual_inc",
+        "contribution": -0.1075630102421629,
+        "value": "117000.0"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.10575017590514296,
+        "value": "804.0"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.0919981147420228,
+        "value": "1.0"
+      },
+      {
+        "feature": "dti",
+        "contribution": -0.0868917323616857,
+        "value": "7.929999828338623"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": -0.07635659943199849,
+        "value": "32178.0"
+      },
+      {
+        "feature": "term",
+        "contribution": -0.0742478022125842,
+        "value": "36 months"
+      }
+    ]
+  },
+  {
+    "id": "62206419",
+    "case": "TN",
+    "component": "lightgbm_seed43",
+    "component_weight": 0.13333333333333333,
+    "target": 0,
+    "selected_probability": 0.007581685515589165,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.016253951704683627,
+    "base_value": -1.8207594589469964,
+    "sum_contributions": -2.2822722627574077,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.5506883773536058,
+        "value": "800.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.175958335284181,
+        "value": "0.08971962616822429"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.1474002572969603,
+        "value": "36"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.14024382563060653,
+        "value": "credit_card"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.1021639015951353,
+        "value": "804.0"
+      },
+      {
+        "feature": "annual_inc",
+        "contribution": -0.09487442587324854,
+        "value": "107000.0"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": -0.09061456202889064,
+        "value": "114.0"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.0868978797947838,
+        "value": "1.0"
+      },
+      {
+        "feature": "term",
+        "contribution": -0.07944615180470543,
+        "value": "36 months"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": -0.07581433213244516,
+        "value": "25401.0"
+      }
+    ]
+  },
+  {
+    "id": "56129626",
+    "case": "FP",
+    "component": "lightgbm_seed44",
+    "component_weight": 0.13333333333333333,
+    "target": 0,
+    "selected_probability": 0.7773252070733463,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.692709582591431,
+    "base_value": -1.8203821036413506,
+    "sum_contributions": 2.6331996567865685,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "term_months",
+        "contribution": 0.4726111214091724,
+        "value": "60"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.2936171736761121,
+        "value": "0.5"
+      },
+      {
+        "feature": "bc_util",
+        "contribution": 0.2276349979685856,
+        "value": "103.5"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": 0.2061538342368971,
+        "value": "0.0"
+      },
+      {
+        "feature": "fico_range_low",
+        "contribution": 0.15445334667335958,
+        "value": "680.0"
+      },
+      {
+        "feature": "total_bc_limit",
+        "contribution": 0.14313817732225448,
+        "value": "5100.0"
+      },
+      {
+        "feature": "revol_util",
+        "contribution": 0.1392320571151302,
+        "value": "102.19999694824219"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.09081590117977849,
+        "value": "5.0"
+      },
+      {
+        "feature": "loan_to_monthly_income",
+        "contribution": 0.08286355610846877,
+        "value": "6.0"
+      },
+      {
+        "feature": "addr_state",
+        "contribution": 0.08036601615352694,
+        "value": "AZ"
+      }
+    ]
+  },
+  {
+    "id": "40960541",
+    "case": "FP",
+    "component": "lightgbm_seed44",
+    "component_weight": 0.13333333333333333,
+    "target": 0,
+    "selected_probability": 0.7658370168452677,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.5316670219262517,
+    "base_value": -1.8203821036413506,
+    "sum_contributions": 1.9472199638537528,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "term_months",
+        "contribution": 0.46487166919830347,
+        "value": "60"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.315784434131121,
+        "value": "15.0"
+      },
+      {
+        "feature": "addr_state",
+        "contribution": -0.20306920006004986,
+        "value": "OR"
+      },
+      {
+        "feature": "fico_range_low",
+        "contribution": 0.18594063113339493,
+        "value": "665.0"
+      },
+      {
+        "feature": "total_bc_limit",
+        "contribution": 0.17713639458847602,
+        "value": "2400.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.1536802227494768,
+        "value": "0.3095"
+      },
+      {
+        "feature": "mo_sin_old_rev_tl_op",
+        "contribution": 0.09520305793608624,
+        "value": "64.0"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.09267003634413876,
+        "value": "4.0"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.09217714677063636,
+        "value": "38.189998626708984"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.07783974341965474,
+        "value": "60 months"
+      }
+    ]
+  },
+  {
+    "id": "43661015",
+    "case": "FP",
+    "component": "lightgbm_seed44",
+    "component_weight": 0.13333333333333333,
+    "target": 0,
+    "selected_probability": 0.7362642648631379,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.5429811486163612,
+    "base_value": -1.8203821036413506,
+    "sum_contributions": 1.9927320655398328,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "term_months",
+        "contribution": 0.5420087372575737,
+        "value": "60"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.31107994438798536,
+        "value": "14.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.2452831807193184,
+        "value": "0.4194721104825005"
+      },
+      {
+        "feature": "total_bc_limit",
+        "contribution": 0.18330100217707604,
+        "value": "1200.0"
+      },
+      {
+        "feature": "fico_range_low",
+        "contribution": 0.1587512643964236,
+        "value": "675.0"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.12325069648129018,
+        "value": "7.0"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": 0.09330684022944888,
+        "value": "72.0"
+      },
+      {
+        "feature": "mo_sin_old_rev_tl_op",
+        "contribution": 0.08775318257607603,
+        "value": "49.0"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": -0.08715528197799878,
+        "value": "40.0"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.08481273050864756,
+        "value": "32.95000076293945"
+      }
+    ]
+  },
+  {
+    "id": "44016868",
+    "case": "FN",
+    "component": "lightgbm_seed44",
+    "component_weight": 0.13333333333333333,
+    "target": 1,
+    "selected_probability": 0.009621006657618149,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.018616525855739224,
+    "base_value": -1.8203821036413506,
+    "sum_contributions": -2.1445315076943388,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.5524714590752111,
+        "value": "820.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.177955140297156,
+        "value": "36"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.16395020436666566,
+        "value": "0.05333333333333334"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.11279181005582282,
+        "value": "824.0"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.10981362378204902,
+        "value": "credit_card"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.0973933204039452,
+        "value": "1.0"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.08838653194417609,
+        "value": "0.0"
+      },
+      {
+        "feature": "annual_inc",
+        "contribution": -0.08474697526692389,
+        "value": "300000.0"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": -0.07607286015873788,
+        "value": "38606.0"
+      },
+      {
+        "feature": "dti",
+        "contribution": -0.06859675618348803,
+        "value": "6.929999828338623"
+      }
+    ]
+  },
+  {
+    "id": "67406916",
+    "case": "FN",
+    "component": "lightgbm_seed44",
+    "component_weight": 0.13333333333333333,
+    "target": 1,
+    "selected_probability": 0.010436255345623454,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.01911655304682493,
+    "base_value": -1.8203821036413506,
+    "sum_contributions": -2.1175169270271166,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.5634018296822093,
+        "value": "830.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.19301959590293827,
+        "value": "36"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.12726512702879836,
+        "value": "0.10121457489878542"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.1147413378365321,
+        "value": "834.0"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.1112062706341925,
+        "value": "credit_card"
+      },
+      {
+        "feature": "annual_inc",
+        "contribution": -0.10975601321434407,
+        "value": "98800.0"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.10435087030901452,
+        "value": "0.0"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": -0.10209446505244422,
+        "value": "170.0"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.09079040661289729,
+        "value": "2.0"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": -0.09044261511145886,
+        "value": "198932.0"
+      }
+    ]
+  },
+  {
+    "id": "63919895",
+    "case": "FN",
+    "component": "lightgbm_seed44",
+    "component_weight": 0.13333333333333333,
+    "target": 1,
+    "selected_probability": 0.01070379327817742,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.018190262494849334,
+    "base_value": -1.8203821036413506,
+    "sum_contributions": -2.168129012797608,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.5305441074168611,
+        "value": "805.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.18130056806530218,
+        "value": "36"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.12601280238721907,
+        "value": "809.0"
+      },
+      {
+        "feature": "annual_inc",
+        "contribution": -0.10946896649014586,
+        "value": "95000.0"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.10433995092284312,
+        "value": "0.0"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.09881461817047482,
+        "value": "0.0"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": -0.09391221893394144,
+        "value": "24000.0"
+      },
+      {
+        "feature": "avg_cur_bal",
+        "contribution": -0.08667398339398737,
+        "value": "159032.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.07814881062754327,
+        "value": "0.15789473684210525"
+      },
+      {
+        "feature": "dti",
+        "contribution": -0.07797492963813761,
+        "value": "2.440000057220459"
+      }
+    ]
+  },
+  {
+    "id": "55942889",
+    "case": "TP",
+    "component": "lightgbm_seed44",
+    "component_weight": 0.13333333333333333,
+    "target": 1,
+    "selected_probability": 0.8173248138243266,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.711007088546234,
+    "base_value": -1.8203821036413506,
+    "sum_contributions": 2.720662343250841,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "term_months",
+        "contribution": 0.521354289108326,
+        "value": "60"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.2243460316349921,
+        "value": "0.36363636363636365"
+      },
+      {
+        "feature": "fico_range_low",
+        "contribution": 0.1925232373617811,
+        "value": "665.0"
+      },
+      {
+        "feature": "total_bc_limit",
+        "contribution": 0.18947769256295402,
+        "value": "700.0"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.16983703492076083,
+        "value": "7.0"
+      },
+      {
+        "feature": "mo_sin_old_rev_tl_op",
+        "contribution": 0.1341934897922776,
+        "value": "14.0"
+      },
+      {
+        "feature": "total_rev_hi_lim",
+        "contribution": 0.11131759913041993,
+        "value": "1300.0"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.09932570145020618,
+        "value": "30.719999313354492"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.09804430166179307,
+        "value": "4.0"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": 0.07527573286301678,
+        "value": "112.0"
+      }
+    ]
+  },
+  {
+    "id": "55240726",
+    "case": "TP",
+    "component": "lightgbm_seed44",
+    "component_weight": 0.13333333333333333,
+    "target": 1,
+    "selected_probability": 0.8066777505982918,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.6585925268248238,
+    "base_value": -1.8203821036413506,
+    "sum_contributions": 2.477410426543709,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "term_months",
+        "contribution": 0.4443191075532075,
+        "value": "60"
+      },
+      {
+        "feature": "purpose",
+        "contribution": 0.4028625650095913,
+        "value": "small_business"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.27918603920915785,
+        "value": "14.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.189005972212098,
+        "value": "0.3333333333333333"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": 0.159047317880109,
+        "value": "3.0"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.14059697003798893,
+        "value": "13.0"
+      },
+      {
+        "feature": "fico_range_low",
+        "contribution": 0.13600834405367113,
+        "value": "675.0"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": 0.10212116324737644,
+        "value": "1.0"
+      },
+      {
+        "feature": "addr_state",
+        "contribution": 0.0769361912024492,
+        "value": "FL"
+      },
+      {
+        "feature": "total_bc_limit",
+        "contribution": 0.06709905503631744,
+        "value": "6200.0"
+      }
+    ]
+  },
+  {
+    "id": "39732445",
+    "case": "TP",
+    "component": "lightgbm_seed44",
+    "component_weight": 0.13333333333333333,
+    "target": 1,
+    "selected_probability": 0.7855217382346737,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.6607803641834809,
+    "base_value": -1.8203821036413506,
+    "sum_contributions": 2.487155819335623,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "term_months",
+        "contribution": 0.46265497655646476,
+        "value": "60"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": 0.345993108631378,
+        "value": "17.0"
+      },
+      {
+        "feature": "num_tl_op_past_12m",
+        "contribution": 0.21762279086085923,
+        "value": "9.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": 0.2135011218621739,
+        "value": "0.41776315789473684"
+      },
+      {
+        "feature": "fico_range_low",
+        "contribution": 0.20508528495190081,
+        "value": "665.0"
+      },
+      {
+        "feature": "addr_state",
+        "contribution": 0.16835567958255077,
+        "value": "NY"
+      },
+      {
+        "feature": "dti",
+        "contribution": 0.12264447514273967,
+        "value": "30.700000762939453"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": 0.09919705428037644,
+        "value": "3.0"
+      },
+      {
+        "feature": "term",
+        "contribution": 0.07806864890430062,
+        "value": "60 months"
+      },
+      {
+        "feature": "mo_sin_old_rev_tl_op",
+        "contribution": 0.06778240091670698,
+        "value": "73.0"
+      }
+    ]
+  },
+  {
+    "id": "58912781",
+    "case": "TN",
+    "component": "lightgbm_seed44",
+    "component_weight": 0.13333333333333333,
+    "target": 0,
+    "selected_probability": 0.007173566885966879,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.017139497959165653,
+    "base_value": -1.8203821036413506,
+    "sum_contributions": -2.2286994738554355,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.5396922615481602,
+        "value": "825.0"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.19913694851570285,
+        "value": "0.025"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.17697507093131598,
+        "value": "36"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.11389803480574234,
+        "value": "829.0"
+      },
+      {
+        "feature": "annual_inc",
+        "contribution": -0.10815682100697024,
+        "value": "120000.0"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": -0.1014179416750113,
+        "value": "73406.0"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.09433974957490902,
+        "value": "0.0"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.09368020412936894,
+        "value": "1.0"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": -0.09354166247532067,
+        "value": "171.0"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.08886671539498947,
+        "value": "car"
+      }
+    ]
+  },
+  {
+    "id": "51879140",
+    "case": "TN",
+    "component": "lightgbm_seed44",
+    "component_weight": 0.13333333333333333,
+    "target": 0,
+    "selected_probability": 0.007533654842236631,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.016114587355310094,
+    "base_value": -1.8203821036413506,
+    "sum_contributions": -2.291402427374324,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.5391807468035467,
+        "value": "800.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.17989604719152005,
+        "value": "36"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.1383538039832754,
+        "value": "0.05641025641025641"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.11740784785908667,
+        "value": "credit_card"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.11465235883289271,
+        "value": "804.0"
+      },
+      {
+        "feature": "annual_inc",
+        "contribution": -0.10720667946396235,
+        "value": "117000.0"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.10129928209147471,
+        "value": "1.0"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": -0.09965666430462869,
+        "value": "32178.0"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.09177025530710749,
+        "value": "0.0"
+      },
+      {
+        "feature": "dti",
+        "contribution": -0.08101910759603341,
+        "value": "7.929999828338623"
+      }
+    ]
+  },
+  {
+    "id": "62206419",
+    "case": "TN",
+    "component": "lightgbm_seed44",
+    "component_weight": 0.13333333333333333,
+    "target": 0,
+    "selected_probability": 0.007581685515589165,
+    "selected_threshold": 0.20848339818594064,
+    "component_raw_probability": 0.016090597043561656,
+    "base_value": -1.8203821036413506,
+    "sum_contributions": -2.2929166521915523,
+    "units": "log_odds",
+    "top_contributions": [
+      {
+        "feature": "fico_range_low",
+        "contribution": -0.5378141990916028,
+        "value": "800.0"
+      },
+      {
+        "feature": "term_months",
+        "contribution": -0.19014925163897453,
+        "value": "36"
+      },
+      {
+        "feature": "loan_to_income",
+        "contribution": -0.14209920864565082,
+        "value": "0.08971962616822429"
+      },
+      {
+        "feature": "purpose",
+        "contribution": -0.11007638749886688,
+        "value": "credit_card"
+      },
+      {
+        "feature": "fico_range_high",
+        "contribution": -0.10896024936684269,
+        "value": "804.0"
+      },
+      {
+        "feature": "annual_inc",
+        "contribution": -0.10367259988219688,
+        "value": "107000.0"
+      },
+      {
+        "feature": "mths_since_recent_bc",
+        "contribution": -0.09566553324674983,
+        "value": "114.0"
+      },
+      {
+        "feature": "inq_last_6mths",
+        "contribution": -0.0955846767781184,
+        "value": "0.0"
+      },
+      {
+        "feature": "acc_open_past_24mths",
+        "contribution": -0.09442427177861987,
+        "value": "1.0"
+      },
+      {
+        "feature": "bc_open_to_buy",
+        "contribution": -0.0838732968722149,
+        "value": "25401.0"
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "train_n": 30000,
+    "validation_n": 20000,
+    "train_ids_sha256": "2b19d390f8f86f0ec2e1719a1d530a83c0d84a4d6d02fee163d6b141fd578893",
+    "validation_ids_sha256": "9b1d9a26ad261169f4d4c00a2c62b36d5e436b295bc6e6dddb1e8d057a8946d1",
+    "same_dates_as_global_CV": true
+  },
+  {
+    "train_n": 30000,
+    "validation_n": 20000,
+    "train_ids_sha256": "7ee698d8436aa855ec5940d1c3a51c47a3ffe64f8eaac3109ed8661600af1a18",
+    "validation_ids_sha256": "fa50b1f661fd10ce14820474aa2fb3e1be3cbad1d1b1dd5c929d66e65bf49a94",
+    "same_dates_as_global_CV": true
+  }
+]

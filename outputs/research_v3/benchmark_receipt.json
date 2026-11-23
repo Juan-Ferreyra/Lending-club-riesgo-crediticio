@@ -1,0 +1,32 @@
+{
+  "state": "complete",
+  "started_utc": "2026-11-02T23:29:52.267761+00:00",
+  "completed_utc": "2026-11-02T23:34:11.946212+00:00",
+  "role": "Previously observed, reused retrospective benchmarks. NOT a new independent final test. No tuning or model replacement after opening V3 benchmark predictions.",
+  "lock_sha256": "1417c2093e9e46eb1a6d9d1927436a56156e2e7d30168baf2374ce1343cbe9ec",
+  "selected": "catboost_combined_control",
+  "selected_model_unchanged": true,
+  "metrics_sha256": "377b63e0ad538a963d7a477a7a69e2b3a4b260939b98c6d39e4444cb9854e92c",
+  "cohorts": {
+    "2015": {
+      "n": 258856,
+      "ids_sha256": "833a99c655cc37127f11e3fe49d22c0ba6b283fcacb6d102d75bf32776351744",
+      "same_ids_targets_order_as_v2": true,
+      "reference_predictions_sha256": "9e40d86c34bdafff5e07b8854933d49213e25de08667f83e74c4bcd9c83dc921"
+    },
+    "2016": {
+      "n": 212482,
+      "ids_sha256": "3e51a123f828f87c3e3044603fb3101bc3cfe11ecbf0ed0e67c062164e882ac1",
+      "same_ids_targets_order_as_v2": true,
+      "reference_predictions_sha256": "68341a78ed008595a99dd445c7195f564d3afdec1340269e3547803439397704"
+    }
+  },
+  "pristine_final_test": false,
+  "outputs_sha256": {
+    "benchmark_metrics.csv": "f6cd6c5b271ac859df7102ad2147f52a3af8bf36cf08e4c911a7a699162be6c3",
+    "benchmark_periods.csv": "cfa416e59e37f2f23ccce1746413b831140a579fdd38f2b94b43312aa6e84cd6",
+    "benchmark_segment_errors.csv": "ef32194735f0ba33fdd2ca89766403bcb038d913af325b2924ed404f6bd5408d",
+    "benchmark_cohorts.json": "45e7416bf4ae0a944c27647f73ffff6a58c4a71259c94091fb7df3f81ccc98eb",
+    "benchmark_uncertainty.json": "2b7a6552625c6a5cd71341b528eda181fff7c3e79f03666e9e98ecdefc2b1433"
+  }
+}

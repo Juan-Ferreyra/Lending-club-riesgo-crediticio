@@ -1,0 +1,39 @@
+{
+  "family": "xgboost",
+  "params": {
+    "n_estimators": 326,
+    "learning_rate": 0.04676664740057031,
+    "max_depth": 3,
+    "min_child_weight": 6.345356893234593,
+    "reg_lambda": 7.400833087122808,
+    "reg_alpha": 2.6202105294222906,
+    "subsample": 0.701271216187201,
+    "colsample_bytree": 0.6780273291927688,
+    "gamma": 0.7056336440801878,
+    "scale_pos_weight": 2.0
+  },
+  "search_params": {
+    "n_estimators": 1400,
+    "learning_rate": 0.04676664740057031,
+    "max_depth": 3,
+    "min_child_weight": 6.345356893234593,
+    "reg_lambda": 7.400833087122808,
+    "reg_alpha": 2.6202105294222906,
+    "subsample": 0.701271216187201,
+    "colsample_bytree": 0.6780273291927688,
+    "gamma": 0.7056336440801878,
+    "scale_pos_weight": 2.0
+  },
+  "CV_AP": 0.28497068199561126,
+  "best_trial": 22,
+  "fold_AP": [
+    0.2903729856277938,
+    0.27956837836342874
+  ],
+  "fold_best_iterations": [
+    91,
+    476
+  ],
+  "trial_count": 24,
+  "search_seconds_this_call": 2732.58
+}

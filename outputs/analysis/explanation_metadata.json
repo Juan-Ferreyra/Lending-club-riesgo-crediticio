@@ -1,0 +1,56 @@
+{
+  "catboost": {
+    "family": "catboost",
+    "weight": 0.19999999999999998,
+    "units": "log_odds",
+    "max_additivity_error": 1.1546319456101628e-14,
+    "global_sample_n": 1200,
+    "explains": "uncalibrated component only; not additive to ensemble calibrated probability",
+    "reference": "tree-path-dependent"
+  },
+  "catboost_seed43": {
+    "family": "catboost",
+    "weight": 0.19999999999999998,
+    "units": "log_odds",
+    "max_additivity_error": 1.199040866595169e-14,
+    "global_sample_n": 1200,
+    "explains": "uncalibrated component only; not additive to ensemble calibrated probability",
+    "reference": "tree-path-dependent"
+  },
+  "catboost_seed44": {
+    "family": "catboost",
+    "weight": 0.19999999999999998,
+    "units": "log_odds",
+    "max_additivity_error": 1.3322676295501878e-14,
+    "global_sample_n": 1200,
+    "explains": "uncalibrated component only; not additive to ensemble calibrated probability",
+    "reference": "tree-path-dependent"
+  },
+  "lightgbm": {
+    "family": "lightgbm",
+    "weight": 0.13333333333333333,
+    "units": "log_odds",
+    "max_additivity_error": 4.6629367034256575e-15,
+    "global_sample_n": 1200,
+    "explains": "uncalibrated component only; not additive to ensemble calibrated probability",
+    "reference": "tree-path-dependent"
+  },
+  "lightgbm_seed43": {
+    "family": "lightgbm",
+    "weight": 0.13333333333333333,
+    "units": "log_odds",
+    "max_additivity_error": 4.884981308350689e-15,
+    "global_sample_n": 1200,
+    "explains": "uncalibrated component only; not additive to ensemble calibrated probability",
+    "reference": "tree-path-dependent"
+  },
+  "lightgbm_seed44": {
+    "family": "lightgbm",
+    "weight": 0.13333333333333333,
+    "units": "log_odds",
+    "max_additivity_error": 5.329070518200751e-15,
+    "global_sample_n": 1200,
+    "explains": "uncalibrated component only; not additive to ensemble calibrated probability",
+    "reference": "tree-path-dependent"
+  }
+}

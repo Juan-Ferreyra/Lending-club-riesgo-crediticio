@@ -1,0 +1,104 @@
+[
+  {
+    "spec": {
+      "family": "xgboost",
+      "params": {
+        "n_estimators": 1600,
+        "learning_rate": 0.04676664740057031,
+        "max_depth": 3,
+        "min_child_weight": 6.345356893234593,
+        "reg_lambda": 7.400833087122808,
+        "reg_alpha": 2.6202105294222906,
+        "gamma": 0.7056336440801878,
+        "subsample": 0.701271216187201,
+        "colsample_bytree": 0.6780273291927688,
+        "scale_pos_weight": 2.0
+      },
+      "feature_mode": "baseline",
+      "preparation": "native",
+      "start": "2012-01-01",
+      "half_life": 0,
+      "seed": 42
+    },
+    "CV_AP": 0.22345939244817414,
+    "folds": [
+      {
+        "fold": 0,
+        "AP": 0.21661480817569775,
+        "ROC_AUC": 0.6725603712029893,
+        "train_n": 60000,
+        "validation_n": 20000,
+        "train_ids_sha256": "e04094ae1fdcd862d9927f4356b337f0a1933670cfbd795aaa1ec28eb24e81c7",
+        "validation_ids_sha256": "5025bc85d9cc5f06c6f7298de69a35ddd2d0ef88e3aa0cfc9e5a7e4a23a853d3",
+        "best_iteration": 639,
+        "features": 76,
+        "seconds": 56.08
+      },
+      {
+        "fold": 1,
+        "AP": 0.2303039767206505,
+        "ROC_AUC": 0.673849497783144,
+        "train_n": 60000,
+        "validation_n": 20000,
+        "train_ids_sha256": "cdef2519bbfdb255a01532b6f66f0d7ca8e52996cbb3e3766527701ad74e365c",
+        "validation_ids_sha256": "27e5aac14b3a95c715af10dbfdb5ad84dd100434258dafed4e1c5c76116561f5",
+        "best_iteration": 464,
+        "features": 76,
+        "seconds": 42.87
+      }
+    ],
+    "prediction_label": "xgboost_0",
+    "trial_number": 0
+  },
+  {
+    "spec": {
+      "family": "xgboost",
+      "params": {
+        "n_estimators": 1600,
+        "learning_rate": 0.04676664740057031,
+        "max_depth": 3,
+        "min_child_weight": 6.345356893234593,
+        "reg_lambda": 7.400833087122808,
+        "reg_alpha": 2.6202105294222906,
+        "gamma": 0.7056336440801878,
+        "subsample": 0.701271216187201,
+        "colsample_bytree": 0.6780273291927688,
+        "scale_pos_weight": 2.0
+      },
+      "feature_mode": "financial",
+      "preparation": "native",
+      "start": "2012-01-01",
+      "half_life": 12,
+      "seed": 42
+    },
+    "CV_AP": 0.22251911206968328,
+    "folds": [
+      {
+        "fold": 0,
+        "AP": 0.21723111010588572,
+        "ROC_AUC": 0.6711911945442407,
+        "train_n": 60000,
+        "validation_n": 20000,
+        "train_ids_sha256": "e04094ae1fdcd862d9927f4356b337f0a1933670cfbd795aaa1ec28eb24e81c7",
+        "validation_ids_sha256": "5025bc85d9cc5f06c6f7298de69a35ddd2d0ef88e3aa0cfc9e5a7e4a23a853d3",
+        "best_iteration": 757,
+        "features": 96,
+        "seconds": 79.63
+      },
+      {
+        "fold": 1,
+        "AP": 0.2278071140334808,
+        "ROC_AUC": 0.6721961224490908,
+        "train_n": 60000,
+        "validation_n": 20000,
+        "train_ids_sha256": "cdef2519bbfdb255a01532b6f66f0d7ca8e52996cbb3e3766527701ad74e365c",
+        "validation_ids_sha256": "27e5aac14b3a95c715af10dbfdb5ad84dd100434258dafed4e1c5c76116561f5",
+        "best_iteration": 506,
+        "features": 96,
+        "seconds": 57.32
+      }
+    ],
+    "prediction_label": "xgboost_2",
+    "trial_number": 2
+  }
+]

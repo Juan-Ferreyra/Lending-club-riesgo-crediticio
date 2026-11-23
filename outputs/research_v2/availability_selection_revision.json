@@ -1,0 +1,8 @@
+{
+  "utc": "2026-11-02T18:54:49.646844+00:00",
+  "reason": "Audit shows ~52% absence for key bureau fields in 2012 versus 0% in 2013. Add fixed-parameter 2013-onward data controls on the same Q3 validation before any new benchmark predictions.",
+  "completed_searches_preserved": true,
+  "candidate_models_preserved": true,
+  "additional_hyperparameter_search": false,
+  "new_benchmark_predictions_computed": false
+}

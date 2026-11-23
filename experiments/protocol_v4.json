@@ -1,0 +1,38 @@
+{
+  "phase": "V4 - técnicas del curso y familias adicionales",
+  "registered_local_time": "2026-11-22T00:52:00-05:00",
+  "registered_before_execution": true,
+  "source_sha256": "55c16f75120f897683f02e7aabcf080d0e4a20c4832feb1d592cfa941bd62a2d",
+  "population": "Préstamos aceptados a 36 meses con desenlace terminal (Fully Paid / Charged Off)",
+  "train_start": "2012-01-01",
+  "train_end": "2014-09-30",
+  "selection_start": "2014-10-01",
+  "selection_end": "2014-12-31",
+  "opens_2015_2016": false,
+  "features": "src.features.FeatureBuilder(extended=True): mismas variables de originación para todos los candidatos; sin grade, sub_grade, int_rate ni installment",
+  "reference": "lightgbm_referencia: LightGBM con parámetros fijos, sin búsqueda",
+  "candidates": [
+    "lightgbm_sin_geografia", "hist_gradient_boosting", "logistica_l2", "logistica_l1",
+    "logistica_cuantiles", "pca_logistica", "naive_bayes", "arbol_decision", "extra_trees", "mlp"
+  ],
+  "row_budget": {"logistica_l1": 60000, "extra_trees": 60000, "others": "todo el entrenamiento"},
+  "primary_metric": "average_precision_score en Q4 2014",
+  "secondary_metrics": ["ROC_AUC", "Brier (probabilidades sin calibrar)", "recall_at_top20"],
+  "uncertainty": "Bootstrap pareado por préstamo (300 réplicas) de la diferencia de AP frente a la referencia",
+  "replacement_rule": "Ningún candidato V4 reemplaza al modelo V3. Para recomendarse como sucesor tendría que superar a la referencia por >= +0.002 AP con límite inferior del IC95 > 0, y después reentrenarse hasta 2014-11-30 y calibrarse en diciembre (opción A) antes de cualquier benchmark. Si nadie lo cumple, V3 se mantiene.",
+  "fairness": "Comparación con y sin addr_state; TPR y FPR al revisar el 20% de mayor riesgo, por vivienda, quintil de ingreso y verificación. Sin atributos protegidos: las diferencias no establecen equidad.",
+  "learning_curve": "Referencia con 15k, 30k, 60k, 120k y todas las filas de entrenamiento",
+  "not_executed_by_design": {
+    "TabNet": "Requiere PyTorch y GPU para tiempos razonables; paquete poco mantenido",
+    "LDA": "Con dos clases produce un único eje lineal: equivale a otro clasificador lineal",
+    "SMOTE": "Genera filas sintéticas, distorsiona la calibración y no mejora una métrica de ordenamiento",
+    "AutoGluon": "Requiere un entorno aparte y una validación temporal fija; no se ejecutó por tiempo",
+    "macro_series": "Requiere series externas con fecha de disponibilidad; no se incorporaron",
+    "stacking_v3": "Requiere regenerar predicciones V1-V3 (horas); los ensambles V3 ya no superaron al mejor individual"
+  },
+  "limitations": [
+    "Q4 2014 ya participó en la elección de calibración de V1 y en el entrenamiento/calibración de V3: es ventana de selección reutilizada, no prueba",
+    "Parámetros fijos razonables, sin búsqueda de hiperparámetros por familia: compara familias, no óptimos",
+    "Probabilidades sin calibrar: Brier es diagnóstico"
+  ]
+}

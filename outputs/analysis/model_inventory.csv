@@ -1,0 +1,11 @@
+model,family,extended_features,seed,transformed_columns,trees,selected_weight
+baseline19,logistic,False,42,97,,0.0
+catboost,catboost,True,42,96,740.0,0.19999999999999998
+catboost_seed43,catboost,True,43,96,740.0,0.19999999999999998
+catboost_seed44,catboost,True,44,96,740.0,0.19999999999999998
+lightgbm,lightgbm,True,42,96,143.0,0.13333333333333333
+lightgbm_seed43,lightgbm,True,43,96,143.0,0.13333333333333333
+lightgbm_seed44,lightgbm,True,44,96,143.0,0.13333333333333333
+logistic,logistic,True,42,238,,0.0
+random_forest,random_forest,True,42,238,250.0,0.0
+xgboost,xgboost,True,42,96,326.0,0.0

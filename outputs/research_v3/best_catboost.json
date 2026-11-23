@@ -1,0 +1,102 @@
+[
+  {
+    "spec": {
+      "family": "catboost",
+      "params": {
+        "iterations": 1400,
+        "learning_rate": 0.02205578452420942,
+        "depth": 7,
+        "l2_leaf_reg": 54.12993362140874,
+        "random_strength": 1.9728817186293905,
+        "bagging_temperature": 0.6092275383467414,
+        "rsm": 0.6841852399022343,
+        "max_ctr_complexity": 1,
+        "auto_class_weights": null
+      },
+      "feature_mode": "baseline",
+      "preparation": "native",
+      "start": "2012-01-01",
+      "half_life": 0,
+      "seed": 42
+    },
+    "CV_AP": 0.2239858628586105,
+    "folds": [
+      {
+        "fold": 0,
+        "AP": 0.2163242043612846,
+        "ROC_AUC": 0.6711309943644895,
+        "train_n": 60000,
+        "validation_n": 20000,
+        "train_ids_sha256": "e04094ae1fdcd862d9927f4356b337f0a1933670cfbd795aaa1ec28eb24e81c7",
+        "validation_ids_sha256": "5025bc85d9cc5f06c6f7298de69a35ddd2d0ef88e3aa0cfc9e5a7e4a23a853d3",
+        "best_iteration": 625,
+        "features": 76,
+        "seconds": 114.61
+      },
+      {
+        "fold": 1,
+        "AP": 0.23164752135593641,
+        "ROC_AUC": 0.6745230015483409,
+        "train_n": 60000,
+        "validation_n": 20000,
+        "train_ids_sha256": "cdef2519bbfdb255a01532b6f66f0d7ca8e52996cbb3e3766527701ad74e365c",
+        "validation_ids_sha256": "27e5aac14b3a95c715af10dbfdb5ad84dd100434258dafed4e1c5c76116561f5",
+        "best_iteration": 726,
+        "features": 76,
+        "seconds": 141.81
+      }
+    ],
+    "prediction_label": "catboost_0",
+    "trial_number": 0
+  },
+  {
+    "spec": {
+      "family": "catboost",
+      "params": {
+        "iterations": 1400,
+        "learning_rate": 0.02205578452420942,
+        "depth": 7,
+        "l2_leaf_reg": 54.12993362140874,
+        "random_strength": 1.9728817186293905,
+        "bagging_temperature": 0.6092275383467414,
+        "rsm": 0.6841852399022343,
+        "max_ctr_complexity": 1,
+        "auto_class_weights": null
+      },
+      "feature_mode": "financial",
+      "preparation": "native",
+      "start": "2012-01-01",
+      "half_life": 12,
+      "seed": 42
+    },
+    "CV_AP": 0.2233868362584099,
+    "folds": [
+      {
+        "fold": 0,
+        "AP": 0.21729315316956027,
+        "ROC_AUC": 0.6724107435618596,
+        "train_n": 60000,
+        "validation_n": 20000,
+        "train_ids_sha256": "e04094ae1fdcd862d9927f4356b337f0a1933670cfbd795aaa1ec28eb24e81c7",
+        "validation_ids_sha256": "5025bc85d9cc5f06c6f7298de69a35ddd2d0ef88e3aa0cfc9e5a7e4a23a853d3",
+        "best_iteration": 667,
+        "features": 96,
+        "seconds": 132.35
+      },
+      {
+        "fold": 1,
+        "AP": 0.22948051934725955,
+        "ROC_AUC": 0.6715259408362784,
+        "train_n": 60000,
+        "validation_n": 20000,
+        "train_ids_sha256": "cdef2519bbfdb255a01532b6f66f0d7ca8e52996cbb3e3766527701ad74e365c",
+        "validation_ids_sha256": "27e5aac14b3a95c715af10dbfdb5ad84dd100434258dafed4e1c5c76116561f5",
+        "best_iteration": 590,
+        "features": 96,
+        "seconds": 116.95
+      }
+    ],
+    "prediction_label": "catboost_2",
+    "trial_number": 2
+  }
+]

@@ -160,5 +160,5 @@ La ponderación de clases ayuda a tratar el desbalance, pero las salidas de `pre
 6. Evaluar calibración de probabilidades y selección de umbral con datos de desarrollo.
 7. Analizar errores por propósito, plazo, FICO, ingreso, vivienda y ubicación, y aplicar interpretabilidad global y local.
 8. Documentar sesgos, limitaciones y consideraciones éticas.
-9. Evaluar una sola vez la solución seleccionada en la prueba final y elaborar el informe y la presentación.
+9. Evaluar una sola vez la solución seleccionada en la prueba final y elaborar el informe.
 

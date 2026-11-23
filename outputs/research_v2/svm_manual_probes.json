@@ -1,0 +1,33 @@
+{
+  "utc": "2026-11-02T18:21:15.216244+00:00",
+  "exact_RBF": [
+    {
+      "C": 10.0,
+      "gamma": 0.0005,
+      "class_weight": null
+    },
+    {
+      "C": 10.0,
+      "gamma": 0.005,
+      "class_weight": null
+    }
+  ],
+  "nystroem": [
+    {
+      "C": 1.0,
+      "gamma": 0.001,
+      "n_components": 600,
+      "class_weight": null
+    },
+    {
+      "C": 10.0,
+      "gamma": 0.005,
+      "n_components": 600,
+      "class_weight": null
+    }
+  ],
+  "inside_existing_parameter_ranges": true,
+  "counts_toward_existing_12_trial_budgets": true,
+  "benchmark_predictions_used": false,
+  "reason": "Avoid drawing conclusions about kernels only from weak initial regularization samples; include reasonable low-gamma/high-C boundary candidates."
+}

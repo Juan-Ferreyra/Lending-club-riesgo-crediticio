@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-11-02T23:13:28.046356+00:00",
+  "selected": "catboost_combined_control",
+  "members": {
+    "catboost_combined_control": 1.0
+  },
+  "model_stage": "Q3 candidates trained through June 2014; final November models are not used.",
+  "model_files_sha256": {
+    "outputs/research_v3/models/candidate_catboost_combined_control.joblib": "22b102028f073e4585973b68fa919996482ad6eb40ba32363a0218cd18d07b0f"
+  },
+  "selection_sha256": "3f26fd38c6bba9c32b737f661dfea9aabcb31f5329704a0189913bf1d0dbd406",
+  "validation_start": "2014-07-01",
+  "validation_end": "2014-09-30",
+  "complete_validation_n": 40595,
+  "validation_n": 6000,
+  "validation_ids_sha256": "2aad5b6706693584a1fc4716946354fe8c9b4ffd430914a4374692687c3282e9",
+  "sampling": "Stratified sample_development, cap=6000, seed=42",
+  "baseline_AP": 0.2653571221326842,
+  "permutations": 3,
+  "permutation_seed": 42,
+  "grouping": "One row permutation shared by all raw fields within a group; derived features recomputed.",
+  "role": "Post-selection descriptive interpretation on reused development; never used for new selection.",
+  "limits": "Importance is predictive and noncausal. Correlation between groups can substitute for shuffled information; combinations between shuffled and unshuffled groups may be unusual. SD across three shuffles is not a confidence interval."
+}

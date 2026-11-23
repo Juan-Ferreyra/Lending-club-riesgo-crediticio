@@ -1,0 +1,10 @@
+{
+  "rule": "SHA256(str(id), UTF-8) parity: even calibration, odd policy; same month, disjoint groups",
+  "calibration_n": 3371,
+  "policy_n": 3503,
+  "december_n": 6874,
+  "calibration_ids_sha256": "e11ea5fa635fd043e5974730d3354f0146558399bc34eb8e33ce4a33c51affae",
+  "policy_ids_sha256": "9dd4f72920d622e72727b975793220a6bab0e6f33d20ddd7a60e5889bedadc0e",
+  "december_ids_sha256": "564e034bce989bcd1c25686e9cf5fad1b7bb1062893655fafbf97970e20c34c9",
+  "overlap_n": 0
+}

@@ -1,0 +1,54 @@
+{
+  "training_only_columns_verified": true,
+  "clipping_fit_only_verified": true,
+  "models": [
+    {
+      "family": "logistic",
+      "finite_scores": true,
+      "roundtrip_verified": true,
+      "unknown_category_verified": true
+    },
+    {
+      "family": "random_forest",
+      "finite_scores": true,
+      "roundtrip_verified": true,
+      "unknown_category_verified": true
+    },
+    {
+      "family": "lightgbm",
+      "finite_scores": true,
+      "roundtrip_verified": true,
+      "unknown_category_verified": true
+    },
+    {
+      "family": "xgboost",
+      "finite_scores": true,
+      "roundtrip_verified": true,
+      "unknown_category_verified": true
+    },
+    {
+      "family": "catboost",
+      "finite_scores": true,
+      "roundtrip_verified": true,
+      "unknown_category_verified": true
+    },
+    {
+      "family": "svm_linear",
+      "finite_scores": true,
+      "roundtrip_verified": true,
+      "unknown_category_verified": true
+    },
+    {
+      "family": "svm_rbf",
+      "finite_scores": true,
+      "roundtrip_verified": true,
+      "unknown_category_verified": true
+    },
+    {
+      "family": "svm_nystroem",
+      "finite_scores": true,
+      "roundtrip_verified": true,
+      "unknown_category_verified": true
+    }
+  ]
+}

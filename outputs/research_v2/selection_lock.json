@@ -1,0 +1,27 @@
+{
+  "frozen_utc": "2026-11-02T19:44:09.078164+00:00",
+  "selected": "catboost",
+  "recipe": {
+    "name": "stable_36_recent",
+    "mode": "stable",
+    "term": "36 months",
+    "start": "2012-01-01"
+  },
+  "model_sha256": "d4d7cd81e26437720d2d2e7d2876cb44acfab5f80702e6bb3c077ce35e091219",
+  "protocol_sha256": "fa898ea503c5adfa5c616bb8c869c68221f94ded0c9d74892c6495e3b177f7db",
+  "selection_sha256": "70fbc3902b282b756c602df61cce0fdf09e2c343a42f607221db6956cdcd683c",
+  "code_sha256": {
+    "research/audit.py": "da11d55e263681f0f3af0bf770ac9192244fa735b160859398fa3b46a361d579",
+    "research/experiments.py": "410f5b006fe730b78762807e58db15feed12fe1b3414f9a8212ac06e66417ed1",
+    "research/followup.py": "b4c5ff4cf38cee8df168ac5a6e1cfb6dc3175e7e743f1082b4facfc166d51a44",
+    "research/models.py": "0ea8944e81a19814f90d70e95e8ba53a031cf85736806a5eb4822bd0ac0b40d5",
+    "research/monthly_coverage.py": "8fa14ed5f3b42eade111a9da1472b953ddc4bbf9654f1f0ce2a874f9fb5102c4",
+    "research/notebook.py": "c20164d1cee4549a6518aa65c91f1dd5c0659b587d708cc571623b7fe000df7a",
+    "research/repair_svm.py": "8664774c08faaa7ecf630d9fba8ebc1da06d302e061ad0d64b0771fdda780052",
+    "research/replay.py": "28c65a50f7702c66cd98faa3aa72592b91150e736e4b7030a12fe98edbb3ecf5",
+    "research/__init__.py": "dec65f76536bf0b38078093d71f6ae0180ee55a4ff080e0e33b907cac1a7a53e"
+  },
+  "original_model_sha256": "5261d382d1d11b33ca07b24437bd1db7b3dd08250bd5ccc4280870e458a6fdaa",
+  "benchmark_role": "2015/2016 are reused, previously observed retrospective benchmarks, NOT pristine independent final tests. The original experiment and metrics remain immutable.",
+  "new_pristine_final_test": false
+}

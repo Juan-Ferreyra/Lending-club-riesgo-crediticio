@@ -1,0 +1,7 @@
+{
+  "rule": "2016 36-month source cohorts with terminal coverage >= 0.995; no model performance used to choose months",
+  "months": [],
+  "coverage_threshold": 0.995,
+  "independent_pristine_test": false,
+  "source_population_before_initial_sample_exclusion": true
+}

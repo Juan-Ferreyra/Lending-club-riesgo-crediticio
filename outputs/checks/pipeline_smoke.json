@@ -1,0 +1,47 @@
+[
+  {
+    "family": "logistic",
+    "validation_n": 1000,
+    "AP": 0.26787736821708397,
+    "finite_probabilities": true,
+    "seconds": 1.6090400218963623,
+    "explanation_units": "log_odds_linear_decomposition_not_SHAP",
+    "explanation_max_additivity_error": 8.881784197001252e-16
+  },
+  {
+    "family": "random_forest",
+    "validation_n": 1000,
+    "AP": 0.2811826021415331,
+    "finite_probabilities": true,
+    "seconds": 2.3563156127929688,
+    "explanation_units": "probability",
+    "explanation_max_additivity_error": 6.245004513516506e-17
+  },
+  {
+    "family": "lightgbm",
+    "validation_n": 1000,
+    "AP": 0.2899309844764019,
+    "finite_probabilities": true,
+    "seconds": 1.8666040897369385,
+    "explanation_units": "log_odds",
+    "explanation_max_additivity_error": 1.1102230246251565e-15
+  },
+  {
+    "family": "xgboost",
+    "validation_n": 1000,
+    "AP": 0.27426549474449063,
+    "finite_probabilities": true,
+    "seconds": 2.18430233001709,
+    "explanation_units": "log_odds",
+    "explanation_max_additivity_error": 4.76837158203125e-07
+  },
+  {
+    "family": "catboost",
+    "validation_n": 1000,
+    "AP": 0.27258002727528763,
+    "finite_probabilities": true,
+    "seconds": 3.787001132965088,
+    "explanation_units": "log_odds",
+    "explanation_max_additivity_error": 4.440892098500626e-16
+  }
+]

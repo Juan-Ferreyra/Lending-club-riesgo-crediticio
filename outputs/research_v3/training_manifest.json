@@ -1,0 +1,240 @@
+{
+  "catboost_combined_control": {
+    "spec": {
+      "family": "catboost",
+      "params": {
+        "iterations": 1177,
+        "learning_rate": 0.02205578452420942,
+        "depth": 7,
+        "l2_leaf_reg": 54.12993362140874,
+        "random_strength": 1.9728817186293905,
+        "bagging_temperature": 0.6092275383467414,
+        "rsm": 0.6841852399022343,
+        "auto_class_weights": null
+      },
+      "feature_mode": "combined",
+      "preparation": "native",
+      "start": "2012-01-01",
+      "half_life": 0,
+      "seed": 42
+    },
+    "train_n": 299588,
+    "train_ids_sha256": "5029ff8b2a4bcae1de24e2cd8e5106d78b19941cb920756b063577cb0ad29b81",
+    "train_start": "2012-01-01",
+    "train_end": "2014-11-01",
+    "training_code_sha256": {
+      "optimization/data.py": "a7ac4265c39438f36f69b33c7a0620fcfc8649bfe8f9234bae105a8de57c8052",
+      "optimization/features.py": "ca9f84049c10d5e4ef9090eac847ff433ff96da386b1c4ce0e06b0c0fa420a03",
+      "optimization/models.py": "9cf5b84388c8b63b88be953e182b25d4cdf364eabd45cb76601262ea39051cb3",
+      "optimization/ensemble.py": "1d08e0a7124318dad73fb4fa9c29211352a6cd06878e57ceff9ffa495a2d127b",
+      "optimization/experiments.py": "492e22a8d3eb0fa33208ff995e4f66b78deaab381f8d09aded161fe2921b78a8"
+    }
+  },
+  "catboost_joint": {
+    "spec": {
+      "family": "catboost",
+      "params": {
+        "iterations": 777,
+        "learning_rate": 0.02205578452420942,
+        "depth": 7,
+        "l2_leaf_reg": 54.12993362140874,
+        "random_strength": 1.9728817186293905,
+        "bagging_temperature": 0.6092275383467414,
+        "rsm": 0.6841852399022343,
+        "max_ctr_complexity": 1,
+        "auto_class_weights": null
+      },
+      "feature_mode": "baseline",
+      "preparation": "native",
+      "start": "2012-01-01",
+      "half_life": 0,
+      "seed": 42
+    },
+    "train_n": 299588,
+    "train_ids_sha256": "5029ff8b2a4bcae1de24e2cd8e5106d78b19941cb920756b063577cb0ad29b81",
+    "train_start": "2012-01-01",
+    "train_end": "2014-11-01",
+    "training_code_sha256": {
+      "optimization/data.py": "a7ac4265c39438f36f69b33c7a0620fcfc8649bfe8f9234bae105a8de57c8052",
+      "optimization/features.py": "ca9f84049c10d5e4ef9090eac847ff433ff96da386b1c4ce0e06b0c0fa420a03",
+      "optimization/models.py": "9cf5b84388c8b63b88be953e182b25d4cdf364eabd45cb76601262ea39051cb3",
+      "optimization/ensemble.py": "1d08e0a7124318dad73fb4fa9c29211352a6cd06878e57ceff9ffa495a2d127b",
+      "optimization/experiments.py": "492e22a8d3eb0fa33208ff995e4f66b78deaab381f8d09aded161fe2921b78a8"
+    }
+  },
+  "lightgbm_joint": {
+    "spec": {
+      "family": "lightgbm",
+      "params": {
+        "n_estimators": 646,
+        "learning_rate": 0.02588968965098415,
+        "num_leaves": 15,
+        "min_child_samples": 273,
+        "reg_lambda": 2.462300726483128,
+        "reg_alpha": 0.0003745018823436387,
+        "colsample_bytree": 0.798070764044508,
+        "subsample": 0.6620359823903265,
+        "subsample_freq": 1,
+        "scale_pos_weight": 1.0
+      },
+      "feature_mode": "financial",
+      "preparation": "native",
+      "start": "2012-01-01",
+      "half_life": 12,
+      "seed": 42
+    },
+    "train_n": 299588,
+    "train_ids_sha256": "5029ff8b2a4bcae1de24e2cd8e5106d78b19941cb920756b063577cb0ad29b81",
+    "train_start": "2012-01-01",
+    "train_end": "2014-11-01",
+    "training_code_sha256": {
+      "optimization/data.py": "a7ac4265c39438f36f69b33c7a0620fcfc8649bfe8f9234bae105a8de57c8052",
+      "optimization/features.py": "ca9f84049c10d5e4ef9090eac847ff433ff96da386b1c4ce0e06b0c0fa420a03",
+      "optimization/models.py": "9cf5b84388c8b63b88be953e182b25d4cdf364eabd45cb76601262ea39051cb3",
+      "optimization/ensemble.py": "1d08e0a7124318dad73fb4fa9c29211352a6cd06878e57ceff9ffa495a2d127b",
+      "optimization/experiments.py": "492e22a8d3eb0fa33208ff995e4f66b78deaab381f8d09aded161fe2921b78a8"
+    }
+  },
+  "logistic_joint": {
+    "spec": {
+      "family": "logistic",
+      "params": {
+        "C": 2.273843986004399,
+        "class_weight": null
+      },
+      "feature_mode": "financial",
+      "preparation": "log_clip",
+      "start": "2013-01-01",
+      "half_life": 12,
+      "seed": 42
+    },
+    "train_n": 256118,
+    "train_ids_sha256": "12167310b3185f1f1967f10c12e66d22214e082bf6866b43890505c9b73b075c",
+    "train_start": "2013-01-01",
+    "train_end": "2014-11-01",
+    "training_code_sha256": {
+      "optimization/data.py": "a7ac4265c39438f36f69b33c7a0620fcfc8649bfe8f9234bae105a8de57c8052",
+      "optimization/features.py": "ca9f84049c10d5e4ef9090eac847ff433ff96da386b1c4ce0e06b0c0fa420a03",
+      "optimization/models.py": "9cf5b84388c8b63b88be953e182b25d4cdf364eabd45cb76601262ea39051cb3",
+      "optimization/ensemble.py": "1d08e0a7124318dad73fb4fa9c29211352a6cd06878e57ceff9ffa495a2d127b",
+      "optimization/experiments.py": "492e22a8d3eb0fa33208ff995e4f66b78deaab381f8d09aded161fe2921b78a8"
+    }
+  },
+  "svm_linear_joint": {
+    "spec": {
+      "family": "svm_linear",
+      "params": {
+        "C": 0.0030605882806936423,
+        "class_weight": "balanced"
+      },
+      "feature_mode": "financial",
+      "preparation": "log_clip",
+      "start": "2012-01-01",
+      "half_life": 12,
+      "seed": 42
+    },
+    "train_n": 299588,
+    "train_ids_sha256": "5029ff8b2a4bcae1de24e2cd8e5106d78b19941cb920756b063577cb0ad29b81",
+    "train_start": "2012-01-01",
+    "train_end": "2014-11-01",
+    "training_code_sha256": {
+      "optimization/data.py": "a7ac4265c39438f36f69b33c7a0620fcfc8649bfe8f9234bae105a8de57c8052",
+      "optimization/features.py": "ca9f84049c10d5e4ef9090eac847ff433ff96da386b1c4ce0e06b0c0fa420a03",
+      "optimization/models.py": "9cf5b84388c8b63b88be953e182b25d4cdf364eabd45cb76601262ea39051cb3",
+      "optimization/ensemble.py": "1d08e0a7124318dad73fb4fa9c29211352a6cd06878e57ceff9ffa495a2d127b",
+      "optimization/experiments.py": "492e22a8d3eb0fa33208ff995e4f66b78deaab381f8d09aded161fe2921b78a8"
+    }
+  },
+  "svm_nystroem_joint": {
+    "spec": {
+      "family": "svm_nystroem",
+      "params": {
+        "C": 2.273843986004399,
+        "class_weight": null,
+        "gamma": 0.0006438036013348905,
+        "n_components": 600
+      },
+      "feature_mode": "financial",
+      "preparation": "log_clip",
+      "start": "2013-01-01",
+      "half_life": 12,
+      "seed": 42
+    },
+    "train_n": 256118,
+    "train_ids_sha256": "12167310b3185f1f1967f10c12e66d22214e082bf6866b43890505c9b73b075c",
+    "train_start": "2013-01-01",
+    "train_end": "2014-11-01",
+    "training_code_sha256": {
+      "optimization/data.py": "a7ac4265c39438f36f69b33c7a0620fcfc8649bfe8f9234bae105a8de57c8052",
+      "optimization/features.py": "ca9f84049c10d5e4ef9090eac847ff433ff96da386b1c4ce0e06b0c0fa420a03",
+      "optimization/models.py": "9cf5b84388c8b63b88be953e182b25d4cdf364eabd45cb76601262ea39051cb3",
+      "optimization/ensemble.py": "1d08e0a7124318dad73fb4fa9c29211352a6cd06878e57ceff9ffa495a2d127b",
+      "optimization/experiments.py": "492e22a8d3eb0fa33208ff995e4f66b78deaab381f8d09aded161fe2921b78a8"
+    }
+  },
+  "v2_catboost": {
+    "spec": {
+      "family": "catboost",
+      "params": {
+        "iterations": 1177,
+        "learning_rate": 0.02205578452420942,
+        "depth": 7,
+        "l2_leaf_reg": 54.12993362140874,
+        "random_strength": 1.9728817186293905,
+        "bagging_temperature": 0.6092275383467414,
+        "rsm": 0.6841852399022343,
+        "auto_class_weights": null
+      },
+      "feature_mode": "baseline",
+      "preparation": "native",
+      "start": "2012-01-01",
+      "half_life": 0,
+      "seed": 42,
+      "engine": "v2"
+    },
+    "train_n": 299588,
+    "train_ids_sha256": "5029ff8b2a4bcae1de24e2cd8e5106d78b19941cb920756b063577cb0ad29b81",
+    "train_start": "2012-01-01",
+    "train_end": "2014-11-01",
+    "training_code_sha256": {
+      "optimization/data.py": "a7ac4265c39438f36f69b33c7a0620fcfc8649bfe8f9234bae105a8de57c8052",
+      "optimization/features.py": "ca9f84049c10d5e4ef9090eac847ff433ff96da386b1c4ce0e06b0c0fa420a03",
+      "optimization/models.py": "9cf5b84388c8b63b88be953e182b25d4cdf364eabd45cb76601262ea39051cb3",
+      "optimization/ensemble.py": "1d08e0a7124318dad73fb4fa9c29211352a6cd06878e57ceff9ffa495a2d127b",
+      "optimization/experiments.py": "492e22a8d3eb0fa33208ff995e4f66b78deaab381f8d09aded161fe2921b78a8"
+    }
+  },
+  "xgboost_joint": {
+    "spec": {
+      "family": "xgboost",
+      "params": {
+        "n_estimators": 634,
+        "learning_rate": 0.04676664740057031,
+        "max_depth": 3,
+        "min_child_weight": 6.345356893234593,
+        "reg_lambda": 7.400833087122808,
+        "reg_alpha": 2.6202105294222906,
+        "gamma": 0.7056336440801878,
+        "subsample": 0.701271216187201,
+        "colsample_bytree": 0.6780273291927688,
+        "scale_pos_weight": 2.0
+      },
+      "feature_mode": "baseline",
+      "preparation": "native",
+      "start": "2012-01-01",
+      "half_life": 0,
+      "seed": 42
+    },
+    "train_n": 299588,
+    "train_ids_sha256": "5029ff8b2a4bcae1de24e2cd8e5106d78b19941cb920756b063577cb0ad29b81",
+    "train_start": "2012-01-01",
+    "train_end": "2014-11-01",
+    "training_code_sha256": {
+      "optimization/data.py": "a7ac4265c39438f36f69b33c7a0620fcfc8649bfe8f9234bae105a8de57c8052",
+      "optimization/features.py": "ca9f84049c10d5e4ef9090eac847ff433ff96da386b1c4ce0e06b0c0fa420a03",
+      "optimization/models.py": "9cf5b84388c8b63b88be953e182b25d4cdf364eabd45cb76601262ea39051cb3",
+      "optimization/ensemble.py": "1d08e0a7124318dad73fb4fa9c29211352a6cd06878e57ceff9ffa495a2d127b",
+      "optimization/experiments.py": "492e22a8d3eb0fa33208ff995e4f66b78deaab381f8d09aded161fe2921b78a8"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+population,dimension,TVD
+all_terminal_2007_2018,issue_year,0.0027138202185822253
+all_accepted_2007_2018,issue_year,0.24683846607555243
+all_terminal_2007_2018,term,0.000414670418616897
+all_accepted_2007_2018,term,0.047086461031410384
+all_terminal_2007_2018,loan_status,0.0007304132585571749

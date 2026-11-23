@@ -1,0 +1,45 @@
+{
+  "created_utc": "2026-11-22T05:59:05.337341+00:00",
+  "train_n": 256442,
+  "train_positive_rate": 0.12996701008415157,
+  "selection_n": 50020,
+  "selection_positive_rate": 0.14528188724510196,
+  "train_range": [
+    "2012-01-01",
+    "2014-09-01"
+  ],
+  "selection_range": [
+    "2014-10-01",
+    "2014-12-01"
+  ],
+  "n_features": 96,
+  "categorical": [
+    "term",
+    "emp_length",
+    "home_ownership",
+    "verification_status",
+    "purpose",
+    "addr_state",
+    "application_type"
+  ],
+  "all_missing_in_train": [
+    "annual_inc_joint",
+    "dti_joint",
+    "open_acc_6m",
+    "open_act_il",
+    "open_il_12m",
+    "open_il_24m",
+    "mths_since_rcnt_il",
+    "total_bal_il",
+    "il_util",
+    "open_rv_12m",
+    "open_rv_24m",
+    "max_bal_bc",
+    "all_util",
+    "inq_fi",
+    "total_cu_tl",
+    "inq_last_12m"
+  ],
+  "load_seconds": 39.8,
+  "opened_2015_2016": false
+}

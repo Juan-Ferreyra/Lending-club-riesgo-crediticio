@@ -1,0 +1,11 @@
+{
+  "recipe": {
+    "name": "stable_36_recent",
+    "mode": "stable",
+    "term": "36 months",
+    "start": "2012-01-01"
+  },
+  "CV_AP": 0.2197105179484954,
+  "selection_source": "development CV only",
+  "benchmark_reopened": false
+}

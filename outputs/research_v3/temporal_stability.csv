@@ -1,0 +1,3 @@
+fold,period,model,n,AP,v2_AP,delta_AP_vs_v2,validation_ids_sha256,role
+1,2013-07-01 / 2013-12-31,catboost_combined_control,20000,0.21549035313550408,0.216196576803394,-0.0007062236678899159,5025bc85d9cc5f06c6f7298de69a35ddd2d0ef88e3aa0cfc9e5a7e4a23a853d3,Reused development folds; selected after seeing Q3; diagnostic only
+2,2014-01-01 / 2014-06-30,catboost_combined_control,20000,0.22942490039997088,0.2319760792342227,-0.0025511788342518216,27e5aac14b3a95c715af10dbfdb5ad84dd100434258dafed4e1c5c76116561f5,Reused development folds; selected after seeing Q3; diagnostic only
